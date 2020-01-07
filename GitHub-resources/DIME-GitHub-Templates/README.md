@@ -27,12 +27,12 @@ GitHub has a template for Python, but we still recommend using our template as i
 
 This template is shared under the MIT LICENSE and is therefore free for anyone to use and to modify for their own purposes. If you are familiar with _.gitignore_ files, then you can set up your own file however you want, but below are instructions for one way how to do so correctly that we have found are easy to follow even for people with little GitHub Experience.
 
-1. Go to the main page of your repository at GitHub.com. The main page is the page in your repository is the page that looks like this: https://github.com/worldbank/DIMEwiki
+1. Go to the main page of your repository at GitHub.com. The main page is the page in your repository is the page that looks like this: https://github.com/worldbank/dime-github-trainings
 1. In this top folder on the main page, click `Create new file`
 1. In the _Name your file..._ field, type `.gitignore`. The `.` before `gitignore` must be included.
 1. Once you have types `.gitignore`, a button will show up that says `Choose .gitignore: None`. Click that button and select any template. It does not matter which template you select as we will replace the content with the DIME Analytics template in the next step. We are only doing this to make sure the file is set up correctly.
 1. Either commit the file now, or do the next step and then commit. If you commit now, you can pull the edits and do the next step in your clone, otherwise you must continue in the browser.
-1. Replace the content in you _.gitignore_ file with the content in [DIME Analytics template](https://github.com/worldbank/DIMEwiki/blob/master/Topics/GitHub/gitignore_template.txt) and then commit this file to the repository.
+1. Replace the content in you _.gitignore_ file with the content in [DIME Analytics template](https://raw.githubusercontent.com/worldbank/dime-github-trainings/master/GitHub-resources/DIME-GitHub-Templates/gitignore_template.txt) and then commit this file to the repository.
 
 If necessary, you can now make additions to the _.gitignore_ file that are specific to your project. But you can also do that at any point in the future.
 
@@ -55,4 +55,4 @@ There are several ways this template can be copied to your repository. However i
 
 If you are using Stata you can use the command [iegitaddmd](https://dimewiki.worldbank.org/wiki/Iegitaddmd) from the [ietoolkit package](https://github.com/worldbank/ietoolkit) to automate this task.
 
-Other ways to use this place holder file is to clone this repository and copy the files on your computer to the clone where you have empty folder that needs to be shared. Or you can follow the instructions for how to copy the _.gitignore_ file, but if you do copy the placholder template content from [here](https://raw.githubusercontent.com/worldbank/DIMEwiki/master/Topics/GitHub/placeholder-README.md) to get the markdown formatting.
+Other ways to use this place holder file is to clone this repository and copy the files on your computer to the clone where you have empty folder that needs to be shared. Or you can follow the instructions for how to copy the _.gitignore_ file, but if you do copy the placholder template content from [here](https://raw.githubusercontent.com/worldbank/dime-github-trainings/master/GitHub-resources/DIME-GitHub-Templates/placeholder-README.md) to get the markdown formatting.
