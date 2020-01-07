@@ -54,7 +54,7 @@
 # Python
 !/**/*.py
 !/**/*.ipynb
-# Ignore .ipynb files in checkpoint folders
+# Still ignore .ipynb files in checkpoint folders
 .ipynb_checkpoints
 
 # Matlab
@@ -63,23 +63,24 @@
 # Markdown
 !/**/*.md
 
-# Text files
-!/**/*.txt
+#######################
+# Include some additional file formats in any output folder. You might have
+# to change the name of the Output folder to whatever it is called in your
+# project, but we strongly recommend that you only include these files in
+# a subset of the folders where you are certain no private data is ever stored.
+!/**/Output/**/*.txt
+!/**/Output/**/*.csv
+!/**/Output/**/*.xml
+!/**/Output/**/*.eps
+!/**/Output/**/*.svg
 
 #######################
-#Un-ignore all images used for Latex-presenations
-!**/Common-Resources/img/*.png
-!**/latex-slides/img/*.png
-
-
-#######################
-#Un-ignore all files needed when setting up the training repositories
-!**/repo-content-files/**/*.*
-!**/repo-content-files/no.gitignore
-!**/repo-content-files/README.md
-
-#######################
-#Ignore everything in the token folder apart from the README.md placeholder
-
-GitHub-trainings/Common-Resources/token/*
-!GitHub-trainings/Common-Resources/token/README.md
+# Include all the files with passwords or tokens here. All files named
+# password or passwords are with this template ignored no matter which
+# format you are using. Additionally, all content in any folder called
+# password or passwords are also ignored. NOTE that your project might be
+# using different names and then you must edit the lines below accordingly.
+password.*
+passwords.*
+password/
+passwords/
