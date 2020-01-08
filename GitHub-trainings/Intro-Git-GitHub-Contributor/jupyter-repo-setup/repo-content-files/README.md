@@ -1,6 +1,8 @@
 # Intro to Git and GitHub training - Contributor
 
-This repository was created for a training session of DIME Analytics Intro to Git and GitHub Training - Contributor. You can read more about DIME Analytics Git and GitHub trainings [here](https://github.com/worldbank/dime-github-trainings), and you can read more about the Contributor role and other roles in DIME Analytics suggested GitHub project roles [here](https://github.com/worldbank/dime-github-trainings/blob/master/GitHub-resources/DIME-GitHub-Roles/DIME-GitHub-roles.md).
+This repository was created for a training session of [DIME Analytics](https://www.worldbank.org/en/research/dime/data-and-analytics) Intro to Git and GitHub Training - Contributor. You can read more about DIME Analytics Git and GitHub trainings [here](https://github.com/worldbank/dime-github-trainings).
+
+This is one of two beginner trainings. This one is for the Contributor role which is someone that will make contributions to the code using Git/GitHub, not just give feedback to code hosted in GitHub. You can read more about the Contributor role and other roles in DIME Analytics suggested GitHub project roles [here](https://github.com/worldbank/dime-github-trainings/blob/master/GitHub-resources/DIME-GitHub-Roles/DIME-GitHub-roles.md).
 
 ## About this training
 
