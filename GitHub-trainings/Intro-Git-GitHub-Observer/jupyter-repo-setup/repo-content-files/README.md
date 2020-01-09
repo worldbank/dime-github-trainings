@@ -14,7 +14,7 @@ We do not use code in our trainings as not everyone attending our trainings uses
 
 ## Doing this training on your own
 
-This training was developed as an interactive training taught by an instructor, but we are happy to share all materials. If you want to follow this training on your own, go to [DIME Analytics GitHub training repo](https://github.com/worldbank/dime-github-trainings). There, you will find the [LaTeX](https://github.com/worldbank/DIME-LaTeX-Templates) code to generate the slides used in this training, and you will find jupyter notebook code that you can run to create your own copy of this repository that you can interact with.
+This training was developed to be an interactive training taught by an instructor, but we are happy to share all material. If you are not participating in an in-person session and want to do this training on your own, go to [DIME Analytics GitHub training repo](https://github.com/worldbank/dime-github-trainings). There, you find the [LaTeX](https://github.com/worldbank/DIME-LaTeX-Templates) code to generate the slides used in this training, and the jupyter notebook code that you can run to create your own copy of this repository that you can interact with.
 
 ## Contact
 
