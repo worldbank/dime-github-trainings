@@ -1,8 +1,8 @@
 # Intro to Git and GitHub training - Observer training
 
-This repository was created for the [DIME Analytics](https://www.worldbank.org/en/research/dime/data-and-analytics) *Intro to Git and GitHub Training - Observer*. You can read more about DIME Analytics Git and GitHub trainings [here](https://github.com/worldbank/dime-github-trainings).
+This repository was created for a training session of [DIME Analytics](https://www.worldbank.org/en/research/dime/data-and-analytics) *Intro to Git and GitHub Training - Observer*. You can read more about DIME Analytics Git and GitHub trainings [here](https://github.com/worldbank/dime-github-trainings).
 
-This is one of two beginner trainings. This one is for *Observers*: users that browse and provide feedback to code hosted in GitHub, but do not make code contributions. You can read more about the Observer role and other roles in DIME Analytics [Suggested GitHub Project Roles](https://github.com/worldbank/dime-github-trainings/blob/master/GitHub-resources/DIME-GitHub-Roles/DIME-GitHub-roles.md).
+This is one of two beginner trainings. This one is for *Observers*: users that browse and provide feedback to code hosted in GitHub, but do not make code contributions. You can read more about Observers role and other roles in DIME Analytics [Suggested GitHub Project Roles](https://github.com/worldbank/dime-github-trainings/blob/master/GitHub-resources/DIME-GitHub-Roles/DIME-GitHub-roles.md).
 
 We hope you will find Git and GitHub as useful as we do!
 
