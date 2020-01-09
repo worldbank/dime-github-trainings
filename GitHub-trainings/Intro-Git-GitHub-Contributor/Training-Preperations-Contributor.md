@@ -4,7 +4,7 @@
 
 All participants need to follow the steps below *before* the training. This is an interactive training so it is important that all participants follow all these instruction and bring their laptop to the training.
 
-1. If you do not already have a GitHub account, please follow [these instructions](https://github.com/worldbank/dime-github-trainings/blob/master/GitHub-resources\DIME-GitHub-Guides\Creating-GitHub-account.md) to sign up
+1. If you do not already have a GitHub account, please follow [these instructions](https://github.com/worldbank/dime-github-trainings/blob/master/GitHub-resources/DIME-GitHub-Guides/Creating-GitHub-account.md) to sign up
 
 2. Please send your GitHub username to the organizer or the instructor for your training session. The instructor will then invite you to the training repository. You will need to accept that invitation in order to participate in the training.
 
