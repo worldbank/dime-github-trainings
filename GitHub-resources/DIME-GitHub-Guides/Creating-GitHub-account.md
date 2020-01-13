@@ -32,4 +32,15 @@ _Watching_ a repository is like _following_ it. There are four different levels 
 
 ##### Send notification to work repositories to your work email
 
-**Different emails for different accounts**
+If you used a private email (as we recommended) when you sat up your GitHub account you can add your work email as your second email. Then you can tell GitHub to send all notifications from repositories hosted at your employer's organization account to be sent to that email.
+
+To do that, follow these steps.
+
+* **Add a second email**
+  1. Go to https://github.com/settings/profile in a browser where you are logged in to github.com
+  1. Click emails in the menu (or click here https://github.com/settings/emails)
+  1. In the field that says _Add email address_ enter the email you want to add as your second email. An email will be sent to that address with instructions for how to confirm that you own that email. Complete those instructions before doing next step.
+* **Set up notification for the second email**
+  1. After you have added a second email, click _Notifications_ in the settings menu (or click here https://github.com/settings/notifications). Make sure you are still logged into github.com
+  1. Make sure that you have the email box selected in the _Participating_ and _Watching_ section.
+  1. Then scroll down to the _Custom routing_ section where you can select which email  GitHub will send notifications from repositories hosted in organization accounts.
