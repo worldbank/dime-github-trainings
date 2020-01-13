@@ -22,6 +22,14 @@ This will increase the productivity in the team, especially for those manager an
 #### Notifications
 In this digital age, few things are more annoying than more notifications. You can turn off all notifications but we strongly encourage you to not turn off all notification and instead learn how you control your notifications.
 
-**Watching**
+##### Watching
+_Watching_ a repository is like _following_ it. There are four different levels of watching. _Watching_, _Releases only_, _Not watching_, and _Ignoring_. By default you are _Not watching_ all repositories. You can change your level for a repository by browsing to that repository at github.com and select your new watching level at the top right of the page. When you are given write access to a repository you are automatically changed to _Watching_ that repository.
+
+* **_Watching_**: You get notifications when a new version is released, a new issue or pull request is open, etc. or you are mentioned (like `@your_username`) in a comment anywhere in this repository.
+* **Releases only**: You get notifications only when a new version is released or you are mentioned (like `@your_username`) in a comment anywhere in this repository.
+* **_Not Watching_**: You only get notifications when you are mentioned (like `@your_username`) in a comment anywhere in this repository.
+* **_Ignore_**: You never get any notifications from this repository, not even when you are mentioned (like `@your_username`) in a comment anywhere in this repository.
+
+##### Send notification to work repositories to your work email
 
 **Different emails for different accounts**
