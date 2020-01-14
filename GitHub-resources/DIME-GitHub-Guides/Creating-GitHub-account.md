@@ -17,7 +17,7 @@ Let's not turn GitHub into another social media platform, but there is one good 
 
 Once a project is actively using GitHub to manage a research project it will be much faster to scan through discussions and commit histories if everyone uses a profile picture unique to them.
 
-This will increase the productivity in the team, especially for those manager and repo maintainer that need to keep an overview of what is going on in a repo, and who is doing what.
+This will increase the productivity in the team, especially for managers and repo maintainers that need to keep an overview of what is going on and who is doing what in a repo.
 
 ### Notifications
 In this digital age, few things are more annoying than more notifications. You can turn off all notifications but we strongly encourage you to not turn off all notification and instead learn how you control your notifications.
