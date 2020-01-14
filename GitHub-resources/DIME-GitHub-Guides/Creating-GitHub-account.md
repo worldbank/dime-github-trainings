@@ -13,7 +13,7 @@ Creating an account is easy, you can do so by following [this link](https://gith
 Here are some optional settings that we have found heling teams to be productive on GitHub
 
 ### Profile picture
-Let's not turn GitHub into another social media platform, but there is one good reason why everyone should replace the automatically the generated profile picture with a picture of your choice. Note that the picture of your choice does not need to be a picture of you, it just need to be unique to you.
+Let's not turn GitHub into another social media platform, but there is one good reason why everyone should replace the automatically generated profile picture with a picture of their choice. Note that the picture of choice does not need to be a picture of them, it just need to be a unique picture no one else uses.
 
 Once a project is actively using GitHub to manage a research project it will be much faster to scan through discussions and commit histories if everyone uses a profile picture unique to them.
 
