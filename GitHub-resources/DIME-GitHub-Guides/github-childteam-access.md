@@ -1,10 +1,10 @@
 # Child team access management
 
-This page is a guide to how you can use teams, child teams, and child teams of child teams access to your repositories in a very granular way. We strongly recommend that this granular set-up is only used when necessary, as our expereince is that this tends to get outdated quite quickly. But if you want to do this, then please reade the guide below.
+This page is a guide to how you can use teams, child teams, and child teams of child teams access to control access to your repositories in a very granular way. We strongly recommend that this granular set-up is only used when necessary, as our expereince is that this tends to get outdated quite quickly. But if you want to do this, then please reade the guide below.
 
 ## General example
 
-Below is an example set-up that explains the main rules how access are given through teams and child teams on GitHub.com. Black boxes are teams, green boxes indicate which repos those teams are added to, and grey boxes are users that are added as members to different teams.
+The image below is an example set-up that explains the main rules how access are inherited between parent teams and child teams on GitHub.com. Black boxes are teams, green boxes indicate which repos those teams are added to, and grey boxes are users that are added as members to the teams. So `Team Parent` has one memeber (`User A`) and is added to one repo (`repo-p1`).
 
 The team "_Team Child_" is a child team of "_Team Parent_" and the two grandchild teams are both added as child teams directly to "_Team Child_" as the arrows indicate.
 
