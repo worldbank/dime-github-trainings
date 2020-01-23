@@ -20,7 +20,7 @@ Child teams have access to repos of the parent team but not the other way around
 
 ---
 
-#### Different type of access
+#### Different types of access
 
 One aspect not mentioned in the image above is that there are different types of access to a repository. There is _read_ access where a user can only see the files, and there is _write_ access where a user can both see and modify a file.
 
