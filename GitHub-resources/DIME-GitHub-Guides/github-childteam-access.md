@@ -13,6 +13,7 @@ Child teams have access to repos of the parent team but not the other way around
 * In this example there is no difference to be added to `Team Parent` and `Team Child` meaning that `User A` and `User B` has the same type of access
 * `User A` and `User B` does not have access to any of the repos `repo-gx1`, `repo-gy1` or `repo-gy2`
 * All users in this example have access to the repository `repo-p1` since all users in this example are members of either `Team Parent` or a child team of `Team Parent`
+* `User E` is added as a member to both `Team Grandchild X` and `Team Grandchild Y` and therefore has access to all repositories in this example
 
 ---
 
