@@ -18,3 +18,11 @@ Child teams have access to repos of the parent team but not the other way around
 * In this example there is no difference to be added to `Team Parent` and `Team Child` meaning that `User A` and `User B` has the same type of access
 * `User A` and `User B` does not have access to any of the repos `repo-gx1`, `repo-gy1` or `repo-gy2`
 * All users in this example have access to the repository `repo-p1` since all users in this
+
+#### Different type of access
+
+One aspect not mentioned in the image above is that there are different types of access to a repository. There is _read_ access where a user can only see the files, and there is _write_ access where a user can both see and modify a file.
+
+Here is one way that can be used. Let's assume that all green boxes indicate _write_ access in the image above. If desired, then the team `Team Child` can be added with _read_ access to the repos `repo-gx1`, `repo-gy1` or `repo-gy2`, meaning that all users but `User A` have read access to those three repos as child teams inherent parent teams' access. 
+
+If a user have both _read_ and _write_ access then the higher level of access, i.e. _write_, applies. So, for example, if `Team Child` is given _read_ access to the repos `repo-gx1`, `repo-gy1` or `repo-gy2`, then `User C` has _write_ access to repos `repo-p1` and `repo-gx1` as before, but also _read_ access to repos `repo-gy1` and `repo-gy2`.
