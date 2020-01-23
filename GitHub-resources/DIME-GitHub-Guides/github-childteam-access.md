@@ -9,10 +9,10 @@ Below is an example set-up that explains the main rules how access are given thr
 The team "_Team Child_" is a child team of "_Team Parent_" and the two grandchild teams are both added as child teams directly to "_Team Child_" as the arrows indicate.
 
 Child teams have access to repos of the parent team but not the other way around. Some examples of what that means:
-* `User A` has does not have access to `repo-gx1` but `User C` has access to `repo-p1`
+* `User A` does not have access to `repo-gx1` as `User A` is only added to `Team Parent` but `User C` has access to `repo-p1` even though it is only added to `Team Grandchild X`
 * In this example there is no difference to be added to `Team Parent` and `Team Child` meaning that `User A` and `User B` has the same type of access
 * `User A` and `User B` does not have access to any of the repos `repo-gx1`, `repo-gy1` or `repo-gy2`
-* All users in this example have access to the repository `repo-p1` since all users in this
+* All users in this example have access to the repository `repo-p1` since all users in this example are members of either `Team Parent` or a child team of `Team Parent`
 
 ---
 
