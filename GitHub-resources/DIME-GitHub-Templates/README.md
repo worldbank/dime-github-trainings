@@ -2,7 +2,7 @@
 
 In this folder there are templates for files with Git/GitHub specific purpose. See the corresponding section below for instructions for each file.
 
-* [.gitignore template](#dime-analytics-.gitignore-template) - a _.gitignore_ files controls which types of files will be shared in the GitHub repository
+* [.gitignore template](#dime-analytics-gitignore-template) - a _.gitignore_ files controls which types of files will be shared in the GitHub repository
 * [placeholder template](#dime-analytics-placeholder-template) - a file that can be used to share an empty folder in the GitHub repository
 
 ## DIME Analytics _.gitignore_ template
