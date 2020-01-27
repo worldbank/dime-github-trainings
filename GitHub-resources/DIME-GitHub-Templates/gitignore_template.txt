@@ -2,7 +2,7 @@
 #
 # Based on DIME .gitignore template. Follow the instructions in the URL
 # below to set up this template in your own repository
-# https://github.com/worldbank/DIMEwiki/tree/master/Topics/GitHub
+# https://github.com/worldbank/dime-github-trainings/tree/master/GitHub-resources/DIME-GitHub-Templates
 #
 # Note that if you are using GitKraken, you need to use version 5.x or more
 # recent for this template to work properly
