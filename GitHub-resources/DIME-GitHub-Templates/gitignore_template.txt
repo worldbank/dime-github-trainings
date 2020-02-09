@@ -64,6 +64,9 @@
 # Markdown
 !/**/*.md
 
+# Julia
+!/**/*.jl
+
 #######################
 # Include some additional file formats in any output folder. You might have
 # to change the name of the Output folder to whatever it is called in your
