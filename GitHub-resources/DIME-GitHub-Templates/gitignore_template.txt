@@ -50,6 +50,7 @@
 
 # LaTeX
 !/**/*.tex
+!/**/*.bib
 
 # Python
 !/**/*.py
