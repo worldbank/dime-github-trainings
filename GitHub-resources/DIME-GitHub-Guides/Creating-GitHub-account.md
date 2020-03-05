@@ -13,11 +13,11 @@ Creating an account is easy. You can do so by following [this link](https://gith
 Here are some optional settings that we have found to be helpful to teams to be productive on GitHub:
 
 ### Profile picture
-Let's not turn GitHub into another social media platform, but there is one good reason why everyone should replace the automatically generated profile picture with a picture of their choice. Note that the picture of choice does not need to be a picture of the user, it just need to be a unique picture no one else uses.
+Let's not turn GitHub into another social media platform, but there is one good reason why everyone should replace the automatically generated profile picture with a picture of their choice. Note that the picture of choice does not need to be a picture of the user, it can be a pic of a pet, a cartoon, a nature image or anything else that is unique among all other users you are working with.
 
-Once a team is actively using GitHub to manage a research project it will be much faster to scan through discussions and commit histories if everyone uses a profile picture unique to them.
+Once a team is actively using GitHub to manage a research project it will be much faster to scan through discussions and commit histories if everyone uses a profile picture unique to them. This will increase the productivity in the team, especially for managers and repo maintainers that need to keep an overview of what is going on and who is doing what in a repo.
 
-This will increase the productivity in the team, especially for managers and repo maintainers that need to keep an overview of what is going on and who is doing what in a repo.
+To update your profile picture, go to https://github.com/settings/profile in a browser where you are logged in to github.com.
 
 ### Notifications
 In this digital age, very few things are more annoying than more notifications. You can turn off all notifications but we strongly encourage you to not turn off all notification and instead learn how you control your notifications.
