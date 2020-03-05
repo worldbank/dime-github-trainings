@@ -57,9 +57,9 @@
 
 \begin{frame}
 	\frametitle{Three common GitHub roles}
-	
+
 	\small The objective of this training is to make you able to take the role of an \textbf{Observer}. See DIME Analytics GitHub Roles for full details (link in end of presentation).
-	
+
 	\input{../../Common-Resources/slides/GitHub-Roles.tex}
 
 \end{frame}
@@ -67,8 +67,8 @@
 \begin{frame}
 \frametitle{What is Git used for?}
 
-	\begin{columns}[c] 
-		
+	\begin{columns}[c]
+
 		\column{.60\textwidth} % Left column and width
 		\begin{itemize}
 			\item Git solves the \textit{Final.doc} problem
@@ -80,16 +80,16 @@
 				\item <4->I can't re-produce my Baseline report problem
 				\item <4->Who wrote this code 4 years ago and why?
 				\item <4->And much much more...
-			\end{itemize} 
-		\end{itemize}	
-		
+			\end{itemize}
+		\end{itemize}
+
 		\column{.40\textwidth} % Right column and width
 		\begin{figure}
 			\centering
 			\includegraphics[width=1\linewidth]{../../Common-Resources/img/finaldoc_cartoon}
 			\label{fig:finaldoccartoon}
 		\end{figure}
-		
+
 	\end{columns}
 \end{frame}
 
@@ -104,44 +104,44 @@
 
 \begin{frame}
 	\frametitle{Today's objective - 7 min}
-	
-	\begin{columns}[c] 
-		
+
+	\begin{columns}[c]
+
 		\column{.15\textwidth} % Left column and width
-		
+
 		\column{.70\textwidth} % Left column and width
-		
+
 		\Large{What we will cover today:}
-		
+
 		\vspace{.5cm}
-		
+
 		\begin{itemize}
 			\large{\item Browse code on GitHub}
 			\begin{itemize}
 				\normalsize{\item \textbf{Commits} - very briefly}
-				\normalsize{\item \textbf{Branches} - very briefly}			
+				\normalsize{\item \textbf{Branches} - very briefly}
 			\end{itemize}
 			\large{\item Provide feedback through GitHub}
 			\begin{itemize}
-				\normalsize{\item \textbf{Issues}}		
-			\end{itemize}		
+				\normalsize{\item \textbf{Issues}}
+			\end{itemize}
 			\large{\item Discuss some basic GitHub best practices}
 		\end{itemize}
-		
+
 		\column{.15\textwidth} % Left column and width
-		
+
 	\end{columns}
 \end{frame}
 
 \begin{frame}
 	\frametitle{How to browse GitHub.com}
-	
+
 	Your project folder is called a \textbf{repository} in Git. We will call the page you land on when you enter \trainingRepoURL{} the \textbf{main page}.
-	
+
 	\vspace{.5cm}
-	
-	\begin{columns}[T] 
-		
+
+	\begin{columns}[T]
+
 		\column{.50\textwidth} % Left column and width
 		GitHub.com -$>$ Repo
 		\begin{enumerate}
@@ -149,69 +149,69 @@
 			\item In the menu to your left you see the repositories you are invited to
 			\item Click any repo to get to the main page of that repo.
 		\end{enumerate}
-		
+
 		\column{.50\textwidth} % Left column and width
 		Repo -$>$ Main page
 		\begin{enumerate}
 			\item Click the repo name in \trainingURL{\repoName} at the top of any page within the repo
 			\item Click the tab that says \textbf{Code} below the repo name at any page in your repo
 		\end{enumerate}
-		
+
 	\end{columns}
 \end{frame}
 
 
 \begin{frame}
 	\frametitle{Country Facts!}
-	
-	\begin{columns}[c] 
-		
+
+	\begin{columns}[c]
+
 		\column{.10\textwidth} % Left column and width
-		
+
 		\column{.80\textwidth} % Left column and width
 		\textbf{No focus on code today!}
-		
+
 		\vspace{.25cm}
-		
-		Code tends to distract people if, for example, they see a command they do not understand. Instead we will work on a \textit{Country Fact Sheet} in a file called \textit{countries.do}. 
-		
+
+		Code tends to distract people if, for example, they see a command they do not understand. Instead we will work on a \textit{Country Fact Sheet} in a file called \textit{countries.do}.
+
 		\vspace{.25cm}
-		
+
 		It is a .do file, so the content will behave just as code, but there is no code in it.
 
 		\vspace{.25cm}
 
-		We will look at some examples that uses actual code once we are familiar with the features we will cover today. 
-		
+		We will look at some examples that uses actual code once we are familiar with the features we will cover today.
+
 		\column{.10\textwidth} % Left column and width
-		
+
 	\end{columns}
-	
+
 	\vspace{.55cm}
 	\trainingRepoURL{/blob/master/facts/countries.do}
-		
-	
+
+
 \end{frame}
 
 \begin{frame}
 	\frametitle{In-depth}
 
-	\begin{columns}[c] 
-	
+	\begin{columns}[c]
+
 	\column{.10\textwidth} % Left column and width
-	
+
 	\column{.70\textwidth} % Left column and width
-	
-		You are not expected to get a full understanding of \textbf{Commits} and \textbf{Branches} and how they are used today, that is what the \textit{Contributor training} is for. 
-		
+
+		You are not expected to get a full understanding of \textbf{Commits} and \textbf{Branches} and how they are used today, that is what the \textit{Contributor training} is for.
+
 		\vspace{.5cm}
-		
+
 		But after I have briefly covered these two topics and also introduced \textbf{Issues}, we will look at an example that will give you the intuition for what \textbf{Commits} and \textbf{Branches} are.
-		
+
 	\column{.15\textwidth} % Left column and width
 
-	\end{columns}		
-		
+	\end{columns}
+
 \end{frame}
 
 
@@ -220,26 +220,26 @@
 \begin{frame}
 	\frametitle{What is a commit? - 12 min}
 
-	\begin{columns}[c] 
-	
+	\begin{columns}[c]
+
 		\column{.45\textwidth}
-		\textbf{In DropBox}, each saved version of a file is saved to the version history. Are all these versions meaningful differences? 
-		
+		\textbf{In DropBox}, each saved version of a file is saved to the version history. Are all these versions meaningful differences?
+
 		\vspace{.35cm}
-		
-		\textbf{In GitHub}, commits are used to indicate what is a meaningful difference. 
-		
+
+		\textbf{In GitHub}, commits are used to indicate what is a meaningful difference.
+
 		\vspace{.35cm}
-		
+
 		One meaningful difference can be large or small, can be an edit to one, some or all files at the same time.
-		
+
 		\column{.55\textwidth}
 		\begin{figure}
 			\centering
 			\includegraphics[width=1\linewidth]{../../Common-Resources/img/dropbox_versioncontrol}
 			\label{fig:dropboxversioncontrol}
 		\end{figure}
-		
+
 	\end{columns}
 \end{frame}
 
@@ -247,16 +247,16 @@
 	\frametitle{Exploring commits}
 
 	Now when have a basic understanding of what a \textit{Commit} is, we can start exploring how the \trainingRepoURL{} repository was created.
-	
+
 	\vspace{.25cm}
-	
+
 	We will see a list of commits, that at first sight is similar to the the version history in DropBox, but \textbf{in Git the version list is more meaningful, as it is a list of only meaningful differences}.
 
 	\vspace{.25cm}
-	
+
 	\begin{itemize}
 		\item \trainingRepoURL{/commits}
-	\end{itemize}	
+	\end{itemize}
 
 \end{frame}
 
@@ -265,26 +265,26 @@
 \begin{frame}
 	\frametitle{Introducing branches  - 16 min}
 
-	\begin{columns}[c] 
-		
+	\begin{columns}[c]
+
 		\column{.60\textwidth}
 		\textbf{Branches is the "killer feature" of Git}. This is where Git becomes really powerful as a collaboration tool and as version control.
-		
+
 		\vspace{.25cm}
-	
+
 		Branches allows you to \textbf{create a copy of the code where you can experiment}, if you like the result, \textbf{you can very easily merge your experiment with the main version of your code}.
-		
+
 		\vspace{.25cm}
-		
+
 		This non-linear version control is much more similar to how we actually work than the strictly linear version control in, for example, DropBox
-		
+
 		\column{.40\textwidth}
 		\begin{figure}
 			\centering
 			\includegraphics[width=1\linewidth]{../../Common-Resources/img/branches}
 			\label{fig:branches}
 		\end{figure}
-		
+
 	\end{columns}
 \end{frame}
 
@@ -302,41 +302,41 @@
 
 \begin{frame}
 	\frametitle{Issues are feedback - 20 min}
-	
+
 	\textbf{Issues are optional} in Git/GitHub, you do not have to use them
-	
+
 	\vspace{.20cm}
-	
+
 	\textbf{Issues} in GitHub is where you discuss \textbf{feedback}. It is like a \textbf{task management tool integrated with your code}
-	
+
 	\vspace{.20cm}
-	
+
 	\textbf{Issues and edits to the code can be linked} so that anyone with access to the repo, can \textbf{link a discussion about an edit to the code to the Commit with that edit}
-	
+
 	\vspace{.20cm}
-	
+
 	The link can also goes the other way, so \textbf{if Commits and Issues are linked}, then anyone in the future with access to the repo, can \textbf{link edits to the code in a Commit with the discussions that lead up to that edit}
-	
+
 	\vspace{.20cm}
-	
+
 	Resolved \textbf{Issues are archived and searchable on GitHub} as long as the repo exists
 \end{frame}
 
 \begin{frame}
 	\frametitle{Issues are feedback}
-	
+
 	For each \textit{Issue} \textbf{a discussion thread} will be opened where anyone with access to the repo can contribute to the discussion
 
 	\vspace{.25cm}
-	
+
 	Issues can be \textbf{assigned} to GitHub users similarly to a task management tool
-	
+
 	\vspace{.25cm}
-	
+
 	Specific \textbf{lines of code can be referenced and previewed}, so the discussion can be tied to specific lines of code, making it clear to everyone what is being discussed
-	
+
 	\vspace{.25cm}
-	
+
 	In addition to reference specific lines of code, there are tools to \textbf{label} \textit{Issues}, \textbf{cross reference} \textit{Issues}, \textbf{tag people} relevant to the discussion etc. so that collectively the \textit{Issues} becomes a the \textbf{documentation} or the meta-information on how the code for your project was developed
 \end{frame}
 
@@ -344,35 +344,35 @@
 	\frametitle{Commits - Branches - Issues}
 	\center{
 		\Large{An example that ties commits, branches and issues together:}
-		
+
 		\vspace{.5cm}
-		\normalsize{Go to the issues tab, then click the issue with the title \textbf{Capital of India is incorrect}. 
-			
+		\normalsize{Go to the issues tab, then click the issue with the title \textbf{Capital of India is incorrect}.
+
 		Or type this URL in your browser: \trainingRepoURL{/issues/1}}
 	}
 	\vspace{1cm}
-	
+
 \end{frame}
 
 \section{Practice issues}
 
 \begin{frame}
 	\frametitle{How to create an issue - 27 min}
-	
-	Time to create issues! Go to: \trainingRepoURL{/blob/master/facts/countries.do}	
+
+	Time to create issues! Go to: \trainingRepoURL{/blob/master/facts/countries.do}
 	\vspace{.5cm}
 
-	\begin{columns}[c] 
-	
-		\column{.60\textwidth}	
+	\begin{columns}[c]
+
+		\column{.60\textwidth}
 		\begin{enumerate}
 			\item Find an incorrect fact to create an issue for
 			\item Click the line number of the line with the incorrect fact you want corrected
 			\item Click the three-dot menu that appears
 			\item Click \textit{Reference in new issue}
 			\item Give the issue a title, describe what you want fixed, use the \textit{preview} as needed, and then click \textit{Submit new issue}
-		\end{enumerate}	
-	
+		\end{enumerate}
+
 		\column{.40\textwidth}
 		\begin{figure}
 			\centering
@@ -384,19 +384,19 @@
 
 \begin{frame}
 	\frametitle{Interact with issues}
-	
-	\begin{columns}[c] 
-		
+
+	\begin{columns}[c]
+
 		\column{.15\textwidth}
-		
-		\column{.70\textwidth}	
+
+		\column{.70\textwidth}
 		\begin{enumerate}
 			\item Assign me (\textit{\traininerUsername}) or someone else to the \textit{Issue} you just created
 			\item See if you find a label that fit your \textit{Issue}
 			\item Write a comment on an \textit{Issue} someone else created
-			\item Click the \textbf{Subscribe} button on an issue that you have not interacted with. This will give you notification on activities in this issue. 
-		\end{enumerate}	
-		
+			\item Click the \textbf{Subscribe} button on an issue that you have not interacted with. This will give you notification on activities in this issue.
+		\end{enumerate}
+
 		\column{.15\textwidth}
 
 	\end{columns}
@@ -404,45 +404,45 @@
 
 \begin{frame}
 	\frametitle{Multi-line code reference}
-	
+
 	How to reference multiple lines of code:
 	\vspace{.5cm}
-	
-	\begin{columns}[T] 
-		
+
+	\begin{columns}[T]
+
 		\column{.45\textwidth}
 		\textbf{Using menus:}
 		\begin{enumerate}
 			\item Click the line number of the first line you want to reference
 			\item Before clicking the three-dot menu that appears, hold shift and click the last line you want to reference
 			\item Then click the three-dot menu and click \textit{Reference in new issue}
-		\end{enumerate}	
-		
+		\end{enumerate}
+
 		\column{.55\textwidth}
 		\textbf{Manually:}
 		\begin{enumerate}
 			\item Create a one line reference and edit the link from: {\color{blue}https://}\trainingRepoURL{/blob/random-sha/facts/countries.do\#L18}
 			\item Modify the end of the URL to: {\color{blue}https://}\trainingRepoURL{/blob/random-sha/facts/countries.do\#L18-L22}
-		\end{enumerate}	
+		\end{enumerate}
 	\end{columns}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Multiple code references}
-	
-	How to reference multiple lines of code: 
+
+	How to reference multiple lines of code:
 	\vspace{.5cm}
-	
-	\begin{columns}[c] 
-		
-		\column{.60\textwidth}	
+
+	\begin{columns}[c]
+
+		\column{.60\textwidth}
 		\textbf{No way to do this in menus}
 		\begin{enumerate}
 			\item When you click \textit{Reference in new issue} GitHub copies a permalink to the code line and put that in an issue
-			\item In the menu in the three-dot menu you can instead click \textit{Copy permalink}. This creates the same link as when clicking \textit{Reference in new issue}. 
+			\item In the menu in the three-dot menu you can instead click \textit{Copy permalink}. This creates the same link as when clicking \textit{Reference in new issue}.
 			\item Create an issue an copy permalinks to all code lines that you want to reference and copy them to the issue
-		\end{enumerate}	
-		
+		\end{enumerate}
+
 		\column{.40\textwidth}
 		\begin{figure}
 			\centering
@@ -456,34 +456,34 @@
 
 \begin{frame}
 	\frametitle{Where should I look for ...? - 40 min}
-	
-	\begin{columns}[c] 
-	
+
+	\begin{columns}[c]
+
 		\column{.10\textwidth}
-		
-		\column{.60\textwidth}	
+
+		\column{.60\textwidth}
 		\Large Your project is now using GitHub, where should I look for:
-		
+
 		\vspace{0.5cm}
-		
+
 		\begin{itemize}
-			\item code?		
-			\item data? 
-			\item outputs?		
+			\item code?
+			\item data?
+			\item outputs?
 		\end{itemize}
-		
+
 		\column{.30\textwidth}
-		
-	\end{columns}	
+
+	\end{columns}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Where should I look for code?}
-	
+
 	Where should I look for \textbf{code}?
-	
+
 	\begin{itemize}
-		\item Code is now in Git/GitHub. 
+		\item Code is now in Git/GitHub.
 		\begin{itemize}
 			\item It is error prone to also keep it on DropBox
 			\item No problem to have archived copies of code on DropBox, just don't do work on them
@@ -492,17 +492,17 @@
 		\begin{itemize}
 			\item \textbf{Browser:} Go to the URL of your repository and explore code using your browser
 			\item \textbf{Download for collaboration:} Clone the repository. It is covered in the collaborator training.
-		\end{itemize}		
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Where should I look for data?}
-	
+
 	Where should I look for \textbf{data}?
-	
+
 	\begin{itemize}
-		\item Data is where it was before (ex. DropBox). 
+		\item Data is where it was before (ex. DropBox).
 		\begin{itemize}
 			\item Github is secure, but not secure enough for project data
 			\item Most data formats is not suited for GitHub and makes GitHub slow
@@ -511,7 +511,7 @@
 		\begin{itemize}
 			\item Same as before.
 			\item Code reads data from DropBox, and reads code from the clone.
-		\end{itemize}		
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 
@@ -519,7 +519,7 @@
 	\frametitle{Where should I look for outputs?}
 
 	Where should I look for \textbf{outputs}?
-	
+
 	\begin{itemize}
 		\item Outputs can go both on Git/GitHub and on DropBox. It is up to the project team!
 		\item GitHub/Git:
@@ -531,7 +531,7 @@
 		\begin{itemize}
 			\item \textbf{Pro:} Outputs become available immediately for everyone
 			\item \textbf{Con:} If two branches creates different outputs, they will overwrite each other's output, with no documentation on which branch the output came from
-		\end{itemize}		
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 
@@ -540,17 +540,17 @@
 
 \begin{frame}
 	\frametitle{Blame  - 43 min}
-	
+
 	Have you ever looked at code you or someone in your project wrote asking yourself these questions:
-	
+
 	\begin{itemize}
 		\item Who wrote this line of code?
 		\item When did someone write this line of code?
-		\item Why did someone write this line of code?		
-	\end{itemize}	
-	
+		\item Why did someone write this line of code?
+	\end{itemize}
+
 	Git has a feature for this \textit{"tactfully"} called \textbf{Blame}.
-	
+
 	\begin{itemize}
 		\item \trainingRepoURL{/blame/master/facts/countries.do}
 	\end{itemize}
