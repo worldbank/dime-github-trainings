@@ -11,7 +11,7 @@
 %-----------------------------------------------
 % Load i2i symbol
 \addtobeamertemplate{frametitle}{}{%
-\begin{textblock*}{\linewidth}(0cm,7.4cm) % Replace with (0cm, 8cm) if using non-wide slide aspect
+\begin{textblock*}{\linewidth}(0cm,7.1cm) % Replace with (0cm, 8cm) if using non-wide slide aspect
 	\includegraphics[width=\linewidth]{../../Common-Resources/img/Footer.png}
 \end{textblock*}}
 
@@ -98,18 +98,18 @@ This is the topics that we will cover in this training:
 \end{frame}
 
 \begin{frame}
-	\frametitle{GitHub Teams Work Flow}
+	\frametitle{GitHub Teams Creation Work Flow}
 
 	\begin{columns}[c]
 		
 		\column{.60\textwidth} % Left column and width
-		\begin{itemize}
+		\begin{enumerate}
 			\item DIME Analytics creates a team
 			\item DIME Analytics makes one team member the \textit{team maintainer}
 			\item DIME Analytics creates a repo and adds the team to the repository
 			\item The team maintainer add and remove user to the team to grant and revoke access to the repo
 			\item Only users added to the DIME organization account can be added to teams
-		\end{itemize}
+		\end{enumerate}
 		
 		\column{.40\textwidth} % Right column and width
 		\begin{figure}
@@ -131,14 +131,14 @@ This is the topics that we will cover in this training:
 		\begin{itemize}
 			\item There can be more than one team maintainer for a team
 			\item A team can be used for more than one repo
-			\item A repo can have more than one repo added to the,
+			\item A repo can have more than one team added to it
 		\end{itemize}
 		
 		\column{.50\textwidth} % Right column and width
 		Admin access vs. Teams
 		\begin{itemize}
 			\item Can I be made admin instead of dealing with teams?
-			\item Sure, but we will ask for the TTL's approval to do so after explaing to them the risks associated with admin access
+			\item Sure, but we will ask for the TTL's approval to do so after explaining to them the risks associated with admin access
 		\end{itemize}	
 		
 	\end{columns}
@@ -183,7 +183,7 @@ This is the topics that we will cover in this training:
 
 
 \begin{frame}
-	\frametitle{Am I a team maintainer for a team?}
+	\frametitle{How do I manage team members?}
 	\begin{columns}[c]
 		
 		\column{.30\textwidth} % Left column and width
@@ -209,15 +209,15 @@ This is the topics that we will cover in this training:
 \end{frame}
 
 
-\begin{frame}
-	\frametitle{Which repos is a team used for?}
-	\textbf{Which repos are a team used for?}
-	\begin{enumerate}
-		\item In the team page, click \textit{Repositories}
-	\end{enumerate}
-	\centering
-	\includegraphics[width=.8\linewidth]{./img/which-repos-in-team}
-\end{frame}
+%\begin{frame}
+%	\frametitle{Which repos is a team used for?}
+%	\textbf{Which repos are a team used for?}
+%	\begin{enumerate}
+%		\item In the team page, click \textit{Repositories}
+%	\end{enumerate}
+%	\centering
+%	\includegraphics[width=.8\linewidth]{./img/which-repos-in-team}
+%\end{frame}
 
 
 \begin{frame}
@@ -243,17 +243,17 @@ This is the topics that we will cover in this training:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Other tasks
 
-\section{Other tasks we might use the maintainer for }
+\section{Other tasks involving team maintainers}
 
 \begin{frame}
-	\frametitle{Other things we will use the team maintainers for}
+	\frametitle{Other tasks involving team maintainers}
 	
 	\begin{itemize}
-		\item We will use the team maintainer as the contact person for repos that team is used for.
+		\item We will use the team maintainer as the contact person for repos linked to a team
 		
-		\item If admins have a question about a repo, then we will contact the team maintainer/maintainers for the team/teams used for that repo. The team maintainer does not need to know all answers, but should at least know who to talk to 
+		\item If admins have a question about a repo, then we will contact the team maintainer/maintainers for the team/teams linked to that repo. The team maintainer does not need to know all answers, but should at least know who to talk to 
 		
-		\item And whenever we need to do a large scale thing, like a transfer, we will turn to the maintainers for help
+		\item Whenever admins are performing a large scale process, such as a transfer, we will turn to team maintainers for help
 
 	\end{itemize}
 \end{frame}
@@ -264,11 +264,11 @@ This is the topics that we will cover in this training:
 \section{Transfer to dime-worldbank account}
 
 \begin{frame}
-	\frametitle{Other things we will use the team maintainers for}
+	\frametitle{dime-worldbank account set up}
 	
 	\begin{itemize}
-		\item In the new account we have an unlimited number of private and public repositories, but instead we pay for users
-		\item We pay for all users added to the the organization account
+		\item In the new account we have an unlimited number of private and public repositories, but instead we pay for users.
+		\item We pay for all users added to the the organization account.
 		\item We pay for external collaborators added private repositories, but not for public repositories.
 		\item DIME Analytics covers this cost for the foreseeable future, in return we just ask the team maintainers to help us remove people as they leave.
 	\end{itemize}
@@ -276,14 +276,14 @@ This is the topics that we will cover in this training:
 
 
 \begin{frame}
-	\frametitle{Other things we will use the team maintainers for}
+	\frametitle{Team maintainers tasks on transfer}
 	
-	\begin{itemize}
+	\begin{enumerate}
 		\item Check that all team members are still current members
 		\item Check that all external collaborators for all repos the team is used for are still current users
 		\item Decide if public repos should be transferred or not
 		\item Help us communicate to the team. We provide a template for that communication, but it is better if it comes from you
-	\end{itemize}
+	\end{enumerate}
 
 	 If you are interested, see our full transfer protocol here: \url{https://github.com/dime-worldbank/dime-account-admin-private/blob/master/transfer-from-old-account/README.md}
 \end{frame}
