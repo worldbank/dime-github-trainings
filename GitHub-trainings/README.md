@@ -17,11 +17,9 @@ We will continuously develop more resources based on the demand from the teams w
 ### Existing trainings
 * **Intro-Git-GitHub-Contributor** - This training require no previous experience and will teach the attendee to explore and contribute to a code hosted in Git/GitHub using GitHub.com and GitHub Desktop.
 * **Intro-Git-GitHub-Observer** - This training require no previous experience and will teach the attendee to explore and provide feedback on code hosted in Git/GitHub using GitHub.com.
-
-### Trainings in development
-
-* **GitBetter** - This training can be self-taught and is aimed towards someone who comfortable using the basics of Git/GitHub and want to start having a deeper understanding how Git works and how GitHub is implemented, and how to use that understanding to be a better *Contributor* and eventually an excellent *Repo maintainer*.
+* **GitHub Team Maintainer Training** - Access to repos in an organizational account on GitHub is controlled using GitHub's Teams feature. This training introduces the DIME Team Maintainers to what the DIME Acccount Admins expect from them.
 
 ### Possible future trainings
 
+* **GitBetter** - This training can be self-taught and is aimed towards someone who comfortable using the basics of Git/GitHub and want to start having a deeper understanding how Git works and how GitHub is implemented, and how to use that understanding to be a better *Contributor* and eventually an excellent *Repo maintainer*.
 * **Git-GitHub-Repo-maintainer** - This training trains the attendee in things necessary for be someone who is responsible to set up and uphold the work flow for a project hosted in Git.
