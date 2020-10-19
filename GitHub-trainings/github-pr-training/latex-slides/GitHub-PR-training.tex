@@ -1,0 +1,83 @@
+% ---------------------------- Preamble starts here ----------------------------
+
+\documentclass[aspectratio=169]{beamer} %Remove [aspectratio=169] to get non-wide 4:3 slide aspect ratio
+
+%-----------------------------------------------
+% --- Set beamer theme
+\usetheme{Metropolis}
+\setbeamertemplate{footline}{}				% Remove automatic footer
+\setbeamertemplate{navigation symbols}{}	% Comment this line to display navigation symbols
+
+%-----------------------------------------------
+% Load i2i symbol
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{\linewidth}(0cm,7.4cm) % Replace with (0cm, 8cm) if using non-wide slide aspect
+	\includegraphics[width=\linewidth]{../../Common-Resources/img/Footer.png}
+\end{textblock*}}
+
+%-----------------------------------------------
+% --- Load packages
+\usepackage{textpos}		% To align objects correctly
+\usepackage{multicol}		% To right in multiple columns
+\usepackage{color}			% To color text
+
+%-----------------------------------------------
+% --- Include link to last commit
+\usepackage{xstring}
+\usepackage{catchfile}
+
+%Set this user input
+\newcommand{\gitfolder}{../../../.git} %relative path to .git folder from .tex doc
+\newcommand{\reponame}{worldbank/dime-github-trainings} % Name of account and repo be set in URL
+
+%Based on this https://tex.stackexchange.com/questions/455396/how-to-include-the-current-git-commit-id-and-branch-in-my-document
+\CatchFileDef{\headfull}{\gitfolder/HEAD.}{} 				%Get path to head file for checked out branch
+\StrGobbleRight{\headfull}{1}[\head]						%Remove end of line character
+\StrBehind[2]{\head}{/}[\branch]							%Parse out the path only
+\CatchFileDef{\commit}{\gitfolder/refs/heads/\branch.}{}	%Get the content of the branch head
+\StrGobbleRight{\commit}{1}[\commithash]					%Remove end of line characted
+
+%Build the URL to this commit based on the information we now have
+\newcommand{\commiturl}{\url{https://github.com/\reponame/commit/\commithash}}
+
+%-----------------------------------------------
+% --- Add your information here
+\title{GitHub - Pull Request training}
+\author{DIME Analytics}
+\institute{DIME - The World Bank - \trainingURL{https://www.worldbank.org/en/research/dime}}
+\date{\today}
+
+\newcommand{\trainingURL}[1]{{\color{blue}\url{#1}}}
+
+\newcommand{\traininerUsername}{kbjarkefur}
+\newcommand{\repoName}{\traininerUsername/lyrics}
+\newcommand{\trainingRepoURL}[1]{\trainingURL{github.com/\repoName #1}}
+\newcommand{\trainerEmail}{\trainingURL{kbjarkefur@worldbank.org} }
+
+
+% ---------------------------- Preamble ends here ----------------------------
+
+\begin{document}
+
+\begin{frame}
+\includegraphics[width=\textwidth]{../../Common-Resources/img/Header.png}
+\vspace{-0.2cm}
+\titlepage 	 % Opening slide, prints inform
+\end{frame}
+
+\section{Prerequisites}
+
+
+\begin{frame}
+\frametitle{Prerequisites}
+
+\end{frame}
+
+
+
+\input{../../Common-Resources/slides/GitHub-Links.tex}
+
+\input{../../Common-Resources/slides/GitHub-Commit-URL.tex}
+
+
+\end{document}
