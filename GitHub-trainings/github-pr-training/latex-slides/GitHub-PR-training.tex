@@ -69,15 +69,14 @@
 
 
 \begin{frame}
-\frametitle{What this training is and isn't}
+	\frametitle{What this training is and isn't}
 
-Get more out of the "branch-PR-merge" cycle.
-
-\begin{itemize}
-	\item Part 1 - Best practices for the \textit{branch-PR-merge} cycle 
-	\item Part 2 - How to fit the \textit{branch-PR-merge} cycle into your workflow
-\end{itemize}
-
+	Get more out of the "branch-PR-merge" cycle.
+	
+	\begin{itemize}
+		\item Part 1 - Best practices for the \textit{branch-PR-merge} cycle 
+		\item Part 2 - How to fit the \textit{branch-PR-merge} cycle into your workflow
+	\end{itemize}
 
 \end{frame}
 
@@ -230,8 +229,76 @@ Get more out of the "branch-PR-merge" cycle.
 \end{frame}
 
 \begin{frame}
-	\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S1-3.png}
+	\frametitle{Open the PR}
+	\begin{columns}[c]
+		
+		\column{.35\textwidth} % Left column and width
+		\begin{itemize}
+			\setlength\itemsep{1em}
+			\item Create a PR \textbf{before} you start working
+			\item Create a \textit{"draft PR"} for work in progress
+			\item Reference branch name in PR name
+		\end{itemize}
+		
+		\column{.65\textwidth} % Right column and width
+		\vspace{-.75cm}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S1-3.png}
+		\end{figure}
+		
+	\end{columns}
 \end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Create an draft PR}
+	\begin{columns}[c]
+		
+		\column{.53\textwidth} % Right column and width
+		\vspace{-.5cm}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/create-pr-1.png}
+		\end{figure}
+		
+		\column{.47\textwidth} % Left column and width
+		
+		\begin{itemize}
+			\setlength\itemsep{.5em}
+			\item Give the PR a name associated with the branch name but more descriptive
+			\item Add \texttt{\#11} in the description to create a hyper link to issue - add \texttt{work-in-progress} label
+			\item Click the arrow on the green button and select \textit{Create draft pull request}
+			\item A PR cannot be merged while in draft status - signals work in progress
+		\end{itemize}
+		
+	\end{columns}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Browse draft PR}
+	\begin{columns}[c]
+		
+		\column{.6\textwidth} % Right column and width
+		\vspace{-.5cm}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/create-pr-2.png}
+		\end{figure}
+		
+		\column{.4\textwidth} % Left column and width
+		
+		\begin{itemize}
+			\setlength\itemsep{1em}
+			\item A draft PR has the color code gray 
+			\item You can follow someone's work here - but no need to do anything yet
+			\item The author will eventually remove the draft status and ask for reviews
+		\end{itemize}
+		
+	\end{columns}	
+\end{frame}
+
 
 \begin{frame}
 	\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S2.png}
