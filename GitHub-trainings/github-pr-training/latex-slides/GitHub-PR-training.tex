@@ -781,10 +781,10 @@
 		\column{.65\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item GitFlow is no a software, it is an idea or a philosophy of how to organize work in git
+			\item GitFlow is not a software, it is an idea or a philosophy of how to organize work in git
 			\item It is developed for computer science and you will find a lot of resources for it online 
 			\item We will present a simplified version adapted for research
-			\item The \textbf{main branch} - should never be worked in directly
+			\item The \textbf{main branch} (formerly master branch) - should never be worked in directly
 			\item \textbf{Feature branches} - this is where you do all your work
 		\end{itemize}
 	
@@ -810,7 +810,7 @@
 		\begin{itemize}
 			\setlength\itemsep{.5em}
 			\item A regular git network graph - each dot is a commit
-			\item Several branches have been opened and merged, but currently only the main branch is open
+			\item Several branches have been opened and merged, but currently only the \textit{main} branch is open
 		\end{itemize}
 	\end{minipage}  
 
@@ -862,7 +862,7 @@
 	\begin{minipage}[t][5cm][t]{\textwidth}
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item Create a new feature branch at the point where you want the the \textit{branch-pr-merge} cycle to start from
+			\item Create a new \textit{feature} branch at the point where you want the the \textit{branch-pr-merge} cycle to start from
 			\item Two branches pointing to the same commit are identical by definition
 		\end{itemize}
 	\end{minipage}  
@@ -930,7 +930,7 @@
 		\begin{itemize}
 			\setlength\itemsep{.5em}
 			\item Merge the PR
-			\item Delete the feature branch
+			\item Delete the \textit{feature} branch
 			\item The green box represents a full \textit{branch-pr-merge} cycle in the network graph
 		\end{itemize}
 	\end{minipage}  
@@ -952,9 +952,9 @@
 		\begin{itemize}
 			\setlength\itemsep{.5em}
 			\item Many tasks are not simple - multiple team members working over multiple month
-			\item Analyzing baseline data is one big task composed of many smaller tasks
+			\item Cleaning the baseline data, for example, data is one big task composed of many smaller tasks
 			\item Solve this by using nested \textit{branch-pr-merge} cycles
-			\item \textbf{Develop branches} - a branch that is a hogh level task that will have several feature branches
+			\item \textbf{Develop branches} - a branch that is a high level task that will have several \textit{feature} branches
 		\end{itemize}
 		
 		\column{.35\textwidth} % Right column and width
@@ -978,9 +978,9 @@
 	\begin{minipage}[t][5cm][t]{\textwidth}
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item Create a develop branch - name it after the high level task - complete set up stage
-			\item Develop branches often does not have an issue - the feature branches off of it will
-			\item Include develop branch name as prefix to all feature branches of it
+			\item Create a \textit{develop} branch - name it after the high level task - complete set up stage
+			\item \textit{Develop} branches often does not have an issue - the \textit{feature} branches off of it will
+			\item Include \textit{develop} branch name as prefix to all \textit{feature} branches of it
 		\end{itemize}
 	\end{minipage}  
 \end{frame}
@@ -1000,9 +1000,9 @@
 	\begin{minipage}[t][5cm][t]{\textwidth}
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item Create as many feature branches of the develop branch as you need
+			\item Create as many \textit{feature} branches of the \textit{develop} branch as you need
 			\item Split them up in as many tasks as needed - try to split tasks until it is no larger than one person can complete it in a week or two
-			\item Create feature branches of the develop branch any time - even after it progresses
+			\item Create \textit{feature} branches of the \textit{develop} branch any time - even after it progresses
 		\end{itemize}
 	\end{minipage}  
 \end{frame}
@@ -1022,7 +1022,7 @@
 	\begin{minipage}[t][5cm][t]{\textwidth}
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item Keep working on the feature branches until they are done
+			\item Keep working on the \textit{feature} branches until they are done
 			\item When a task is complete: assign a reviewer - comment/suggest - accept/reject/discuss
 		\end{itemize}
 	\end{minipage}  
@@ -1110,12 +1110,12 @@
 	\begin{minipage}[t][5cm][t]{\textwidth}
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item <1->When could it be ok to work directly on a main/develop branch? - see red arrows
+			\item <1->When could it be ok to work directly on a \textit{main}/\textit{develop} branch? - see red arrows
 			\item <2->When updating documentation!
 			\begin{itemize}
 				\setlength\itemsep{.5em}
-				\item <2->Documentation about the repo in the main branch
-				\item <2->Documentation about the high level task in the develop branch
+				\item <2->Documentation about the repo in the \textit{main} branch
+				\item <2->Documentation about the high level task in the \textit{develop} branch
 			\end{itemize}
 		\end{itemize}
 	\end{minipage}  
