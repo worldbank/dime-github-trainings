@@ -23,3 +23,16 @@ You can do these exercises by yourself and be both the _author_ role and the _re
 4. They will be sent an email from GitHub, but you can also send them this link `https://github.com/<username>/gh-pr-ex-repo/invitations` and ask them to click it.
 
 They are succesfully added to your repo when their status no longer says "_Pending invite_".
+
+## Exercise 1 - review a PR
+
+In this exercise you are the PI
+and you created the very simple Stata script `ex1\stata-1.do`.
+Open that file in the `main` branch.
+This file runs in Stata,
+but you do not need to run anything or
+not even know any Stata to follow along in this exercise.
+You can see that you have only loaded the data set,
+and added some place holders where you want your RA to add code.
+
+Your RA has already done the work. Go to the `Pull request` tab and see PR number 1 that they have already created.
