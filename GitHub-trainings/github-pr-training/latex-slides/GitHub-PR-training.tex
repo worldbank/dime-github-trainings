@@ -821,7 +821,120 @@
 	\huge\centering \textbf{Simple branch-pr-merge cycle}
 	
 \end{frame}
+
+
+\begin{frame}
+	\frametitle{Start a branch-pr-merge cycle}
 	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/dime-gitflow-network-0.png}
+		\end{figure}
+	\end{minipage}  
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{.5em}
+			\item This can either be the beginning of a repo or at a point where all branches were merged
+			\item Let's say your next task is to set up folders - apply the \textit{branch-pr-merge} cycle
+		\end{itemize}
+	\end{minipage}  
+	
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Set up stage - 1}
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/dime-gitflow-network-1-0.png}
+		\end{figure}
+	\end{minipage}  
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{.5em}
+			\item Create a new feature branch at the point where you want the the \textit{branch-pr-merge} cycle to start from
+			\item Two branches pointing to the same commit are identical by definition
+		\end{itemize}
+	\end{minipage}  
+	
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Set up stage - 2}
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/dime-gitflow-network-1-1.png}
+		\end{figure}
+	\end{minipage}  
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{.5em}
+			\item Create a new README or edit an existing one documenting this task - (or make a quick commit for the task)
+			\item Open up a draft PR so there is a good place for your team to follow your work
+		\end{itemize}
+	\end{minipage}  
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Work stage}
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/dime-gitflow-network-1-2.png}
+		\end{figure}
+	\end{minipage}  
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{.5em}
+			\item Complete the task using one or many commits - this example only requires one more commit
+			\item Assign someone to review the task - iterate until you are all satisfied
+		\end{itemize}
+	\end{minipage}  
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Merge stage}
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/dime-gitflow-network-1-3.png}
+		\end{figure}
+	\end{minipage}  
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{.5em}
+			\item Merge the PR
+			\item Delete the feature branch
+			\item The green box represents a full \textit{branch-pr-merge} cycle in the network graph
+		\end{itemize}
+	\end{minipage}  
+	
+\end{frame}
 
 \begin{frame}
 	\frametitle{Nested branch-pr-merge cycles}
