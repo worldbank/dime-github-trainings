@@ -942,6 +942,157 @@
 	\huge\centering \textbf{Nested branch-pr-merge cycles}
 	
 \end{frame}
+
+\begin{frame}
+	\frametitle{Nested branch-pr-merge cycles}
+	\begin{columns}[c]
+		
+		\column{.65\textwidth} % Left column and width
+		\begin{itemize}
+			\setlength\itemsep{.5em}
+			\item Many tasks are not simple - multiple team members working over multiple month
+			\item Analyzing baseline data is one big task composed of many smaller tasks
+			\item Solve this by using nested \textit{branch-pr-merge} cycles
+			\item \textbf{Develop branches} - a branch that is a hogh level task that will have several feature branches
+		\end{itemize}
+		
+		\column{.35\textwidth} % Right column and width
+		\vspace{-.75cm}
+		\Large SOME ICON
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Create a develop branch}
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/dime-gitflow-network-2-1.png}
+		\end{figure}
+	\end{minipage}  
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{.5em}
+			\item Create a develop branch - name it after the high level task - complete set up stage
+			\item Develop branches often does not have an issue - the feature branches off of it will
+			\item Include develop branch name as prefix to all feature branches of it
+		\end{itemize}
+	\end{minipage}  
+\end{frame}
+
+\begin{frame}
+	\frametitle{Create feature branches of the develop branch}
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/dime-gitflow-network-2-2.png}
+		\end{figure}
+	\end{minipage}  
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{.5em}
+			\item Create as many feature branches of the develop branch as you need
+			\item Split them up in as many tasks as needed - try to split tasks until it is no larger than one person can complete it in a week or two
+			\item Create feature branches of the develop branch any time - even after it progresses
+		\end{itemize}
+	\end{minipage}  
+\end{frame}
+
+\begin{frame}
+	\frametitle{Work in the branches}
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/dime-gitflow-network-2-3.png}
+		\end{figure}
+	\end{minipage}  
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{.5em}
+			\item Keep working on the feature branches until they are done
+			\item When a task is complete: assign a reviewer - comment/suggest - accept/reject/discuss
+		\end{itemize}
+	\end{minipage}  
+\end{frame}
+
+\begin{frame}
+	\frametitle{Merge a feature branch}
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/dime-gitflow-network-2-4.png}
+		\end{figure}
+	\end{minipage}  
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{.5em}
+			\item The branch \texttt{baseline-clean-exp} was approved in the review step in the work stage and was merged in the merge stage
+			\item The orange box is one \textit{branch-pr-merge} cycle
+		\end{itemize}
+	\end{minipage}  
+\end{frame}
+
+\begin{frame}
+	\frametitle{Merge a feature branch}
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/dime-gitflow-network-2-5.png}
+		\end{figure}
+	\end{minipage}  
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{.5em}
+			\item The branch \texttt{baseline-clean-hh} was then also approved in the review step in the work stage and was merged in the merge stage
+			\item The blue box is also a \textit{branch-pr-merge} cycle
+		\end{itemize}
+	\end{minipage}  
+\end{frame}
+
+\begin{frame}
+	\frametitle{Merge a develop branch}
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/dime-gitflow-network-2-6.png}
+		\end{figure}
+	\end{minipage}  
+	
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{.5em}
+			\item Then the branch \texttt{baseline} is ready for a review - assign a reviewer - comment/suggest - accept/reject/discuss
+			\item The green box is also a \textit{branch-pr-merge} cycle
+			\item This network graph shows a nested \textit{branch-pr-merge} cycle
+		\end{itemize}
+	\end{minipage}  
+\end{frame}
+
+
+
 \input{../../Common-Resources/slides/GitHub-Links.tex}
 
 \input{../../Common-Resources/slides/GitHub-Commit-URL.tex}
