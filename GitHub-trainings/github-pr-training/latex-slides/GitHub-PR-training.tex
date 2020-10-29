@@ -12,10 +12,10 @@
 % Load i2i symbol
 \addtobeamertemplate{frametitle}{}{%
 \begin{textblock*}{\linewidth}(0cm,7.4cm) % Replace with (0cm, 8cm) if using non-wide slide aspect
-	\includegraphics[width=\linewidth]{../../Common-Resources/img/Footer.png} 
+	\includegraphics[width=\linewidth]{../../Common-Resources/img/Footer.png}
 \end{textblock*}}
 
-\setbeamertemplate{footline}{\hfill\insertframenumber/\inserttotalframenumber} 
+\setbeamertemplate{footline}{\hfill\insertframenumber/\inserttotalframenumber}
 
 %-----------------------------------------------
 % --- Load packages
@@ -124,7 +124,7 @@
 		\vspace{1em}
 
 		\raggedright
-		\normalfont Introducing a framework for the 
+		\normalfont Introducing a framework for the
 		\textit{branch-PR-merge} cycle,
 		and best practices for each step
 
@@ -143,12 +143,12 @@
 		\vspace{1em}
 
 		\raggedright
-		\normalfont How to integrate the \textit{branch-PR-merge} cycle 
+		\normalfont How to integrate the \textit{branch-PR-merge} cycle
 		for a typical DIME research project
 
 		\vspace{.5em}
 
-		\normalfont Intro to the GitFlow philosophy
+		\normalfont Intro to the Gitflow philosophy
 
 		\column{.08\textwidth}
 
@@ -170,7 +170,7 @@
 		\vspace{.7cm}\newline
 		\large Complete this cycle for \textbf{all tasks}
 		\vspace{.7cm}\newline
-		\large We will go over all steps but 
+		\large We will go over all steps but
 		focus today on the \textbf{work stage}
 
 		\column{.65\textwidth} % Right column and width
@@ -229,7 +229,7 @@
 			\item They allow other team members to provide input
 			on how to solve the task
 			\item No need to open an issue for tasks
-			that will be done immediately and 
+			that will be done immediately and
 			don't require a place to document related discussions
 		\end{itemize}
 
@@ -284,12 +284,12 @@
 
 		\begin{itemize}
 			\setlength\itemsep{1em}
-			\item Take note of the issue number 
-			(also found in end of issue URL) 
+			\item Take note of the issue number
+			(also found in end of issue URL)
 			so you can refer to it
 			\item Anyone can use the comment field to provide input
 			\item You can update assignees and/or labels
-			\item Even when closed, 
+			\item Even when closed,
 			this issue may be browsed by future team members
 		\end{itemize}
 
@@ -303,12 +303,12 @@
 		\column{.35\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item Create branch on GitHub.com 
+			\item Create branch on GitHub.com
 			\hyperlink{new-branch}{\beamergotobutton{Step-by-step}}
-			\item We create a branch to have a space 
-			where work on this task does not interfere 
+			\item We create a branch to have a space
+			where work on this task does not interfere
 			with work on other tasks
-			\item Name the branch after the task and 
+			\item Name the branch after the task and
 			add the issue number as suffix - for example:
 			\texttt{pr-training-11}
 		\end{itemize}
@@ -330,8 +330,8 @@
 		\column{.35\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{1em}
-			\item Create a PR \textbf{before} you start working 
-			- this creates a space on GitHub 
+			\item Create a PR \textbf{before} you start working
+			- this creates a space on GitHub
 			where the progress of this task can be followed
 			\item Create a \textit{``draft PR''} for work in progress
 			\item Reference branch name in PR name
@@ -449,7 +449,7 @@
 			\item Most time will be spent in this stage
 			\item Reviewing the code should be seen as a step
 			as important as writing it
-			\item This stage will be repeated until 
+			\item This stage will be repeated until
 			the team agrees on the quality of the code
 		\end{itemize}
 
@@ -496,7 +496,7 @@
 			\setlength\itemsep{1em}
 			\item Remove the draft status from the PR
 			\item Assign one or several people to review your PR
-			\item Notify the reviewer(s) using email 
+			\item Notify the reviewer(s) using email
 			or slack as GitHub notifications may be muted
 		\end{itemize}
 
@@ -847,17 +847,39 @@
 
 
 
-\section{Part 2: \newline GitFlow - How to fit the ``branch-PR-merge'' cycle into your workflow}
-
+\section{Part 2: \newline Gitflow - How to fit the ``branch-PR-merge'' cycle into your workflow}
 
 \begin{frame}
-	\frametitle{GitFlow}
+	\frametitle{The network graph}
+
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/dime-gitflow-network.png}
+		\end{figure}
+	\end{minipage}
+
+	\vspace{-.5cm}
+	\begin{minipage}[t][5cm][t]{\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{.5em}
+			\item A typical git network graph - each dot is a commit
+			\item Several branches have been opened and merged,
+			but currently only the \textit{main} branch is open
+		\end{itemize}
+	\end{minipage}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Gitflow}
 	\begin{columns}[c]
 
 		\column{.65\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item GitFlow is not a software,
+			\item Gitflow is not a software,
 			it is an idea or a philosophy of how to organize work in git
 			\item It is developed for computer science and
 			you will find a lot of resources for it online
@@ -876,17 +898,7 @@
 	\end{columns}
 \end{frame}
 
-	\vspace{-.5cm}
-	\begin{minipage}[t][5cm][t]{\textwidth}
-		\begin{itemize}
-			\setlength\itemsep{.5em}
-			\item A typical git network graph - each dot is a commit
-			\item Several branches have been opened and merged,
-			but currently only the \textit{main} branch is open
-		\end{itemize}
-	\end{minipage}
 
-\end{frame}
 
 \begin{frame}
 	\frametitle{Simple branch-PR-merge cycle}
@@ -1201,7 +1213,7 @@
 
 \begin{frame}
 	\frametitle{Work directly in main/develop}
-	
+
 	\vspace{-.5cm}
 	\begin{minipage}[t][5cm][t]{\textwidth}
 		\begin{figure}
@@ -1209,7 +1221,7 @@
 			\includegraphics[width=\textwidth]{./img/dime-gitflow-network-workdirectly.png}
 		\end{figure}
 	\end{minipage}
-	
+
 	\vspace{-.5cm}
 	\begin{minipage}[t][5cm][t]{\textwidth}
 		\begin{itemize}
@@ -1245,7 +1257,7 @@
 		\begin{itemize}
 			\setlength\itemsep{.4em}
 			\item There is technically no difference between
-			the GitFlow types of branches
+			the Gitflow types of branches
 			- the only difference is what workflow that is expected
 			\begin{itemize}
 				\setlength\itemsep{.5em}
@@ -1265,32 +1277,32 @@
 \begin{frame}
 	\frametitle{Nest cycles in the work stage}
 	\begin{columns}[c]
-		
+
 		\column{.35\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{1em}
 			\item \textit{Branch-PR-merge} cycles should be nested
-			in the work stage 
+			in the work stage
 			\item The \textit{develop} branch is paused
 			in the \textit{Commit edits} step while
 			feature \textit{branch-PR-merge} cycles are completed
 			\item If needed, convert a \textit{feature} branch
 			to a \textit{develop} branch here
 		\end{itemize}
-		
+
 		\column{.65\textwidth} % Right column and width
 		\vspace{-.75cm}
 		\begin{figure}
 			\centering
 			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S2-1.png}
-		\end{figure}	
+		\end{figure}
 	\end{columns}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Thank you!}
 	\huge\centering \textbf{Questions?}
-	
+
 	\vspace{1cm}
 	\normalsize Slides can be found here: \url{https://osf.io/e54gy/}
 \end{frame}
