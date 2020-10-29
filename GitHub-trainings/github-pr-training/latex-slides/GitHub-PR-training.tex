@@ -68,7 +68,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Who is this training for}
+	\frametitle{Who is this training for?}
 
 
 	\begin{columns}[c]
@@ -474,16 +474,15 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Update the PR}
+	\frametitle{Un-draft the PR}
 	\begin{columns}[c]
 
 		\column{.35\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{1em}
 			\item Remove the draft status from the PR
-			\item Document what has been implemented in the PR
 			\item Assign one or several people to review your PR
-			\item Notify the assignee(s) using email 
+			\item Notify the reviewer(s) using email 
 			or slack as GitHub notifications may be muted
 		\end{itemize}
 
@@ -498,7 +497,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Update the PR}
+	\frametitle{Un-draft the PR}
 	\begin{columns}[c]
 
 	\column{.6\textwidth} % Right column and width
@@ -513,8 +512,7 @@
 		\setlength\itemsep{1em}
 		\item Replace the \textit{work-in-progress} label
 		with \textit{review-me}
-		\item Assign one or more people as reviewer
-		\item Use the comment field to document what has been done
+		\item Document what has been implemented in the branch
 		\item Click \textit{``Ready for review''} to remove draft status
 	\end{itemize}
 
@@ -627,7 +625,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{PR comments}
+	\frametitle{Overall comments}
 	\begin{columns}[c]
 
 		\column{.6\textwidth} % Right column and width
@@ -658,7 +656,7 @@
 		\column{.35\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{1em}
-			\item The author accepts or discusses suggestions
+			\item The author discusses, accepts or rejects suggestions
 			and replies to comments
 			\item Then the author and the reviewers
 			(and anyone else in the project team)
@@ -1029,14 +1027,14 @@
 		\column{.65\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item \textbf{Develop branch}
-			- a branch that is a high-level task that
-			will have several \textit{feature} branches
 			\item Many high-level tasks are not simple
 			- multiple team members working over multiple months
 			\item Cleaning the baseline data,
 			for example, is one big task composed of many smaller tasks
 			\item Solve this by using nested \textit{branch-PR-merge} cycles
+			\item \textbf{Develop branch}
+			- a branch that is a high-level task that
+			will have several \textit{feature} branches
 		\end{itemize}
 
 		\column{.35\textwidth} % Right column and width
@@ -1089,7 +1087,7 @@
 			\setlength\itemsep{.5em}
 			\item Create as many \textit{feature} branches off
 			the \textit{develop} branch as you need
-			\item Split them up in as many tasks as needed
+			\item Split up the high-level task in as many smaller tasks as needed
 			- try to split up tasks until each is small enough
 			for one person to complete in a week or two
 			\item Create new \textit{feature} branches off
@@ -1137,7 +1135,7 @@
 		\begin{itemize}
 			\setlength\itemsep{.5em}
 			\item The branch \texttt{baseline-clean-exp} was
-			approved in the review step in the work stage and
+			approved in the last step in the work stage and
 			was merged and deleted in the merge stage
 			\item The orange box is one \textit{branch-PR-merge} cycle
 		\end{itemize}
@@ -1160,7 +1158,7 @@
 		\begin{itemize}
 			\setlength\itemsep{.5em}
 			\item The branch \texttt{baseline-clean-hh} was then
-			also approved in the review step in the work stage and
+			also approved in the last step in the work stage and
 			was merged and deleted in the merge stage
 			\item The blue box is also a \textit{branch-PR-merge} cycle
 		\end{itemize}
@@ -1215,7 +1213,7 @@
 				\setlength\itemsep{.5em}
 				\item <2->Documentation about the repo
 				in the \textit{main} branch
-				\item <2->Documentation about the high level task
+				\item <2->Documentation about the high-level task
 				in the \textit{develop} branch
 			\end{itemize}
 		\end{itemize}
