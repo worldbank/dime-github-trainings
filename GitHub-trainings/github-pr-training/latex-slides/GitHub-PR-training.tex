@@ -124,14 +124,12 @@
 		\vspace{1em}
 
 		\raggedright
-		\normalfont Introducing a framework for the
-		\textit{branch-PR-merge} cycle,
-		and best practices for each step
+		\normalfont Introducing the
+		\textit{branch-PR-merge} cycle
 
 		\vspace{.5em}
 
-		\normalfont This framework should be used for
-		each task implemented on Git/GitHub
+		\normalfont A best practice framework for each individual PR
 
 		\column{.04\textwidth}
 
@@ -143,12 +141,15 @@
 		\vspace{1em}
 
 		\raggedright
-		\normalfont How to integrate the \textit{branch-PR-merge} cycle
-		for a typical DIME research project
-
+		\normalfont Introducing the Gitflow philosophy
+		
 		\vspace{.5em}
+		
+		\normalfont A best practice framework for working with PRs in your project
 
-		\normalfont Intro to the Gitflow philosophy
+
+
+
 
 		\column{.08\textwidth}
 
@@ -166,9 +167,9 @@
 	\begin{columns}[c]
 
 		\column{.35\textwidth} % Left column and width
-		\large The branch-PR-merge cycle
+		\large Three stages with multiple steps in each
 		\vspace{.7cm}\newline
-		\large Complete this cycle for \textbf{all tasks}
+		\large Complete a full \textit{branch-PR-merge} cycle for \textbf{all tasks}
 		\vspace{.7cm}\newline
 		\large We will go over all steps but
 		focus today on the \textbf{work stage}
@@ -197,7 +198,7 @@
 
 		\column{.35\textwidth} % Left column and width
 
-		\Large \textbf{The set up stage:}
+		\Large \textbf{Purpose of the set up stage:}
 		\vspace{1em}
 		\normalsize
 
@@ -225,12 +226,11 @@
 		\column{.35\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item Issues are a great way to document what tasks need to be done
+			\item Issues is a far superior way to document tasks
+			compared to emails or in-person meetings!
 			\item They allow other team members to provide input
 			on how to solve the task
-			\item No need to open an issue for tasks
-			that will be done immediately and
-			don't require a place to document related discussions
+			\item Very quick tasks that do not require discussion may not need an issue
 		\end{itemize}
 
 		\column{.65\textwidth} % Right column and width
@@ -259,11 +259,10 @@
 		\begin{itemize}
 			\setlength\itemsep{.5em}
 			\item Click the issues tab and then \texttt{New Issue}
-			\item Document the task and/or ask the rest of the team of input
-			\item Assign yourself or someone else to complete the task
+			\item Describe the task and assign yourself or someone else to complete the task
+			\item Ask the rest of the team of input if applicable
 			\item Add labels to facilitate future searches
-			\item This is a far superior way to document tasks
-			compared to emails or in-person meetings!
+
 		\end{itemize}
 
 	\end{columns}
@@ -287,10 +286,9 @@
 			\item Take note of the issue number
 			(also found in end of issue URL)
 			so you can refer to it
-			\item Anyone can use the comment field to provide input
-			\item You can update assignees and/or labels
-			\item Even when closed,
-			this issue may be browsed by future team members
+			\item Anyone can provide input using the comment field
+			\item Assignees and labels can be updated as the task evolve
+			\item Future team members can browse closed issues
 		\end{itemize}
 
 	\end{columns}
@@ -330,11 +328,12 @@
 		\column{.35\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{1em}
-			\item Create a PR \textbf{before} you start working
-			- this creates a space on GitHub
+			\item Create a PR \textbf{before} you implement the task
+			- this creates a space on GitHub.com
 			where the progress of this task can be followed
-			\item Create a \textit{``draft PR''} for work in progress
-			\item Reference branch name in PR name
+			\item You can create a \textit{``draft PR''} 
+			that cannot be merged while in draft status
+			- signals work in progress
 		\end{itemize}
 
 		\column{.65\textwidth} % Right column and width
@@ -396,8 +395,6 @@
 			- add \texttt{work-in-progress} label
 			\item Click the arrow on the green button and
 			select \textit{Create draft pull request}
-			\item A PR cannot be merged while in draft status
-			- signals work in progress
 		\end{itemize}
 
 	\end{columns}
@@ -441,16 +438,14 @@
 
 		\column{.35\textwidth} % Left column and width
 
-		\Large \textbf{The work stage:}
+		\Large \textbf{Purpose of the work stage:}
 		\vspace{.5em}
 		\normalsize
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item Most time will be spent in this stage
-			\item Reviewing the code should be seen as a step
-			as important as writing it
-			\item This stage will be repeated until
-			the team agrees on the quality of the code
+			\item Write the code that implements this task
+			\item Use the review features in a PR to improve code quality
+			\item Iterate this stage until you have high-quality code
 		\end{itemize}
 
 		\column{.65\textwidth} % Right column and width
@@ -494,10 +489,8 @@
 		\column{.35\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{1em}
-			\item Remove the draft status from the PR
-			\item Assign one or several people to review your PR
-			\item Notify the reviewer(s) using email
-			or slack as GitHub notifications may be muted
+			\item Document what has been implemented in the branch
+			\item Un-drafting indicates that a PR is ready to review
 		\end{itemize}
 
 		\column{.65\textwidth} % Right column and width
@@ -526,7 +519,9 @@
 		\setlength\itemsep{1em}
 		\item Replace the \textit{work-in-progress} label
 		with \textit{review-me}
-		\item Document what has been implemented in the branch
+		\item Assign one or several people to review your PR
+		\item Notify the reviewer(s) using email
+		or slack as GitHub notifications may be muted
 		\item Click \textit{``Ready for review''} to remove draft status
 	\end{itemize}
 
@@ -540,7 +535,7 @@
 		\column{.35\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{1em}
-			\item This step is incredibly important for high-quality code
+			\item PR reviews are incredibly important for high-quality code
 			\item Use the PR to review code edits
 			in the \textit{file changes} tab
 			\item The reviewer adds code suggestions and comments
@@ -570,9 +565,8 @@
 		\column{.35\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{2em}
-			\item When reviewing a PR,
-			always start by reading what the author or anyone else
-			have written in the \textit{``Conversation"} tab
+			\item Start your review by reading what the author or anyone else
+			have already said in the \textit{``Conversation"} tab
 			\item Then go to the \textit{``Files changed''} tab
 			- this is where you will review the new content of the files
 		\end{itemize}
@@ -602,8 +596,10 @@
 			\setlength\itemsep{.74em}
 			\item Make comments on specific lines of as much as possible
 			- line comments are much easier to keep track of
-			\item Click plus sign in blue circle to comment on a line
-			\item Hold shift when click and drag mouse to comment multiple lines
+			\item Hover with the mouse over the line number 
+			for a line you want to comment on and click the plus sign 
+			(blue circle) to open comment field
+			\item Hold shift when click and drag mouse to comment multiple lines (black circle)
 		\end{itemize}
 
 	\end{columns}
@@ -630,9 +626,11 @@
 			\setlength\itemsep{.74em}
 			\item You can also suggest an edit directly to the code
 			if the edit is not too big
-			\item Click the suggestion button (red circle), and edit the line
-			\item The author will then see the edit that you are suggesting
-			\item Can be done in multi line comments too
+			\item Click the suggestion button (red circle) 
+			and edit the line of code in the comment field
+			\item The author will then see the exact difference in your suggestion
+			\item Suggestions can be done to multi-line comments too
+			and can be combined with regular comments
 		\end{itemize}
 
 	\end{columns}
@@ -655,9 +653,9 @@
 			\item Make overall comments and comments
 			that cannot be done to a specific section of the code
 			in thread in the \textit{``Conversation''} tab
-			\item Suggestions are also listed here
 			\item Tag the author so they get a notification
 			that someone have reviewed the PR
+			\item Suggestions are also listed in this tab
 		\end{itemize}
 
 	\end{columns}
@@ -672,9 +670,9 @@
 			\setlength\itemsep{1em}
 			\item The author discusses, accepts or rejects suggestions
 			and replies to comments
-			\item Then the author and the reviewers
-			(and anyone else in the project team)
-			come together and decide if the task is complete or not
+			\item The author, the reviewer(s)
+			and/or anyone else in the project team then
+			decide if the work stage needs to be repeated
 		\end{itemize}
 
 		\column{.65\textwidth} % Right column and width
@@ -688,7 +686,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Review suggestion}
+	\frametitle{Review suggestions}
 	\begin{columns}[c]
 
 		\column{.5\textwidth} % Right column and width
@@ -701,8 +699,8 @@
 		\column{.5\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{1em}
-			\item Start by going over the suggestions as they tend to be quick
-			\item Suggestions are ordered chronologically
+			\item Respond to code suggestions before comments as suggestions tend to be quicker
+			\item Suggestions and line comments are listed chronologically
 			in the \textit{``Conversation''} tab and
 			by line number in the \textit{``File changes''} tab
 			\item Accept the suggestion with \textit{Commit Suggestion},
@@ -714,7 +712,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Review suggestion}
+	\frametitle{Approve PR}
 	\begin{columns}[c]
 
 		\column{.35\textwidth} % Right column and width
@@ -726,15 +724,16 @@
 		\column{.65\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{1em}
-			\item Address all suggestions and comments
-			until they are all answered
+			\item The team discussed should discuss if a task is done 
+			or need more work when all suggestions and comments
+			have been responded to
 			\item If major work is still required,
-			put the PR in draft status again and
+			revert the PR to draft status,
 			add back the \textit{work-in-progress} label and
-			start over the work stage
-			\item Once there are no more small or major comments
-			or suggestions left to do,
-			then move on to the merge stage
+			iterate the work stage again
+			\item Move on to the merge stage 
+			only when the task is complete and 
+			the team agrees the code is high-quality
 		\end{itemize}
 
 	\end{columns}
@@ -754,13 +753,13 @@
 
 		\column{.35\textwidth} % Left column and width
 
-		\Large \textbf{The merge stage:}
+		\Large \textbf{Purpose of the merge stage:}
 		\vspace{1em}
 		\normalsize
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item Once the work stage is complete, the merge stage is quick
-			\item Clean up the task and make sure it was properly documented
+			\item Merge the quality controlled PR
+			\item Make sure the task is properly documented and clean up the repo
 		\end{itemize}
 
 		\column{.65\textwidth} % Right column and width
@@ -830,7 +829,7 @@
 		If you created an issue for this task:
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item Make sure that the PR number is referenced in the issue.
+			\item Make sure that the PR number is referenced in the issue
 			\item For example: \textit{``Issue resolved in PR \#12''}
 			\item Then close the issue
 		\end{itemize}
@@ -879,14 +878,17 @@
 		\column{.65\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item Gitflow is not a software,
-			it is an idea or a philosophy of how to organize work in git
-			\item It is developed for computer science and
+			\item \textbf{Gitflow} is an idea or a philosophy 
+			of how to organize work in git - it is not a software you install
+			\item It is developed by computer scientists and
 			you will find a lot of resources for it online
 			\item We will present a simplified version adapted for research
-			\item The \textbf{main branch} (formerly master branch)
-			- should never be worked in directly
-			\item \textbf{Feature branches} - this is where you do all your work
+			\item Two branch types (later we add a third type):
+			\begin{itemize}
+				\item The \textbf{main branch} (formerly master branch)
+				- should never be worked in directly
+				\item \textbf{Feature branches} - this is where you do all your work
+			\end{itemize}
 		\end{itemize}
 
 		\column{.35\textwidth} % Right column and width
@@ -978,7 +980,7 @@
 			\item Create a new short README or
 			quickly edit an existing and commit -
 			(or make a quick commit for the task) -
-			at least one commit is needed for this work flow
+			at least one commit is needed to follow this workflow
 			\item Open up a draft PR so there is a good place
 			for your team to follow your work
 		\end{itemize}
@@ -1002,7 +1004,7 @@
 		\begin{itemize}
 			\setlength\itemsep{.5em}
 			\item Complete the task using one or many commits
-			- this example only requires one more commit
+			- in this example only one more commit was needed
 			\item Assign someone to review the PR
 			- iterate until you are all satisfied
 		\end{itemize}
@@ -1025,8 +1027,7 @@
 	\begin{minipage}[t][5cm][t]{\textwidth}
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item Merge the PR
-			\item Delete the \textit{feature} branch
+			\item Merge the PR and delete the \textit{feature} branch
 			\item The green box represents
 			a full \textit{branch-PR-merge} cycle in the network graph
 		\end{itemize}
@@ -1053,7 +1054,7 @@
 			\item Cleaning the baseline data,
 			for example, is one big task composed of many smaller tasks
 			\item Solve this by using nested \textit{branch-PR-merge} cycles
-			\item \textbf{Develop branch}
+			\item Third type of branch: \textbf{Develop branch}
 			- a branch that is a high-level task that
 			will have several \textit{feature} branches
 		\end{itemize}
@@ -1087,7 +1088,7 @@
 			- complete set up stage
 			\item \textit{Develop} branches often do not have a Github issue
 			- but the \textit{feature} branches off of it
-			should often have an corresponding GitHub issue
+			often have corresponding GitHub issues
 			\item Include \textit{develop} branch name as prefix
 			to all \textit{feature} branches off it
 		\end{itemize}
@@ -1113,7 +1114,7 @@
 			the \textit{develop} branch as you need
 			\item Split up the high-level task in as many smaller tasks as needed
 			- try to split up tasks until each is small enough
-			for one person to complete in a week or two
+			for one person to complete in max a week or two
 			\item Create new \textit{feature} branches off
 			the \textit{develop} branch even after it progresses
 		\end{itemize}
@@ -1138,7 +1139,7 @@
 			\item Keep working on the \textit{feature} branches until
 			they are done
 			\item When a task is complete: assign a reviewer
-			- comment/suggest - accept/reject/discuss
+			- make comments/suggestions - accept/reject/discuss
 		\end{itemize}
 	\end{minipage}
 \end{frame}
@@ -1259,7 +1260,7 @@
 	\begin{minipage}[t][5cm][t]{\textwidth}
 		\begin{itemize}
 			\setlength\itemsep{.4em}
-			\item There is technically no difference between
+			\item There is no technical git difference between
 			the Gitflow types of branches
 			- the only difference is what workflow that is expected
 			\begin{itemize}
@@ -1286,9 +1287,10 @@
 			\setlength\itemsep{1em}
 			\item \textit{Branch-PR-merge} cycles should be nested
 			in the work stage
-			\item The \textit{develop} branch is paused
+			\item The \textit{develop} branch is kept
 			in the \textit{Commit edits} step while
-			feature \textit{branch-PR-merge} cycles are completed
+			the \textit{branch-PR-merge} cycles are completed
+			for the feature branches
 			\item If needed, convert a \textit{feature} branch
 			to a \textit{develop} branch here
 		\end{itemize}
