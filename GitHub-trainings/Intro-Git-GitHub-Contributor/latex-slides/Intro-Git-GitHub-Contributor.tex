@@ -423,8 +423,8 @@
 
 	\textbf{Create a branch:}
 	\begin{itemize}
-		\item Go to \trainingRepoURL{} and click the button where it says \textit{Branch: master}.
-		\item Write your name in the field and click \textit{Create branch: your\_name}. Make sure it says \textit{from 'master'}.
+		\item Go to \trainingRepoURL{} and click the button where it says \textit{Branch: main}.
+		\item Write your name in the field and click \textit{Create branch: your\_name}. Make sure it says \textit{from 'main'}.
 		\item See how the button now says \textit{Branch: your\_name}
 		\item Go to \trainingRepoURL{/network} to check that your branch is there.
 	\end{itemize}
@@ -464,7 +464,8 @@
 	\item Then you need to do the three steps required to commit a file to the repository:
 	\begin{enumerate}
 		\item Make sure the file you want to add is checked
-		\item Write a commit message and click \text{Commit to master}
+		\item Write a commit message
+		\item Click \textit{Commit to your\_name} - check out your branch if it says \textit{main}
 		\item Click the sync button
 	\end{enumerate}
 \end{enumerate}
@@ -509,12 +510,16 @@
 \begin{frame}
 \frametitle{Pull Requests}
 
-	A feature related to branches is a \textbf{pull request}. When the edits you have done in your branch are ready to be merged with the main version of the code, you make a pull request, i.e. you are requesting that your edits are pulled into the master branch.
+	A feature related to branches is a \textbf{pull request}. 
+	When the edits you have done in your branch 
+	are ready to be merged with the main version of the code, 
+	you make a pull request, i.e. you are requesting that 
+	your edits are pulled into the main branch.
 
 
 	A pull request can be made either by the person that edited the branch or the repo maintainer.
 
-	It is very common in GitHub repositories that only the repo maintainer have access to the master branch, and pull requests are then the only way to contribute to the master branch.
+	It is common in GitHub repositories that only the repo maintainer have access to the main branch, and pull requests are then the only way to contribute to the main branch.
 
 
 \end{frame}
@@ -525,8 +530,8 @@
 	\textbf{To make a pull request for your branch:}
 	\begin{itemize}
 		\item Go to \trainingRepoURL{/pulls} and click \textit{New pull request}
-		\item Make sure that the \textit{master} branch is selected as the \textit{base:} branch, and then select your branch as the \textit{compare:} branch
-		\item Scroll down to check the edits you are requesting to be pulled in to the master branch. If it looks ok, then click \textit{Create pull request}
+		\item Make sure that the \textit{main} branch is selected as the \textit{base:} branch, and then select your branch as the \textit{compare:} branch
+		\item Scroll down to check the edits you are requesting to be pulled in to the main branch. If it looks ok, then click \textit{Create pull request}
 		\item Then you have the chance to add more instructions if you want, then click \textit{Create pull request} again
 	\end{itemize}
 \end{frame}
@@ -534,11 +539,16 @@
 \begin{frame}
 \frametitle{Merge your contribution}
 
-Can you see your lyrics file in the master branch now? Why not?
+Can you see your lyrics file in the main branch now? Why not?
 
 \vspace{.5cm}
 
-Future trainings will teach you about merging pull requests. So I will do that for you now. Can you see your lyrics file in the master branch now?
+Your contribution will not be included until the branch is merged. We have more trainings on the details of merging branches but for now this is all you need to know:
+
+	\begin{itemize}
+		\item Always have someone to review your PR before merging it
+		\item Always delete your branch after it is merged - you can always recreate a new branch with the same name if you want
+	\end{itemize}
 
 \end{frame}
 
@@ -567,7 +577,7 @@ Future trainings will teach you about merging pull requests. So I will do that f
 		\item Explore the history of \textbf{repository} and see what different team members are currently working on
 		\item \textbf{Clone} a \textbf{repository} so you can work on it
 		\item Create a \textbf{branch} in the \textbf{repository} where you can make your edits
-		\item Make edits and share \textbf{commits} with your team. When you are ready, make a \textbf{pull request} to the \textbf{master branch}
+		\item Make edits and share \textbf{commits} with your team. When you are ready, make a \textbf{pull request} to the \textbf{main branch}
 	\end{itemize}
 \end{frame}
 
