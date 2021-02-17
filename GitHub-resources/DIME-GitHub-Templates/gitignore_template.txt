@@ -68,6 +68,15 @@
 # Julia
 !/**/*.jl
 
+# .yml and .yaml files
+# yml and yaml files are sometimes used to as config files where credentials
+# might be stored. This is why these are ignored as default. If you want to
+# push your yml or yaml file to your repo (which is often the case) then first
+# confirm that your files do not include any sensitive information, and then
+# uncomment the lines below by removing the "#" in the beginning of the line
+#!/**/*.yml
+#!/**/*.yaml
+
 #######################
 # Include some additional file formats in any output folder. You might have
 # to change the name of the Output folder to whatever it is called in your
