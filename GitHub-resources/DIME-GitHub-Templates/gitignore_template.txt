@@ -56,6 +56,7 @@
 # Python
 !/**/*.py
 !/**/*.ipynb
+!requirements.txt
 # Still ignore .ipynb files in checkpoint folders
 .ipynb_checkpoints
 
