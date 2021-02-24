@@ -15,7 +15,7 @@ See the [GitHub trainings README](https://github.com/worldbank/dime-github-train
 
 ## Resources overview
 
-The resources include templates and guidelines that we hope to be useful. Browse the [GitHub-resource](https://github.com/worldbank/dime-github-trainings/tree/master/GitHub-resources) for more material.
+The resources include [templates](https://github.com/worldbank/dime-github-trainings/tree/master/GitHub-resources/DIME-GitHub-Templates) and guidelines that we hope to be useful. Browse the [GitHub-resource](https://github.com/worldbank/dime-github-trainings/tree/master/GitHub-resources) for more material.
 
 ## Contact
 
