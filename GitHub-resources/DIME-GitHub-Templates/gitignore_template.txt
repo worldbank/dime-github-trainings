@@ -61,6 +61,8 @@
 !/**/*.py
 !/**/*.ipynb
 !requirements.txt
+!Pipenv
+!Pipfile.lock
 # Still ignore .ipynb files in checkpoint folders
 .ipynb_checkpoints
 
