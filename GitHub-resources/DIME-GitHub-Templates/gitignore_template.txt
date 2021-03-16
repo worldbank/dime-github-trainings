@@ -47,8 +47,6 @@
 !/**/*.R
 !/**/*.Rmd
 !/**/*.Rproj
-# Still ignore shiny app meta files
-**/rsconnect/**/*.dcf
 # Still ignore user file for R projects
 .Rproj.user
 
