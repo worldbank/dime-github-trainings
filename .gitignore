@@ -48,12 +48,6 @@
 !/**/*.R
 !/**/*.Rmd
 !/**/*.Rproj
-# These files are used to style markdown notebooks
-!/**/*.css 
-!/**/*.js
-!/**/*.sh
-# These files store metadata on how to republish shiny apps
-!**/rsconnect/**/*.dcf 
 
 # LaTeX
 !/**/*.tex
