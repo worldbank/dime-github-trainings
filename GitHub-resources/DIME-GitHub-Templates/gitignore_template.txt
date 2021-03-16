@@ -73,6 +73,14 @@
 # Julia
 !/**/*.jl
 
+#Files to create custom layout and functionality
+# in dashboards, markdown notebooks, bookdown etc.
+!/**/*.css
+!/**/*.js
+
+#Bash scripts
+!/**/*.sh
+
 # .yml and .yaml files
 # These files sometimes have credentials, so only unignore these lines by removing
 # the "#" below after you checked your .yml/.yaml files for sensitive content
