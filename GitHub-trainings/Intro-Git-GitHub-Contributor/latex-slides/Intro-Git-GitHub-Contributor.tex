@@ -292,37 +292,9 @@
 \section{Commit}
 
 \begin{frame}
-\frametitle{What is a version in version control?}
-
-	\begin{columns}[c]
-
-		\column{.50\textwidth}
-		First look at how version control works in another software you might be familiar with.
-
-		\vspace{.5cm}
-
-		In DropBox each saved version of a file is saved to the version history. This is the only way to do it automatically, but are all these versions meaningful differences?
-
-		\column{.50\textwidth}
-		\begin{figure}
-			\centering
-			\includegraphics[width=1\linewidth]{../../Common-Resources/img/dropbox_versioncontrol}
-			\label{fig:dropboxversioncontrol}
-		\end{figure}
-
-	\end{columns}
-
-
-\end{frame}
-
-\begin{frame}
 \frametitle{What is a commit?}
 
-	Instead of having a list of each saved version of a file, in Git we use \textbf{commits to indicate what is each meaningful difference between two versions of our project folder}.
-
-	\vspace{.25cm}
-
-	Each commit is a snap shot of all files in the project folder, and lists how that snap shot differ from the previous snap shot (the previous commit).
+	A commit is \textbf{a meaningful difference between two versions of our project files}.
 
 	\vspace{.25cm}
 
@@ -370,12 +342,14 @@
 
 	\begin{columns}[c]
 
-		\column{.60\textwidth}
-		\textbf{Branches is the "killer feature" of Git}. This is where Git becomes really powerful as a collaboration tool and not just as version control.
+		Branches are \textbf{non-linear version-control}
 
-		\vspace{.25cm}
+		Branches allow you to:
+		\begin{itemize}
+			 \item create a copy of the code where you can collaborate or experiment
+			 merge your experiment with the main version of your code.
+		\end{itemize}
 
-		Branches allows you to \textbf{create a copy of the code where you can experiment}, if you like the result, \textbf{you can very easily merge your experiment with the main version of your code}.
 
 		\vspace{.25cm}
 
