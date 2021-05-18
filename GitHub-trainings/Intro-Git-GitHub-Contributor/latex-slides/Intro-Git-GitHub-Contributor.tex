@@ -4,7 +4,7 @@
 
 %-----------------------------------------------
 % --- Set beamer theme
-\usetheme{Metropolis}
+%\usetheme{Metropolis}
 \setbeamertemplate{footline}{}				% Remove automatic footer
 \setbeamertemplate{navigation symbols}{}	% Comment this line to display navigation symbols
 
@@ -20,6 +20,7 @@
 \usepackage{textpos}		% To align objects correctly
 \usepackage{multicol}		% To right in multiple columns
 \usepackage{color}			% To color text
+\usepackage{hyperref}
 
 %-----------------------------------------------
 % --- Include link to last commit
@@ -27,8 +28,8 @@
 \usepackage{catchfile}
 
 %Set this user input
-\newcommand{\gitfolder}{../../../.git} %relative path to .git folder from .tex doc
-\newcommand{\reponame}{worldbank/dime-github-trainings} % Name of account and repo be set in URL
+\newcommand{\gitfolder}{.git} %relative path to .git folder from .tex doc
+\newcommand{\reponame}{buscandoaverroes/dime-github-trainings} % Name of account and repo be set in URL
 
 %Based on this https://tex.stackexchange.com/questions/455396/how-to-include-the-current-git-commit-id-and-branch-in-my-document
 \CatchFileDef{\headfull}{\gitfolder/HEAD.}{} 				%Get path to head file for checked out branch
@@ -43,16 +44,16 @@
 %-----------------------------------------------
 % --- Add your information here
 \title{An intro to Git and GitHub - Contributor Role}
-\author{DIME Analytics}
+\author{DIME Analytics x Tom}
 \institute{DIME - The World Bank - \trainingURL{https://www.worldbank.org/en/research/dime}}
 \date{\today}
 
 \newcommand{\trainingURL}[1]{{\color{blue}\url{#1}}}
 
-\newcommand{\traininerUsername}{kbjarkefur}
-\newcommand{\repoName}{\traininerUsername/lyrics}
-\newcommand{\trainingRepoURL}[1]{\trainingURL{github.com/\repoName #1}}
-\newcommand{\trainerEmail}{\trainingURL{kbjarkefur@worldbank.org} }
+\newcommand{\traininerUsername}{buscandoaverroes}
+\newcommand{\repoName}{\traininerUsername/names}
+\newcommand{\trainingRepoURL}[1]{\trainingURL{https://github.com/\repoName #1}}
+\newcommand{\trainerEmail}{\trainingURL{tmosher@worldbank.org} }
 
 
 % ---------------------------- Preamble ends here ----------------------------
@@ -68,9 +69,10 @@
 \begin{frame}
 \frametitle{Before the session starts:}
 	\begin{enumerate}
-		\item Do you have a GitHub.com account? If not, got to \trainingURL{https://github.com/join} and sign up
-		\item Have you sent your GitHub username to the organizer or to \trainerEmail?
-		\item Have you installed GitHub Desktop? If not got to \trainingURL{https://desktop.github.com/} and download it.
+		\item Do you have a GitHub.com account? If not, we will go to \trainingURL{https://github.com/join} and sign up later
+		\item consider \url{https://github.com/worldbank/dime-github-trainings/blob/master/GitHub-resources/DIME-GitHub-Guides/Creating-GitHub-account.md}
+		\item If you do have a GitHub send your GitHub username me via the chat.
+		\item Have you installed GitHub Desktop? If so, also let me know. got to \trainingURL{https://desktop.github.com/} and download it.
 		\item Have you logged in at least once on GitHub Desktop? If not open GitHub Desktop and log in using your GitHub account.
 		\item Have you been invited to \trainingRepoURL{} ?
 		\item And have you accepted at \trainingRepoURL{/invitations} ?
@@ -79,17 +81,25 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{Full disclosure}
+
+	I did about \textbf{0.1\%} of the presentation. DIME (and Kris, especially) did literally everything
+	except for the terrible edits I did to shorten it for a smaller audience.
+
+
+\end{frame}
+
+
+\begin{frame}
 \includegraphics[width=\textwidth]{../../Common-Resources/img/Header.png}
 \vspace{-0.2cm}
 \titlepage 	 % Opening slide, prints inform
 \end{frame}
 
 \begin{frame}
-	\frametitle{Three common GitHub roles}
+	\frametitle{Raise your Hand}
 
-	\small The objective of this training is to make you able to take the role of a Contributor. See DIME Analytics GitHub Roles for full details. (link at the end of the presentation)
-
-	\input{../../Common-Resources/slides/GitHub-Roles.tex}
+	\small if you'd like to share a version-control nightmare!
 
 \end{frame}
 
@@ -101,14 +111,13 @@
 		\column{.60\textwidth} % Left column and width
 		\begin{itemize}
 			\item Git solves the \textit{Final.doc} problem
-			\item <2->Common solution to the \textit{Final.doc} problem: Name all your docs like \textit{YYMMDD\_docname\_INITIALS.doc}
-			\item <3->Git tracks \textit{YYMMDD} and \textit{INITIALS} for all edits  without the user having to remember it
-			\item <4->That's far from everything, Git also solves:
+			\item Git tracks automates "timestamps" for all edits with elegance
+			\item That's far from everything, Git also solves:
 			\begin{itemize}
-				\item <4->Conflicting copy problem (DropBox etc.)
-				\item <4->I can't re-produce my Baseline report problem
-				\item <4->Who wrote this code 4 years ago and why?
-				\item <4->And much much more...
+				\item <2->Conflicting copy problem (DropBox etc.)
+				\item <2->Help, I can't re-produce my Baseline report...problem
+				\item <2->Huh, who wrote this code 4 years ago and why?
+				\item <2->Parallel work flows
 			\end{itemize}
 		\end{itemize}
 
@@ -126,18 +135,39 @@
 \input{../../Common-Resources/slides/Git-GitHub-GitClient.tex}
 
 \begin{frame}
-\frametitle{What will we learn?}
+\frametitle{What will we do?}
 
 	In \textbf{An intro to Git and GitHub - Contributor Role} you will learn to:
 
 	\begin{itemize}
-		\item Explore the history of a project folder in GitHub and see what different team members are currently working on
-		\item Download a project folder from GitHub so you can work on it
-		\item Create a space in the project folder where you can make your edits
-		\item Make edits and share those versions with your team. When you are ready, request that your edits are included in the main version
+		\item Get set up with GitHub
+		\item Explore a repo / see other's work
+		\item Download a project folder from GitHub and work on it
+		\item Create a space in the project folder and make your own edits without disturbing other versions
+		\item Request that your edits are included in the main version.
 	\end{itemize}
 
 \end{frame}
+
+\section{Getting Ready for Git}
+
+\begin{frame}
+\frametitle{Getting Ready}
+
+
+	\begin{enumerate}
+		\item For those not yet on GitHub: \trainingURL{https://github.com/join}
+		\begin{itemize}
+			\item consider \url{https://github.com/worldbank/dime-github-trainings/blob/master/GitHub-resources/DIME-GitHub-Guides/Creating-GitHub-account.md}
+			\item when you have a GH, send me your username via the chat
+			\item I'll invite you to a demo repository. You can accept at \trainingRepoURL{/invitations}.
+		\end{itemize}
+		\item Next, install GitHub desktop \trainingURL{https://desktop.github.com/}
+
+	\end{enumerate}
+
+\end{frame}
+
 
 
 \begin{frame}
@@ -156,6 +186,20 @@
 
 
 \begin{frame}
+\frametitle{Like Trees}
+
+	\hspace*{2.5cm}\Large{Three Git concepts needed to do this:}
+
+	\begin{itemize}
+		\setlength{\itemindent}{3cm}
+		\Large{\item Clone = Seed}
+		\Large{\item Commit = Grow}
+		\Large{\item Branch = Branch}
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}
 \frametitle{Code free training!}
 
 	\begin{columns}[c]
@@ -169,15 +213,7 @@
 
 		We will not work with code today.
 
-		\vspace{.25cm}
 
-		Code tends to distract people if, for example, they see a command they do not understand.
-
-		\vspace{.25cm}
-
-		Instead we will work with lyrics in .txt files that works exactly the same as code files in Git.
-
-		\column{.15\textwidth} % Left column and width
 
 	\end{columns}
 \end{frame}
@@ -185,10 +221,12 @@
 \begin{frame}
 \frametitle{How to browse GitHub.Com}
 
-	Your project folder is called a \textbf{repository} in Git, often \textbf{repo} for short.
+	\textbf{repository}: in Git, \textbf{repo} for short, is simply a project. Think of a Tree.
+		\vspace{.25cm}
+
 	When you enter \trainingRepoURL{} you get to what we will call the \textbf{repository landing page}.
 
-	\vspace{.5cm}
+	\vspace{.25cm}
 
 	\begin{columns}[T]
 
@@ -212,13 +250,13 @@
 \section{Clone}
 
 \begin{frame}
-\frametitle{What is cloning?}
+\frametitle{Cloning}
 
-	Cloning is similar to downloading a \textbf{repository} to your computer.
+	\textbf{Cloning} is similar to downloading a repository to your computer, but is still "connected" via the internet.
 
 	\vspace{.5cm}
 
-	The difference between cloning and downloading is that \textbf{when Git clones a repository it remembers where you downloaded it from}. This is necessary so that Git knows where send any edits you make to the files when sharing them with your team.
+	The difference between cloning and downloading is that \textbf{when Git clones a repository it can later be synced through software}. This is necessary so that Git knows where send any edits you make to the files when sharing them with your team.
 
 \end{frame}
 
@@ -234,6 +272,7 @@
 			\item Click the green \textit{Code} button (see image)
 			\item Click \textit{Open with GitHub Desktop}
 			\item Select where on your computer to clone the repository. Do \textbf{NOT} clone in a shared folder, like a network drive or in DropBox. Create a \textit{GitHub} folder in non-synced location and clone there.
+			\item note differences for types of computers!
 		\end{enumerate}
 
 		\column{.30\textwidth} % Left column and width
@@ -280,88 +319,14 @@
 	\begin{columns}[c]
 
 		\column{.30\textwidth} % Left column and width
-		\center{\huge{\textbf{Commits}}}
+		\center{\huge{\textbf{Branches}}}
 
 		\column{.30\textwidth} % Left column and width
-		\center{\huge{\textbf{Branches}}}
+		\center{\huge{\textbf{Commits}}}
 
 	\end{columns}
 
 	\vspace{2cm}
-
-\end{frame}
-
-\section{Commit}
-
-\begin{frame}
-\frametitle{What is a version in version control?}
-
-	\begin{columns}[c]
-
-		\column{.50\textwidth}
-		First look at how version control works in another software you might be familiar with.
-
-		\vspace{.5cm}
-
-		In DropBox each saved version of a file is saved to the version history. This is the only way to do it automatically, but are all these versions meaningful differences?
-
-		\column{.50\textwidth}
-		\begin{figure}
-			\centering
-			\includegraphics[width=1\linewidth]{../../Common-Resources/img/dropbox_versioncontrol}
-			\label{fig:dropboxversioncontrol}
-		\end{figure}
-
-	\end{columns}
-
-
-\end{frame}
-
-\begin{frame}
-\frametitle{What is a commit?}
-
-	Instead of having a list of each saved version of a file, in Git we use \textbf{commits to indicate what is each meaningful difference between two versions of our project folder}.
-
-	\vspace{.25cm}
-
-	Each commit is a snap shot of all files in the project folder, and lists how that snap shot differ from the previous snap shot (the previous commit).
-
-	\vspace{.25cm}
-
-	Each commit has a time stamp and tracks who did the commit. This is very similar to the \textit{YYMMDD\_docname\_INITIALS.doc} solution to the \textit{Final.doc} problem.
-
-\end{frame}
-
-\begin{frame}
-\frametitle{How to make a commit}
-
-	We need to introduce \textit{branches} before we can all commit to the same repository, so for now, let me show you how to make a commit:
-
-	\begin{enumerate}
-		\item I add a new lyrics .txt file in the clone
-		\item I use GitHub desktop to commit the new file to the repository
-		\item Can you see the new file on your computer?
-		\item Can you see it if you sync in GitHub Desktop?
-	\end{enumerate}
-
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Exploring commits}
-
-	Now when we know what a commit is, we can start exploring how the \trainingRepoURL{} repository was created.
-
-	\vspace{.25cm}
-
-	We will see a list of commits, that at first sight is similar to the the version history in DropBox, but \textbf{in Git the version list is more meaningful, as it is a list of only meaningful differences}.
-
-	\vspace{.25cm}
-
-	\begin{itemize}
-		\item \trainingRepoURL{/commits}
-		\item This list can also be found in GitHub Desktop in the \textit{History} tab
-	\end{itemize}
 
 \end{frame}
 
@@ -372,16 +337,13 @@
 
 	\begin{columns}[c]
 
-		\column{.60\textwidth}
-		\textbf{Branches is the "killer feature" of Git}. This is where Git becomes really powerful as a collaboration tool and not just as version control.
-
-		\vspace{.25cm}
-
-		Branches allows you to \textbf{create a copy of the code where you can experiment}, if you like the result, \textbf{you can very easily merge your experiment with the main version of your code}.
-
-		\vspace{.25cm}
-
-		This non-linear version control is much more similar to how we actually work than the strictly linear version control in, for example, DropBox
+		\column{.40\textwidth}
+		Branches:
+		\begin{itemize}
+			\item are non-linear version-control
+			\item create a copy of the code where you can collaborate or experiment
+			\item merge your experiment with the main version of your code.
+		\end{itemize}
 
 		\column{.40\textwidth}
 		\begin{figure}
@@ -393,6 +355,21 @@
 	\end{columns}
 
 \end{frame}
+
+\begin{frame}
+\frametitle{Working with branches}
+
+
+	\textbf{Create a branch:}
+	\begin{itemize}
+		\item Go to \trainingRepoURL{} and click the button where it says \textit{Branch: main}.
+		\item Write your name in the field and click \textit{Create branch: your\_name}. Make sure it says \textit{from 'main'}.
+		\item See how the button now says \textit{Branch: your\_name}
+		\item Go to \trainingRepoURL{/network} to check that your branch is there.
+	\end{itemize}
+
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Looking at branches}
@@ -416,78 +393,85 @@
 
 \end{frame}
 
+
+
+
+\section{Commit}
+
 \begin{frame}
-\frametitle{Working with branches}
+\frametitle{What is a commit?}
 
-	A typical Git work flow involves multiple branches and there are tools in GitHub to makes that work flow easy, but that is not within today's scope. Although, what you should know after this training is only how to create your own branch and how to commit to it.
+	A \textbf{commit} is a meaningful difference between two versions of our project files.
 
-	\textbf{Create a branch:}
+	\vspace{.25cm}
 	\begin{itemize}
-		\item Go to \trainingRepoURL{} and click the button where it says \textit{Branch: main}.
-		\item Write your name in the field and click \textit{Create branch: your\_name}. Make sure it says \textit{from 'main'}.
-		\item See how the button now says \textit{Branch: your\_name}
-		\item Go to \trainingRepoURL{/network} to check that your branch is there.
+		\item Each commit has a time stamp and tracks who did the commit.
+		\item new files
+		\item changes
+		\item deletetions of entire files
 	\end{itemize}
 
+
+
 \end{frame}
+
+
 
 \section{Combining Commit \& Branch}
 
 \begin{frame}
-\frametitle{Now it is time to collaborate}
+\frametitle{Preparation}
 
-\textbf{Now it is time for you to collaborate:}
+\textbf{We'll be collaborating with .txt files:}
 \begin{enumerate}
-	\item Make sure your branch is checked out in GitHub Desktop.
-	\item Open a text editor. It could be \textit{Notepad} if you are using Windows, \textit{TextEdit} if you are using Mac, or any other code editor like \textit{Atom}, or \textit{Notepad++} etc.
-	\item Google the lyrics of your favorite song, and copy the lyrics to a new file in the text editor you just opened
-	\item Save the lyrics in your local clone according to these instructions:
+	\item Make sure the branch with your name is checked out in GitHub Desktop.
+	\item Open a text editor: \textit{Notepad}, \textit{TextEdit}, \textit{Atom}, etc.
+	\item Think of a confusing WB acroynm, or any confusing term, and make up an explanation.
 	\begin{itemize}
-		\item Save the file in \textit{.txt} format (Especially Mac users, this is not always the default)
-		\item Name the file after the title of the song
-		\item Save it in the appropriate genre folder (create a new genre folder if needed)
+		\item When you're ready, tell us your acronym/term in the chat
 	\end{itemize}
 \end{enumerate}
 
 \end{frame}
 
+
+
 \begin{frame}
-\frametitle{Do your first commit}
+\frametitle{Make a commit: new file}
+	\begin{columns}[c]
+		\column{.40\textwidth} % Left column and width
+			\begin{enumerate}
+				\item copy/add a new \textbf{names\_TEMPLATE.txt} file in the clone
+				\item save the new file name with your name in the title
+				\begin{itemize}
+					\item Make sure the file you want to add is checked (Green)
+					\item Write a commit message
+					\item Click \textit{Commit to your\_name} - check out your branch if it says \textit{main}
+					\item Click the sync button
+				\end{itemize}
+			\end{enumerate}
 
-\begin{columns}[c]
+		\column{.40\textwidth} % Right column and width
+			\begin{figure}
+				\centering
+				\includegraphics[width=1\linewidth]{img/desktop_changes}
+				\label{fig:desktopchanges}
+			\end{figure}
 
-\column{.60\textwidth} % Left column and width
+		\vspace{-1cm}
 
-\begin{enumerate}
-	\item Open the changes tab in GitHub Desktop
-	\item GitHub Desktop tracks your clone and has noticed that you changed something in it
-	\item Then you need to do the three steps required to commit a file to the repository:
-	\begin{enumerate}
-		\item Make sure the file you want to add is checked
-		\item Write a commit message
-		\item Click \textit{Commit to your\_name} - check out your branch if it says \textit{main}
-		\item Click the sync button
-	\end{enumerate}
-\end{enumerate}
+			\begin{figure}
+				\centering
+				\includegraphics[width=1\linewidth]{img/desktop_commit}
+				\label{fig:desktop_commit}
+			\end{figure}
 
-\column{.40\textwidth} % Left column and width
-\begin{figure}
-	\centering
-	\includegraphics[width=1\linewidth]{img/desktop_changes}
-	\label{fig:desktopchanges}
-\end{figure}
+	\end{columns}
 
-\vspace{-1cm}
+	\end{frame}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=1\linewidth]{img/desktop_commit}
-	\label{fig:desktop_commit}
-\end{figure}
 
-\end{columns}
 
-\end{frame}
 
 \begin{frame}
 \frametitle{Check your contribution}
@@ -507,19 +491,56 @@
 
 \end{frame}
 
+
+
+\begin{frame}
+\frametitle{Make a commit: editing file}
+
+
+	\begin{enumerate}
+		\item In your new file, fill in the info and save it
+		\begin{itemize}
+			\item Make sure the file you want to edit is yellow
+			\item Write a commit message
+			\item Click \textit{Commit to your\_name} - check out your branch if it says \textit{main}
+			\item Click the sync button
+		\end{itemize}
+	\end{enumerate}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Exploring commits}
+
+	You can explore "version history" of a repo by looking at commits:
+
+	\vspace{.25cm}
+
+	\begin{itemize}
+		\item \trainingRepoURL{/commits}
+		\item Or in GitHub Desktop in the \textit{History} tab
+	\end{itemize}
+
+\end{frame}
+
+
 \begin{frame}
 \frametitle{Pull Requests}
 
-	A feature related to branches is a \textbf{pull request}.
-	When the edits you have done in your branch
-	are ready to be merged with the main version of the code,
-	you make a pull request, i.e. you are requesting that
-	your edits are pulled into the main branch.
+ 	A \textbf{pull request} is a request to join or "pull"
+	edits from one branch to another.
+	\vspace{0.5cm}
+
+	\begin{enumerate}
+		\item If successfull, the pull request results in one perfectly harmonized branch (every file, folder)
+		\item GitHub takes care of all potential conflicts or errors
+		\item It is common in GitHub repositories that to limit who has the authority to merge pull requests to the main branch. This helps avoid caos.
+	\end{enumerate}
 
 
-	A pull request can be made either by the person that edited the branch or the repo maintainer.
 
-	It is common in GitHub repositories that only the repo maintainer have access to the main branch, and pull requests are then the only way to contribute to the main branch.
 
 
 \end{frame}
@@ -539,7 +560,7 @@
 \begin{frame}
 \frametitle{Merge your contribution}
 
-Can you see your lyrics file in the main branch now? Why not?
+Can you see your name file in the main branch now? Why not?
 
 \vspace{.5cm}
 
@@ -560,20 +581,6 @@ Your contribution will not be included until the branch is merged. We have more 
 	In \textbf{An intro to Git and GitHub - Contributor Role} you have learned to:
 
 	\begin{itemize}
-		\item Explore the history of a project folder in GitHub and see what different team members are currently working on
-		\item Download a project folder from GitHub so you can work on it
-		\item Create a space in the project folder where you can make your edits
-		\item Make edits and share those versions with your team. When you are ready, request that your edits are included in the main version
-	\end{itemize}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{What have we learned?}
-
-	In \textbf{An intro to Git and GitHub - Contributor Role} you have learned to:
-
-	\begin{itemize}
 		\item Explore the history of \textbf{repository} and see what different team members are currently working on
 		\item \textbf{Clone} a \textbf{repository} so you can work on it
 		\item Create a \textbf{branch} in the \textbf{repository} where you can make your edits
@@ -581,19 +588,94 @@ Your contribution will not be included until the branch is merged. We have more 
 	\end{itemize}
 \end{frame}
 
-\section{Magic Trick}
+
+\section{What could go wrong?}
 
 
 \begin{frame}
-\frametitle{Magic Trick}
+\frametitle{Errors can almost always be undone with precautions}
 
-	All great training ends with a magic trick! This is a pedagogical magic trick, don't worry, just bear with me!
+	Let's walk through some scenarios. Strategies will almost always start with:
+
+	\begin{itemize}
+		\item Sync
+		\item Check your branches
+		\item Reclone
+		\item Ask us
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Sync}
+
+	Mario just told Tom about changes to the Stata code. Tom has Stata and GitHub Desktop open,
+	and doesn't see the changes from just a few moments ago. What should he do?
+	\begin{itemize}
+		\item a. Create a new branch to see if Mario's changes are there.
+		\item b. Sync the repo
+		\item c. Sing and hope the changes come before the chorus arrives.
+	\end{itemize}
+
+\includegraphics[width=1\linewidth]{img/desktop_push}
+\includegraphics[width=1\linewidth]{img/desktop_sync}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Branch}
+Tom just wrote this awesome code yesterday and this morning, he opens his GH desktop and the file's
+not there. What could have happened and what should he do?
+\begin{columns}[c]
+	\column{.45\textwidth}
+	\begin{itemize}
+		\item a. The file may have been accidentally deleted, so try to recover via version control.
+		\item b. It was all just a dream, he never wrote the file to begin with :(
+		\item c. Maybe GH desktop is on an older branch where the file didn't exist, so check the branch!
+	\end{itemize}
+	\column{.45\textwidth}
+	\centering{\includegraphics[height=4cm]{img/desktop_branch}}
+
+\end{columns}
+
+
+
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Reclone}
+
+	Everything on the website version of the repo looks good, but I'm getting weird errors locally.
+	\begin{columns}[c]
+		\column{.45\textwidth}
+			\begin{itemize}
+				\item a. Time for a break.
+				\item b. Make a new branch.
+				\item c. Just reclone the repo. You can always archive the old local version if you're nervous.
+			\end{itemize}
+
+		\column{.45\textwidth}
+		\includegraphics[height=4cm]{img/clonedownload_button}
+
+	\end{columns}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Just Ask}
+
+	\textbf{When in doubt, just ask someone}
 
 	\vspace{1cm}
+	\begin{itemize}
+		\item Everybody's learning
+		\item Technically, almost anything can be undone, and the earlier the better
+		\item Asking directions phenomenon
+	\end{itemize}
 
-	\center{I need a volunteer for a simple task from the audience!}
-
-	\vspace{1cm}
 
 \end{frame}
 
@@ -609,7 +691,7 @@ Your contribution will not be included until the branch is merged. We have more 
 \begin{frame}
 \frametitle{Next steps for the research team}
 
-	Before adopting Git the research team should discuss the following things:
+	DIME thinks we should do the following:
 
 	\begin{itemize}
 		\item Who will be repo maintainer
@@ -624,7 +706,7 @@ Your contribution will not be included until the branch is merged. We have more 
 
 \input{../../Common-Resources/slides/GitHub-Links.tex}
 
-\input{../../Common-Resources/slides/GitHub-Commit-URL.tex}
+\input{../../Common-Resources/slides/GitHub-Commit-URL.tex} 
 
 
 \end{document}
