@@ -69,7 +69,8 @@
 \frametitle{Before the session starts:}
 	\begin{enumerate}
 		\item Do you have a GitHub.com account? If not, got to \trainingURL{https://github.com/join} and sign up
-		\item Have you sent your GitHub username to the organizer or to \trainerEmail?
+		\item consider: https://github.com/worldbank/dime-github-trainings/blob/master/GitHub-resources/DIME-GitHub-Guides/Creating-GitHub-account.md
+		\item Please send your GitHub username me via the chat?
 		\item Have you installed GitHub Desktop? If not got to \trainingURL{https://desktop.github.com/} and download it.
 		\item Have you logged in at least once on GitHub Desktop? If not open GitHub Desktop and log in using your GitHub account.
 		\item Have you been invited to \trainingRepoURL{} ?
@@ -109,14 +110,13 @@
 		\column{.60\textwidth} % Left column and width
 		\begin{itemize}
 			\item Git solves the \textit{Final.doc} problem
-			\item <2->Common solution to the \textit{Final.doc} problem: Name all your docs like \textit{YYMMDD\_docname\_INITIALS.doc}
-			\item <3->Git tracks \textit{YYMMDD} and \textit{INITIALS} for all edits  without the user having to remember it
-			\item <4->That's far from everything, Git also solves:
+			\item Git tracks automates "timestamps" for all edits with elegance
+			\item That's far from everything, Git also solves:
 			\begin{itemize}
-				\item <4->Conflicting copy problem (DropBox etc.)
-				\item <4->I can't re-produce my Baseline report problem
-				\item <4->Who wrote this code 4 years ago and why?
-				\item <4->Parallel work flows
+				\item <2->Conflicting copy problem (DropBox etc.)
+				\item <2->Help, I can't re-produce my Baseline report...problem
+				\item <2->Huh, who wrote this code 4 years ago and why?
+				\item <2->Parallel work flows
 			\end{itemize}
 		\end{itemize}
 
@@ -139,10 +139,10 @@
 	In \textbf{An intro to Git and GitHub - Contributor Role} you will learn to:
 
 	\begin{itemize}
-		\item Explore the history of a project folder in GitHub and see what different team members are currently working on
-		\item Download a project folder from GitHub so you can work on it
-		\item Create a space in the project folder where you can make your edits
-		\item Make edits and share those versions with your team. When you are ready, request that your edits are included in the main version
+		\item Explore a repo / see other's work
+		\item Download a project folder from GitHub and work on it
+		\item Create a space in the project folder and make your own edits without disturbing other versions
+		\item Request that your edits are included in the main version.
 	\end{itemize}
 
 \end{frame}
@@ -164,6 +164,20 @@
 
 
 \begin{frame}
+\frametitle{Like Trees}
+
+	\hspace*{2.5cm}\Large{Three Git concepts needed to do this:}
+
+	\begin{itemize}
+		\setlength{\itemindent}{3cm}
+		\Large{\item Clone = Seed}
+		\Large{\item Commit = Grow}
+		\Large{\item Branch = Branch}
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}
 \frametitle{Code free training!}
 
 	\begin{columns}[c]
@@ -177,15 +191,7 @@
 
 		We will not work with code today.
 
-		\vspace{.25cm}
 
-		Code tends to distract people if, for example, they see a command they do not understand.
-
-		\vspace{.25cm}
-
-		Instead we will work with words in .txt files that works exactly the same as code files in Git.
-
-		\column{.15\textwidth} % Left column and width
 
 	\end{columns}
 \end{frame}
@@ -193,10 +199,12 @@
 \begin{frame}
 \frametitle{How to browse GitHub.Com}
 
-	Your project folder is called a \textbf{repository} in Git, often \textbf{repo} for short.
+	\textbf{repository}: in Git, \textbf{repo} for short, is simply a project. Think of a Tree.
+		\vspace{.25cm}
+
 	When you enter \trainingRepoURL{} you get to what we will call the \textbf{repository landing page}.
 
-	\vspace{.5cm}
+	\vspace{.25cm}
 
 	\begin{columns}[T]
 
@@ -220,9 +228,9 @@
 \section{Clone}
 
 \begin{frame}
-\frametitle{What is cloning?}
+\frametitle{Cloning}
 
-	Cloning is similar to downloading a \textbf{repository} to your computer.
+	\textbf{Cloning} is similar to downloading a repository to your computer, but is still "connected" via the internet.
 
 	\vspace{.5cm}
 
@@ -312,7 +320,7 @@
 		\begin{itemize}
 			\item are non-linear version-control
 			\item create a copy of the code where you can collaborate or experiment
-			 merge your experiment with the main version of your code.
+			\item merge your experiment with the main version of your code.
 		\end{itemize}
 
 		\column{.40\textwidth}
@@ -371,55 +379,30 @@
 \begin{frame}
 \frametitle{What is a commit?}
 
-	A commit is \textbf{a meaningful difference between two versions of our project files}.
+	A \textbf{commit} is a meaningful difference between two versions of our project files.
 
 	\vspace{.25cm}
-
-	Each commit has a time stamp and tracks who did the commit. This is very similar to the \textit{YYMMDD\_docname\_INITIALS.doc} solution to the \textit{Final.doc} problem.
-
-\end{frame}
-
-\begin{frame}
-\frametitle{How to make a commit}
-
-
-	\begin{enumerate}
-		\item I copy/add a new names .txt file in the clone
-		\item I use GitHub desktop to commit the new file to the repository
-		\item Can you see the new file on your computer?
-		\item Can you see it if you sync in GitHub Desktop?
-	\end{enumerate}
-
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Exploring commits}
-
-	Now when we know what a commit is, we can start exploring how the \trainingRepoURL{} repository was created.
-
-	\vspace{.25cm}
-
-	We will see a list of commits, that at first sight is similar to the the version history in DropBox, but \textbf{in Git the version list is more meaningful, as it is a list of only meaningful differences}.
-
-	\vspace{.25cm}
-
 	\begin{itemize}
-		\item \trainingRepoURL{/commits}
-		\item This list can also be found in GitHub Desktop in the \textit{History} tab
+		\item Each commit has a time stamp and tracks who did the commit.
+		\item new files
+		\item changes
+		\item deletetions of entire files
 	\end{itemize}
 
+
+
 \end{frame}
+
 
 
 \section{Combining Commit \& Branch}
 
 \begin{frame}
-\frametitle{Now it is time to collaborate}
+\frametitle{Preparation}
 
 \textbf{Now it is time for you to collaborate:}
 \begin{enumerate}
-	\item Make sure your branch is checked out in GitHub Desktop.
+	\item Make sure the branch with your name is checked out in GitHub Desktop.
 	\item Open a text editor. It could be \textit{Notepad} if you are using Windows, \textit{TextEdit} if you are using Mac, or any other code editor like \textit{Atom}, or \textit{Notepad++} etc.
 	\item Think of a confusing WB acroynm, or any confusing name, and make up an explanation.
 	\item Save the file in your local clone according to these instructions:
@@ -486,6 +469,57 @@
 	\end{itemize}
 
 \end{frame}
+
+
+\begin{frame}
+\frametitle{Make a commit: new file}
+
+
+	\begin{enumerate}
+		\item copy/add a new names_TEMPLATE.txt file in the clone
+		\item save the new file name with your name in the title
+		\item use GitHub desktop to commit the new file to the repository
+		\item in "changes", the file name will appear in green
+	\end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Make a commit: editing file}
+
+
+	\begin{enumerate}
+		\item in your new file, fill in the info and save it
+		\item use GitHub desktop to commit the new file to the repository
+		\item in "changes", the file name will appear in yellow
+		\item "push" all commits to the cloud
+	\end{enumerate}
+
+\includegraphics[width=1\linewidth]{img/desktop_push}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Exploring commits}
+
+	Now when we know what a commit is, we can start exploring how the \trainingRepoURL{} repository was created.
+
+	\vspace{.25cm}
+
+	We will see a list of commits, that at first sight is similar to the the version history in DropBox, but \textbf{in Git the version list is more meaningful, as it is a list of only meaningful differences}.
+
+	\vspace{.25cm}
+
+	\begin{itemize}
+		\item \trainingRepoURL{/commits}
+		\item This list can also be found in GitHub Desktop in the \textit{History} tab
+	\end{itemize}
+
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Pull Requests}
@@ -575,8 +609,8 @@ Your contribution will not be included until the branch is merged. We have more 
 		\item c. Sing and hope the changes come before the chorus arrives.
 	\end{itemize}
 
-%\includegraphics[width=1\linewidth]{img/desktop_push}
-%\includegraphics[width=1\linewidth]{img/desktop_sync}
+\includegraphics[width=1\linewidth]{img/desktop_push}
+\includegraphics[width=1\linewidth]{img/desktop_sync}
 
 \end{frame}
 
@@ -593,7 +627,7 @@ Your contribution will not be included until the branch is merged. We have more 
 		\item c. Maybe GH desktop is on an older branch where the file didn't exist, so check the branch!
 	\end{itemize}
 
-%\includegraphics[width=1\linewidth]{img/desktop_branch}
+\includegraphics[width=1\linewidth]{img/desktop_branch}
 
 \end{frame}
 
@@ -608,7 +642,7 @@ Your contribution will not be included until the branch is merged. We have more 
 		\item c. Just reclone the repo. You can always archive the old local version if you're nervous.
 	\end{itemize}
 
-%\includegraphics[width=1\linewidth]{img/clonedownload_button}
+\includegraphics[width=1\linewidth]{img/clonedownload_button}
 
 \end{frame}
 
