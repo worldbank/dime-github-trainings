@@ -4,7 +4,7 @@ Creating an account is easy. You can do so by following [this link](https://gith
 
 ## Best practice creating account
 
-1. **Use a private email address** - We have had colleagues who has lost access to their GitHub account after losing access to work email when changing jobs, so use a personal email when you create your account. You can later add your work email and have any notifications from GitHub sent there.
+1. **Use a private email address** - We have had colleagues who has lost access to their GitHub account after losing access to work email when changing jobs, so use a personal email when you create your account. This will be your primary email. You can later add your work email and have any notifications from work repositories sent to that email.
 
 2. **No need for multiple accounts** - Most people use the same account, even when working for different organization or for personal projects like hosting a web site. So, if you already have a GitHub account, there is no need to create a second one.
 
