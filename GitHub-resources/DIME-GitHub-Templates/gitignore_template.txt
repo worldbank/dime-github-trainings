@@ -107,3 +107,7 @@ password.*
 passwords.*
 password/
 passwords/
+token.*
+tokens.*
+token/
+tokens/
