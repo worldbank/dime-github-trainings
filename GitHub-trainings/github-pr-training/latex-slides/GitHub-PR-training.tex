@@ -67,10 +67,10 @@
 \titlepage 	 % Opening slide, prints inform
 \end{frame}
 
+\section{Intro - Pull Request training}
+
 \begin{frame}
-	\frametitle{Who is this training for?}
-
-
+	\frametitle{Prerequisites}
 	\begin{columns}[c]
 
 		\column{.65\textwidth} % Left column and width
@@ -102,56 +102,82 @@
 		\column{.05\textwidth} % Left column and width
 
 	\end{columns}
+\end{frame}
 
+\begin{frame}
+	\frametitle{What are pull-request?}
+	\begin{columns}[c]
+		
+		\column{.68\textwidth} % Left column and width
+		
+		GitHub is to Git, what Gmail is to email
+		
+		\vspace{2em}
+		
+		\textit{Pull requests} (PRs) are part of GitHub but not part of Git
+		
+		\vspace{2em}
+
+		A PR is a collaboration tool when working with branches.
+        The intention of a PR is always to merge two branches, 
+		but a PR adds excellent review features before the merge is done.
+		
+		\column{.25\textwidth} % Left column and width
+		
+		\begin{minipage}[t][6.5cm][t]{\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=.55\textwidth]{./img/pr-highlight.png}
+			\end{figure}
+		\end{minipage}
+		
+		\column{.05\textwidth} % Left column and width
+		
+	\end{columns}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Content}
 
-	\Large\centering \textbf{THIS TRAINING HAS TWO PARTS}
+	\Large\centering \textbf{THIS TRAINING HAS THREE PARTS}
 
-	\vspace{.8em}
+	\vspace{1.2em}
 
+	\raggedright
 	\begin{columns}[T]
 
-		\column{.08\textwidth}
-
-		\column{.4\textwidth} % Left column and width
-
-		\centering
-		\large \textbf{Part 1}
-
-		\vspace{1em}
-
-		\raggedright
-		\normalfont Introducing the
-		\textit{branch-PR-merge} cycle
-
-		\vspace{.5em}
-
-		\normalfont A best practice framework for implementing each task in a PR
-
-		\column{.04\textwidth}
-
-		\column{.4\textwidth} % Left column and width
-
-		\centering
-		\large \textbf{Part 2}
-
-		\vspace{1em}
-
-		\raggedright
-		\normalfont Introducing the Gitflow philosophy
+		\column{.01\textwidth}
 		
-		\vspace{.5em}
+		\column{.3\textwidth} % Left column and width
+			
+			\large \textbf{Part 1}
+			
+			\vspace{1em}
+			\raggedright
+			\normalfont A very brief review of how to work with branches in Git
+
+		\column{.01\textwidth}
+
+		\column{.3\textwidth} % Left column and width
+			
+			\large \textbf{Part 2}
+			
+			\vspace{1em}
+			\raggedright
+			\normalfont Introducing the \textit{branch-PR-merge} cycle for how to use the review features in a PR
+			
 		
-		\normalfont A best practice framework for working with PRs in your project
-
-
-
-
-
-		\column{.08\textwidth}
+		\column{.01\textwidth}
+		
+		\column{.3\textwidth} % Left column and width
+		
+			\large \textbf{Part 3}
+			
+			\vspace{1em}
+			\raggedright
+			\normalfont Gitflow - a philosophy for how to work with branches and merge/PRs in Git
+		
+		\column{.01\textwidth}
 
 	\end{columns}
 
@@ -159,7 +185,7 @@
 
 
 
-\section{Part 1: \newline Best practices for the branch-PR-merge cycle}
+\section{Part 2: \newline Best practices for the branch-PR-merge cycle}
 
 \begin{frame}
 \frametitle{The branch-PR-merge cycle}
@@ -848,7 +874,7 @@
 
 
 
-\section{Part 2: \newline Gitflow - How to fit the ``branch-PR-merge'' cycle into your workflow}
+\section{Part 3: \newline Gitflow - How to fit the ``branch-PR-merge'' cycle into your workflow}
 
 \begin{frame}
 	\frametitle{The network graph}
