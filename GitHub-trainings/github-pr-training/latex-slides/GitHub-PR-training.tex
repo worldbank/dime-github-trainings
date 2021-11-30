@@ -105,23 +105,94 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{What are pull-request?}
+	\frametitle{Content}
+
+	\Large\centering \textbf{THIS TRAINING HAS THREE PARTS}
+
+	\vspace{1.2em}
+
+	\raggedright
+	\begin{columns}[T]
+
+		\column{.01\textwidth}
+		\column{.3\textwidth} % Left column and width	
+			\large \textbf{Part 1}
+			
+			\vspace{1em}
+			\raggedright
+			\normalfont A very brief review of how to work with branches in Git
+
+		\column{.01\textwidth}
+		\column{.3\textwidth} % Left column and width
+			\large \textbf{Part 2}
+			
+			\vspace{1em}
+			\raggedright
+			\normalfont Introducing the \textit{branch-PR-merge} cycle for how to use the review features in a PR
+			
+		\column{.01\textwidth}
+		\column{.3\textwidth} % Left column and width
+			\large \textbf{Part 3}
+			
+			\vspace{1em}
+			\raggedright
+			\normalfont Gitflow - a philosophy for how to work with branches and merge/PRs in Git
+		
+		\column{.01\textwidth}
+
+	\end{columns}
+\end{frame}
+
+\section{Part 1: \newline A brief intro to working with branches}
+
+\begin{frame}
+	\frametitle{Brief intro to branches}
 	\begin{columns}[c]
 		
 		\column{.68\textwidth} % Left column and width
 		
-		GitHub is to Git, what Gmail is to email
-		
-		\vspace{2em}
-		
-		\textit{Pull requests} (PRs) are part of GitHub but not part of Git
-		
-		\vspace{2em}
+		Branches is the killer feature of Git. 
+		It allows us to approach tasks in a non-linear way,
+		which is similar to how human brains
+		and especially teams of humans work.
+		\vspace{1.5em}	
 
-		A PR is a collaboration tool when working with branches.
-        The intention of a PR is always to merge two branches, 
-		but a PR adds excellent review features before the merge is done.
+		It's thanks to branches we can - without creating conflicts -
+		test multiple solutions to as task at the same time, or 
+		have multiple people working at different tasks at the same time.
+		\vspace{1.5em}
+			
+		Branches are often visualized in network graphs.
 		
+		\column{.25\textwidth} % Left column and width
+		
+		\begin{minipage}[t][6.5cm][t]{\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=.55\textwidth]{./img/pr-branch.png}
+			\end{figure}
+		\end{minipage}
+		
+		\column{.05\textwidth} % Left column and width
+		
+	\end{columns}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{What are pull request?}
+	\begin{columns}[c]
+		
+		\column{.68\textwidth} % Left column and width
+		
+		\textit{Pull requests} (PRs) are part of GitHub, but not part of Git.	
+		\vspace{2em}
+		
+		GitHub is to Git, what Gmail is to email.
+		\vspace{2em}
+		
+		A PR is a request to merge one branch into another,
+		and adds great QA and review features before the merge.
 		\column{.25\textwidth} % Left column and width
 		
 		\begin{minipage}[t][6.5cm][t]{\textwidth}
@@ -135,55 +206,6 @@
 		
 	\end{columns}
 \end{frame}
-
-\begin{frame}
-	\frametitle{Content}
-
-	\Large\centering \textbf{THIS TRAINING HAS THREE PARTS}
-
-	\vspace{1.2em}
-
-	\raggedright
-	\begin{columns}[T]
-
-		\column{.01\textwidth}
-		
-		\column{.3\textwidth} % Left column and width
-			
-			\large \textbf{Part 1}
-			
-			\vspace{1em}
-			\raggedright
-			\normalfont A very brief review of how to work with branches in Git
-
-		\column{.01\textwidth}
-
-		\column{.3\textwidth} % Left column and width
-			
-			\large \textbf{Part 2}
-			
-			\vspace{1em}
-			\raggedright
-			\normalfont Introducing the \textit{branch-PR-merge} cycle for how to use the review features in a PR
-			
-		
-		\column{.01\textwidth}
-		
-		\column{.3\textwidth} % Left column and width
-		
-			\large \textbf{Part 3}
-			
-			\vspace{1em}
-			\raggedright
-			\normalfont Gitflow - a philosophy for how to work with branches and merge/PRs in Git
-		
-		\column{.01\textwidth}
-
-	\end{columns}
-
-	\end{frame}
-
-
 
 \section{Part 2: \newline Best practices for the branch-PR-merge cycle}
 
