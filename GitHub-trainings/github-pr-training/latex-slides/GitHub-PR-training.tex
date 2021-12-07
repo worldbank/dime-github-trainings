@@ -212,15 +212,15 @@
 
 	\begin{columns}[c]
 
-		\column{.35\textwidth} % Left column and width
-		\large Three stages with multiple steps in each
-		\vspace{.7cm}\newline
-		\large Complete a full \textit{branch-PR-merge} cycle for \textbf{all tasks}
-		\vspace{.7cm}\newline
-		\large We will go over all steps but
-		focus today on the \textbf{work stage}
+		\column{.4\textwidth} % Left column and width
+		\large Complete \textbf{every} data work task in your project with a \textit{branch-PR-merge} cycle
+		\vspace{.5cm}\newline
+		\large The \textit{branch-PR-merge} cycle consists of three stages,
+		we will focus on the \textit{work stage} today
+		\vspace{.5cm}\newline
+		\large A more detailed version in Appendix A of these slides.
 
-		\column{.65\textwidth} % Right column and width
+		\column{.6\textwidth} % Right column and width
 		\vspace{-.75cm}
 		\begin{figure}
 			\centering
@@ -228,372 +228,186 @@
 		\end{figure}
 
 	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Stage: The set up stage}
-
-	\huge\centering \textbf{SET UP STAGE}
-
-\end{frame}
+	`\end{frame}
 
 
 \begin{frame}
-	\frametitle{Stage: The set up stage}
+	\frametitle{Set-up Stage}
 	\begin{columns}[c]
-
-		\column{.35\textwidth} % Left column and width
-
-		\Large \textbf{Purpose of the set up stage:}
-		\vspace{1em}
-		\normalsize
-
-		\begin{itemize}
-			\setlength\itemsep{1em}
-			\item Document the task you will work on
-			\item Create a space in your repo to work on the task
-		\end{itemize}
-
-		\column{.65\textwidth} % Right column and width
-		\vspace{-.75cm}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S1.png}
-		\end{figure}
-
-	\end{columns}
-\end{frame}
-
-
-\begin{frame}
-	\frametitle{Step: Create an issue}
-	\begin{columns}[c]
-
-		\column{.35\textwidth} % Left column and width
-		\begin{itemize}
-			\setlength\itemsep{.5em}
-			\item Issues is a far superior way to document tasks
-			compared to emails or in-person meetings!
-			\item They allow other team members to provide input
-			on how to solve the task
-			\item Very quick tasks that do not require discussion may not need an issue
-		\end{itemize}
-
-		\column{.65\textwidth} % Right column and width
-		\vspace{-.75cm}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S1-1.png}
-		\end{figure}
-
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Create an issue}
-	\begin{columns}[c]
-
-		\column{.55\textwidth} % Right column and width
-		\vspace{-.5cm}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{./img/create-issue-1.png}
-		\end{figure}
-
-		\column{.45\textwidth} % Left column and width
-
-		\begin{itemize}
-			\setlength\itemsep{.5em}
-			\item Click the issues tab and then \texttt{New Issue}
-			\item Describe the task and assign yourself or someone else to complete the task
-			\item Ask the rest of the team of input if applicable
-			\item Add labels to facilitate future searches
-
-		\end{itemize}
-
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Browse an issue}
-	\begin{columns}[c]
-
-		\column{.55\textwidth} % Right column and width
-		\vspace{-.5cm}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{./img/create-issue-2.png}
-		\end{figure}
-
-		\column{.45\textwidth} % Left column and width
-
-		\begin{itemize}
-			\setlength\itemsep{1em}
-			\item Take note of the issue number
-			(also found in end of issue URL)
-			so you can refer to it
-			\item Anyone can provide input using the comment field
-			\item Assignees and labels can be updated as the task evolve
-			\item Future team members can browse closed issues
-		\end{itemize}
-
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Create a branch}
-	\begin{columns}[c]
-
-		\column{.35\textwidth} % Left column and width
-		\begin{itemize}
-			\setlength\itemsep{.5em}
-			\item Create branch on GitHub.com
-			\hyperlink{new-branch}{\beamergotobutton{Step-by-step}}
-			\item We create a branch to have a space
-			where work on this task does not interfere
-			with work on other tasks
-			\item Name the branch after the task and
-			add the issue number as suffix - for example:
-			\texttt{pr-training-11}
-		\end{itemize}
-
-		\column{.65\textwidth} % Right column and width
-		\vspace{-.75cm}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S1-2.png}
-		\end{figure}
-
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Open the PR}
-	\begin{columns}[c]
-
-		\column{.35\textwidth} % Left column and width
-		\begin{itemize}
-			\setlength\itemsep{1em}
-			\item Create a PR \textbf{before} you implement the task
-			- this creates a space on GitHub.com
-			where the progress of this task can be followed
-			\item You can create a \textit{``draft PR''} 
-			that cannot be merged while in draft status
-			- signals work in progress
-		\end{itemize}
-
-		\column{.65\textwidth} % Right column and width
-		\vspace{-.75cm}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S1-3.png}
-		\end{figure}
-
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Create a PR}
-	\begin{columns}[c]
-
-		\column{.53\textwidth} % Right column and width
-		\vspace{-.5cm}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{./img/create-pr-0.png}
-		\end{figure}
-
-		\column{.47\textwidth} % Left column and width
-		Recap of PR creation best practices:
-		\vspace{.5cm}
-		\begin{itemize}
-			\setlength\itemsep{.5em}
-			\item Go to the \textit{``Pull request''} tab
-			\item Make sure that you are comparing the correct branches
-			\item Always browse the commits and
-			the files changes before opening the PR
-			\item You need at least one commit
-			- Create/edit a README describing the task
-		\end{itemize}
-
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Create a draft PR}
-	\begin{columns}[c]
-
-		\column{.53\textwidth} % Right column and width
-		\vspace{-.5cm}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{./img/create-pr-1.png}
-		\end{figure}
-
-		\column{.47\textwidth} % Left column and width
-
-		\begin{itemize}
-			\setlength\itemsep{.5em}
-			\item Give the PR a name associated with
-			the branch name but more descriptive
-			\item Add \texttt{\#11} in the description
-			to create a hyper link to issue
-			- add \texttt{work-in-progress} label
-			\item Click the arrow on the green button and
-			select \textit{Create draft pull request}
-		\end{itemize}
-
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Browse draft PR}
-	\begin{columns}[c]
-
-		\column{.6\textwidth} % Right column and width
-		\vspace{-.5cm}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{./img/create-pr-2.png}
-		\end{figure}
 
 		\column{.4\textwidth} % Left column and width
 
-		\begin{itemize}
-			\setlength\itemsep{1em}
-			\item A draft PR has the color code gray
-			\item You can follow someone's work here
-			- but no one is required to review anything yet
-			\item The author will eventually remove the draft status
-			and ask for reviews
-		\end{itemize}
+		\Large \textbf{SET-UP STAGE:}
+		\vspace{.8em}
+	
+		\normalsize
+		Create a branch for this task!
+		\vspace{.5cm}\newline
+		Part 3 is all about when and how many branches to create
+		\vspace{.5cm}\newline
+		See Appendix B for step-by-step instructions on how to create branches
+		
+		\column{.6\textwidth} % Right column and width
+		\vspace{-.75cm}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S1a.png}
+		\end{figure}
 
 	\end{columns}
 \end{frame}
 
-\begin{frame}
-	\frametitle{Stage: The work stage}
-
-	\huge\centering \textbf{WORK STAGE}
-
-\end{frame}
 
 \begin{frame}
-	\frametitle{Stage: The work stage}
+	\frametitle{Work Stage}
 	\begin{columns}[c]
-
-		\column{.35\textwidth} % Left column and width
-
-		\Large \textbf{Purpose of the work stage:}
-		\vspace{.5em}
+		
+		\column{.4\textwidth} % Left column and width
+		
+		\Large \textbf{WORK STAGE:}
+		\vspace{.8em}
+		
 		\normalsize
-		\begin{itemize}
-			\setlength\itemsep{.5em}
-			\item Write the code that implements this task
-			\item Use the review features in a PR to improve code quality
-			\item Iterate this stage until you have high-quality code
-		\end{itemize}
-
-		\column{.65\textwidth} % Right column and width
+		Most time in a branch-pr-merge cycle is spent in the work stage.
+		\vspace{.5cm}\newline
+		Research teams typically under-utilize features 
+		in the \textit{Review} and \textit{Discuss} steps, 
+		despite this is the real added value of PRs.\vspace{.5cm}\newline
+		The work stage should be repeated as many times as needed.
+		
+		\column{.6\textwidth} % Right column and width
 		\vspace{-.75cm}
 		\begin{figure}
 			\centering
 			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S2.png}
 		\end{figure}
-
+		
 	\end{columns}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Make commits}
+	\frametitle{Work Stage : Commit edits}
 	\begin{columns}[c]
-
-		\column{.35\textwidth} % Left column and width
-		\begin{itemize}
-			\setlength\itemsep{1em}
-			\item The author commits edits as usual
-			\item The draft PR will be updated as
-			more commits are pushed to the branch
-			\item Keep pushing commits until
-			the first implementation of the task is complete
-		\end{itemize}
-
-		\column{.65\textwidth} % Right column and width
+		
+		\column{.4\textwidth} % Left column and width
+		
+		\normalsize
+		In the first step team member working on this task
+		commits edits as usual to the new branch 
+		\vspace{.5cm}\newline
+		The PR needs to be opened before moving to the \textit{Review PR} step
+		\vspace{.5cm}\newline
+		We will call the person making the commits the \textit{Author} and the person reviewing the PR the \textit{Reviewer}. This can be two people, groups of people or one person reviewing their own work.
+		
+		\column{.6\textwidth} % Right column and width
 		\vspace{-.75cm}
 		\begin{figure}
 			\centering
-			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S2-1.png}
+			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S2a.png}
 		\end{figure}
-
+		
 	\end{columns}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Un-draft the PR}
+	\frametitle{Create the PR}
 	\begin{columns}[c]
-
-		\column{.35\textwidth} % Left column and width
-		\begin{itemize}
-			\setlength\itemsep{1em}
-			\item Document what has been implemented in the branch
-			\item Un-drafting indicates that a PR is ready to review
-		\end{itemize}
-
-		\column{.65\textwidth} % Right column and width
+		
+		\column{.50\textwidth} % Right column and width
 		\vspace{-.75cm}
 		\begin{figure}
 			\centering
-			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S2-2.png}
+			\includegraphics[width=\textwidth]{./img/create-pr-0.png}
 		\end{figure}
-
+		
+		\column{.50\textwidth} % Left column and width
+		\begin{itemize}
+			\setlength\itemsep{1em}
+			\item Typically done by the Author		
+			\item Select the two branches you want to merge
+			\item Remember a merge is not symmetric 
+			- only edits in the \textit{compare} branch are merged into to \textit{base} branch.
+			\item Check the tabs in the \textit{Commits}, \textit{Files changed} etc. bar
+			to make sure you are creating a PR for the right branches - merges are often messy to revert
+		\end{itemize}
+		
 	\end{columns}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Un-draft the PR}
+	\frametitle{Document the PR}
 	\begin{columns}[c]
-
-	\column{.6\textwidth} % Right column and width
-	\vspace{-.75cm}
-	\begin{figure}
-		\centering
-		\includegraphics[width=\textwidth]{./img/undraft-pr.png}
-	\end{figure}
-
-	\column{.4\textwidth} % Left column and width
-	\begin{itemize}
-		\setlength\itemsep{1em}
-		\item Replace the \textit{work-in-progress} label
-		with \textit{review-me}
-		\item Assign one or several people to review your PR
-		\item Notify the reviewer(s) using email
-		or slack as GitHub notifications may be muted
-		\item Click \textit{``Ready for review''} to remove draft status
-	\end{itemize}
-
-\end{columns}
+		
+		\column{.50\textwidth} % Right column and width
+		\vspace{-.25cm}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/create-pr-1.png}
+		\end{figure}
+		
+		\column{.50\textwidth} % Left column and width
+		\begin{itemize}
+			\setlength\itemsep{1.5em}
+			\item Merged PRs are milestones that can be browsed in the future - 
+			document these milestones
+			\item Why did the Author work on this task?
+			\item Making people reviewers and assignees as well as 
+			using labels and projects are neat features, but not necessary 
+		\end{itemize}
+		
+	\end{columns}
 \end{frame}
 
+
 \begin{frame}
-	\frametitle{Review the PR}
+	\frametitle{Work Stage : Review PR}
 	\begin{columns}[c]
-
-		\column{.35\textwidth} % Left column and width
+		
+		\column{.4\textwidth} % Left column and width
+		
+		\normalsize
+		Review a PR when either: \vspace{.3cm}
 		\begin{itemize}
-			\setlength\itemsep{1em}
-			\item PR reviews are incredibly important for high-quality code
-			\item Use the PR to review code edits
-			in the \textit{file changes} tab
-			\item The reviewer adds code suggestions and comments
+			\item the Author is completed 
+			\item the Author wants help
+			\item after a set amount of time 
 		\end{itemize}
+	
+		\vspace{.5cm}
 
-		\column{.65\textwidth} % Right column and width
+		The PR can be opened as a \textit{Draft PR} already after one commit. 
+		More on this in Appendix A.
+
+		
+		\column{.6\textwidth} % Right column and width
 		\vspace{-.75cm}
 		\begin{figure}
 			\centering
-			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S2-3.png}
+			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S2b.png}
 		\end{figure}
+		
+	\end{columns}
+\end{frame}
 
+\begin{frame}
+	\frametitle{Overall comments}
+	\begin{columns}[c]
+		
+		\column{.6\textwidth} % Right column and width
+		\vspace{-.75cm}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/pr-comment.png}
+		\end{figure}
+		
+		\column{.4\textwidth} % Left column and width
+		\begin{itemize}
+			\setlength\itemsep{1em}
+			\item If applicable/possible, always start by running the code
+			\item Provide overall comments in the \textit{``Conversation"} tab. Code does or does not run, not possible to follow the code etc.
+			\item Tag the Author or Reviewer your comment is meant for
+		\end{itemize}
+		
 	\end{columns}
 \end{frame}
 
@@ -610,21 +424,19 @@
 
 		\column{.35\textwidth} % Left column and width
 		\begin{itemize}
-			\setlength\itemsep{2em}
-			\item Start your review by reading what the author or anyone else
-			have already said in the \textit{``Conversation"} tab
-			\item Then go to the \textit{``Files changed''} tab
-			- this is where you will review the new content of the files
+			\setlength\itemsep{1.5em}
+			\item Next, go to the \textit{``Files changed''} tab
+			- this is the summary of all changes in all commits in this PR
+			\item In this tab we make comments to specific lines of code which is always much more useful than overall comments
 		\end{itemize}
 
 	\end{columns}
 \end{frame}
 
-
 \begin{frame}
 	\frametitle{Line comments}
 	\begin{columns}[c]
-
+		
 		\column{.50\textwidth} % Right column and width
 		\vspace{-.6cm}
 		\begin{figure}
@@ -636,18 +448,17 @@
 			\centering
 			\includegraphics[width=\textwidth]{./img/line-comment-2.png}
 		\end{figure}
-
+		
 		\column{.50\textwidth} % Left column and width
 		\begin{itemize}
-			\setlength\itemsep{.74em}
-			\item Make comments on specific lines of as much as possible
-			- line comments are much easier to keep track of
-			\item Hover with the mouse over the line number 
-			for a line you want to comment on and click the plus sign 
-			(blue circle) to open comment field
-			\item Hold shift when click and drag mouse to comment multiple lines (black circle)
+			\setlength\itemsep{1em}
+			\item You can start a thread anywhere in the code in this tab
+			\item \textit{Comment one line}: Hold with the mouse over the line number 
+			for a line you want to comment on and click the plus sign - orange circle
+			\item \textit{Comment multiple lines:} Press shift while 
+			click-and-drag mouse over multiple lines - black circle
 		\end{itemize}
-
+		
 	\end{columns}
 \end{frame}
 
@@ -670,38 +481,17 @@
 		\column{.50\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{.74em}
-			\item You can also suggest an edit directly to the code
-			if the edit is not too big
-			\item Click the suggestion button (red circle) 
-			and edit the line of code in the comment field
-			\item The author will then see the exact difference in your suggestion
-			\item Suggestions can be done to multi-line comments too
-			and can be combined with regular comments
-		\end{itemize}
-
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Overall comments}
-	\begin{columns}[c]
-
-		\column{.6\textwidth} % Right column and width
-		\vspace{-.75cm}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{./img/pr-comment.png}
-		\end{figure}
-
-		\column{.4\textwidth} % Left column and width
-		\begin{itemize}
-			\setlength\itemsep{1em}
-			\item Make overall comments and comments
-			that cannot be done to a specific section of the code
-			in thread in the \textit{``Conversation''} tab
-			\item Tag the author so they get a notification
-			that someone have reviewed the PR
-			\item Suggestions are also listed in this tab
+			\item You can suggest edits to one or multiple lines of code 
+			directly in this comment field
+			
+			\item Click the suggest code button - red circle - 
+			and edit the code that appears
+			
+			\item The Author will then see the exact suggestion, 
+			and can commit it with the click of a button
+			
+			\item Works really well when tweaking the code in the PR,
+			but only works well for smaller edits
 		\end{itemize}
 
 	\end{columns}
@@ -714,52 +504,26 @@
 		\column{.35\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{1em}
-			\item The author discusses, accepts or rejects suggestions
+			\item The Author discusses, accepts or rejects suggestions
 			and replies to comments
-			\item The author, the reviewer(s)
+			\item The Author, the Reviewer(s)
 			and/or anyone else in the project team then
 			decide if the work stage needs to be repeated
 		\end{itemize}
 
-		\column{.65\textwidth} % Right column and width
+		\column{.6\textwidth} % Right column and width
 		\vspace{-.75cm}
 		\begin{figure}
 			\centering
-			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S2-4.png}
+			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S2c.png}
 		\end{figure}
 
 	\end{columns}
 \end{frame}
 
-\begin{frame}
-	\frametitle{Review suggestions}
-	\begin{columns}[c]
-
-		\column{.5\textwidth} % Right column and width
-		\vspace{-.75cm}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{./img/review-suggestion-1.png}
-		\end{figure}
-
-		\column{.5\textwidth} % Left column and width
-		\begin{itemize}
-			\setlength\itemsep{1em}
-			\item Respond to code suggestions before comments 
-			as suggestions tend to be quicker to address
-			\item Suggestions and line comments are listed chronologically
-			in the \textit{``Conversation''} tab and
-			by line number in the \textit{``File changes''} tab
-			\item Accept the suggestion with \textit{Commit Suggestion},
-			ignore/delete it with \textit{Resolve conversation}
-			or comment to ask for more information
-		\end{itemize}
-
-	\end{columns}
-\end{frame}
 
 \begin{frame}
-	\frametitle{Approve PR}
+	\frametitle{Branch-PR-Merge }
 	\begin{columns}[c]
 
 		\column{.35\textwidth} % Right column and width
@@ -768,17 +532,15 @@
 			\includegraphics[width=.6\textwidth]{./img/qa.png}
 		\end{figure}
 
-		\column{.65\textwidth} % Left column and width
+		\column{.55\textwidth} % Left column and width
 		\begin{itemize}
 			\setlength\itemsep{1em}
 			\item When all suggestions and comments
 			have been responded to,
-			the team should discuss if a task is done 
-			or need more work 
-			\item If major work is still required,
-			revert the PR to draft status,
-			add back the \textit{work-in-progress} label and
-			iterate the work stage again
+			the team should discuss if a task either 
+			is done or need more work 
+			\item Repeat the work stage 
+			if significant work is still required
 			\item Move on to the merge stage 
 			only when the task is complete and 
 			the team agrees the code is high-quality
@@ -789,112 +551,44 @@
 
 
 \begin{frame}
-	\frametitle{Stage: The merge stage}
-
-	\huge\centering \textbf{MERGE STAGE}
-
-\end{frame}
-
-\begin{frame}
-	\frametitle{Stage: The merge stage}
+	\frametitle{Merge Stage}
 	\begin{columns}[c]
-
-		\column{.35\textwidth} % Left column and width
-
-		\Large \textbf{Purpose of the merge stage:}
-		\vspace{1em}
+		
+		\column{.4\textwidth} % Left column and width
+		
+		\Large \textbf{MERGE STAGE:}
+		\vspace{.8em}
+		
 		\normalsize
-		\begin{itemize}
-			\setlength\itemsep{.5em}
-			\item Merge the quality controlled PR
-			\item Make sure the task is properly documented and clean up the repo
-		\end{itemize}
-
-		\column{.65\textwidth} % Right column and width
+		Last stage of the \textit{branch-pr-merge} cycle is to merge the PR
+		once everyone have agreed to the suggested changes
+		\vspace{.5cm}\newline
+		Always delete the old branch - recreate that branch from the \textit{base} branch
+		if you want to keep working in a branch with the same name.
+		
+		\column{.6\textwidth} % Right column and width
 		\vspace{-.75cm}
 		\begin{figure}
 			\centering
 			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S3.png}
 		\end{figure}
-
-	\end{columns}
-\end{frame}
-
-
-\begin{frame}
-	\frametitle{Merge the PR}
-	\begin{columns}[c]
-
-		\column{.35\textwidth} % Left column and width
-		\begin{itemize}
-			\setlength\itemsep{.5em}
-			\item Make sure that the PR is well documented
-			- this is where future team members will read
-			how something was done and why
-			\item Then you can merge your well-reviewed and well-documented code
-			\item \textbf{Test run your code after merging it!}
-
-		\end{itemize}
-
-		\column{.65\textwidth} % Right column and width
-		\vspace{-.75cm}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S3-1.png}
-		\end{figure}
-
+		
 	\end{columns}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Delete the branch}
-	\begin{columns}[c]
-
-		\column{.35\textwidth} % Left column and width
-		\begin{itemize}
-			\setlength\itemsep{1em}
-			\item Always delete branches after they are merged
-			\item If you want to keep working in a branch with the same name,
-			then re-create that branch
-			\item Otherwise you risk working on an outdated version of the repo
-		\end{itemize}
-
-		\column{.65\textwidth} % Right column and width
-		\vspace{-.75cm}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S3-2.png}
-		\end{figure}
-
-	\end{columns}
+	\frametitle{Branch-PR-Merge Checklist}
+	I will make a checklist as a summary here
+	\begin{itemize}
+		\setlength\itemsep{1em}
+		\item Step 1
+		\item Step 2
+		\item Step 4
+	\end{itemize}		
 \end{frame}
 
-\begin{frame}
-	\frametitle{Close issue}
-	\begin{columns}[c]
 
 \section{Part 3: \newline Gitflow - When, how and how much to branch}
-		If you created an issue for this task:
-		\begin{itemize}
-			\setlength\itemsep{.5em}
-			\item Make sure that the PR number is referenced in the issue
-			\item For example: \textit{``Issue resolved in PR \#12''}
-			\item Then close the issue
-		\end{itemize}
-
-		\column{.65\textwidth} % Right column and width
-		\vspace{-.75cm}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\textwidth]{./img/branch-pr-merge-cycle-S3-3.png}
-		\end{figure}
-
-	\end{columns}
-\end{frame}
-
-
-
-\section{Part 3: \newline Gitflow - How to fit the ``branch-PR-merge'' cycle into your workflow}
 
 \begin{frame}
 	\frametitle{The network graph}
