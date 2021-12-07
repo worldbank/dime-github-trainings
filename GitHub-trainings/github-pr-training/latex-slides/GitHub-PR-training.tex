@@ -629,7 +629,7 @@
 			\begin{itemize}
 				\item The \textbf{main branch} (formerly master branch)
 				- should never be worked in directly
-				\item \textbf{Feature branches} - this is where you do all your work
+				\item \textbf{Feature branches} - this is where all work should be done
 			\end{itemize}
 		\end{itemize}
 
@@ -719,12 +719,9 @@
 	\begin{minipage}[t][5cm][t]{\textwidth}
 		\begin{itemize}
 			\setlength\itemsep{.5em}
-			\item Create a new short README or
-			quickly edit an existing and commit -
-			(or make a quick commit for the task) -
-			at least one commit is needed to follow this workflow
-			\item Open up a draft PR so there is a good place
-			for your team to follow your work
+			\item The Author starts working on the task in the new branch
+			\item As soon as one commit is made you can open a new PR 
+			where this task can be reviewed and discussed - great case for a draft PR
 		\end{itemize}
 	\end{minipage}
 
@@ -748,7 +745,7 @@
 			\item Complete the task using one or many commits
 			- in this example only one more commit was needed
 			\item Assign someone to review the PR
-			- iterate until you are all satisfied
+			- iterate the work stage of the branch-PR-merge cycle until everyone is satisfied
 		\end{itemize}
 	\end{minipage}
 
@@ -824,14 +821,10 @@
 	\vspace{-.5cm}
 	\begin{minipage}[t][5cm][t]{\textwidth}
 		\begin{itemize}
-			\setlength\itemsep{.5em}
+			\setlength\itemsep{1em}
 			\item Create a \textit{develop} branch
 			- name it after the high-level task
-			- complete set up stage
-			\item \textit{Develop} branches often do not have a Github issue
-			- but the \textit{feature} branches off of it
-			often have corresponding GitHub issues
-			\item Include \textit{develop} branch name as prefix
+			\item Include the name of the \textit{develop} branch as prefix
 			to all \textit{feature} branches off it
 		\end{itemize}
 	\end{minipage}
@@ -1002,9 +995,9 @@
 	\begin{minipage}[t][5cm][t]{\textwidth}
 		\begin{itemize}
 			\setlength\itemsep{.4em}
-			\item There is no technical git difference between
-			the Gitflow types of branches
-			- the only difference is what workflow that is expected
+			\item There is no difference to git between
+			different Gitflow types of branches
+			- the only difference is how team members use them
 			\begin{itemize}
 				\setlength\itemsep{.5em}
 				\item \textbf{Main branch}:
