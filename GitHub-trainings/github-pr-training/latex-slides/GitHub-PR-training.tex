@@ -51,8 +51,8 @@
 
 \newcommand{\trainingURL}[1]{{\color{blue}\url{#1}}}
 
-\newcommand{\traininerUsername}{kbjarkefur}
-\newcommand{\repoName}{\traininerUsername/lyrics}
+\newcommand{\traininerUsername}{dime-wb-trainings}
+\newcommand{\repoName}{\traininerUsername/pr-training-dec21}
 \newcommand{\trainingRepoURL}[1]{\trainingURL{github.com/\repoName #1}}
 \newcommand{\trainerEmail}{\trainingURL{kbjarkefur@worldbank.org} }
 
@@ -138,6 +138,25 @@
 		
 		\column{.01\textwidth}
 
+	\end{columns}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{The branch-PR-merge cycle}
+	
+	\begin{columns}[c]
+		
+		\column{.6\textwidth} % Right column and width
+		\vspace{-1cm}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\textwidth]{./img/training-repo.png}
+		\end{figure}
+	
+		\column{.4\textwidth} % Right column and width
+		All screenshots in this slide comes from this repo: \trainingRepoURL{}
+		
 	\end{columns}
 \end{frame}
 
@@ -228,7 +247,7 @@
 		\end{figure}
 
 	\end{columns}
-	`\end{frame}
+\end{frame}
 
 
 \begin{frame}
@@ -354,6 +373,9 @@
 			\item Making people reviewers and assignees as well as 
 			using labels and projects are neat features, but not necessary 
 		\end{itemize}
+		
+		\vspace{.25cm}
+		\footnotesize See PR at \trainingRepoURL{/pull/1}
 		
 	\end{columns}
 \end{frame}
@@ -598,18 +620,6 @@
 		
 	\end{columns}
 \end{frame}
-
-\begin{frame}
-	\frametitle{Branch-PR-Merge Checklist}
-	I will make a checklist as a summary here
-	\begin{itemize}
-		\setlength\itemsep{1em}
-		\item Step 1
-		\item Step 2
-		\item Step 4
-	\end{itemize}		
-\end{frame}
-
 
 \section{Part 3: \newline Gitflow - When, how and how much to branch}
 
@@ -1060,20 +1070,18 @@
 	\end{minipage}
 \end{frame}
 
-
-
-
 \begin{frame}
 	\frametitle{Thank you!}
 	\huge\centering \textbf{Questions?}
 
 	\vspace{1cm}
-	\normalsize Slides can be found here: \url{https://osf.io/e54gy/}
+	\normalsize Most up to date version of these slides here: \url{https://osf.io/e54gy}
+	
+	\vspace{.2cm}
+	\normalsize The exact version of the slides used today here: \url{https://osf.io/ker4u}
 \end{frame}
 
 \input{../../Common-Resources/slides/GitHub-Links.tex}
-
-\input{../../Common-Resources/slides/GitHub-Commit-URL.tex}
 
 \section{Appendix A : A more detailed version of the branch-PR-merge cycle }
 
@@ -1199,6 +1207,9 @@
 		
 		First we complete a brnach-pr-merge cycle for the \textit{shine-bronze} branch
 		
+		\vspace{.25cm}
+		\footnotesize See PR at \trainingRepoURL{/pull/2}
+		
 	\end{columns}
 \end{frame}
 
@@ -1254,16 +1265,18 @@
 		
 		\column{.50\textwidth} % Left column and width
 		
-		If the merge have conflict you will see a warning like this 
+		If the merge have conflict you will see a warning 
 		and the \textit{Merge Pull Reques}t button is disabled. 
-		To solve the conflict click the \textit{Resolve Conflict} button
+		Click the \textit{Resolve Conflict} button.
 		
 		\vspace{.5cm}
 		
 		When solving the conflict a code editor opens in your browser. 
-		GitHub will ask you which part from which branch to use. 
 		The conflicts starts at \texttt{<<<<<<<} and ends \texttt{>>>>>>>}. 
 		And the parts that are from each branch is separated with a \texttt{=======} 
+		
+		\vspace{.25cm}
+		\footnotesize See PR at \trainingRepoURL{/pull/3}
 		
 	\end{columns}
 \end{frame}
@@ -1294,16 +1307,24 @@
 	\end{minipage}
 \end{frame}
 
+\input{../../Common-Resources/slides/GitHub-Commit-URL.tex}
+
+\end{document}
+
+\section{OLD SLIDES LOOKING FOR A NEW HOME}
 
 \begin{frame}
-	\frametitle{Un-draft the PR}
+	\frametitle{Step: Create an issue}
 	\begin{columns}[c]
 		
 		\column{.35\textwidth} % Left column and width
 		\begin{itemize}
-			\setlength\itemsep{1em}
-			\item Document what has been implemented in the branch
-			\item Un-drafting indicates that a PR is ready to review
+			\setlength\itemsep{.5em}
+			\item Issues is a far superior way to document tasks
+			compared to emails or in-person meetings!
+			\item They allow other team members to provide input
+			on how to solve the task
+			\item Very quick tasks that do not require discussion may not need an issue
 		\end{itemize}
 		
 		\column{.65\textwidth} % Right column and width
