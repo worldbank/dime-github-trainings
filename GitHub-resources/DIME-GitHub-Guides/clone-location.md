@@ -1,11 +1,14 @@
 # Clone location best practices
 
-This guide discusses best practices to where on your computer
+This guide discusses best practices for where on your computer
 you should clone the repositories you are working on.
 It is often fine to not follow these best practices for a long time -
-sometimes even years - but when that would cause an error,
-it will create error that are difficult to solve.
+sometimes even years - but when that causes an error,
+that error tend to be difficult to solve
+and/or risk you losing parts of your work.
 So, it is best to follow these best practices in the first place.
+
+**Table of content:**
 
 * [What are good locations for a clone?](#what-are-good-locations-for-a-clone)
 * How do I move a clone on my computer?
@@ -13,11 +16,11 @@ So, it is best to follow these best practices in the first place.
 
 ## What are good locations for a clone?
 
-Most places on your computer would be a good place for your clone,
+Most places on your computer are acceptable places for your clone,
 however, the places where you should not store your clone
 tend to be the first place most users would think of.
 In short, the clone should not be stored in a folder that is
-managed by another software or a remote team
+managed by another software or managed by a remote team
 such as the IT department of your organization.
 Common examples of folders managed by another software are folders
 synced by syncing software like OneDrive, Dropbox etc.
@@ -27,12 +30,11 @@ Read more below on why synced folders are not good locations for clones.
 In order to not have to remember what folders are good folders
 each time you clone a repository, it is a good practice to create a folder
 called `git`, `github`, `github-clones` or something similar
-where _all_ clones you work on are stored,
-no matter what project that clone is for.
+where _all_ clones for all projects you work on are stored.
 This way you only have to find a good location for your clones once,
 create this folder there and then clone all your clones in that folder.
 
-A common location for your clone is `C:\Users\username\github` on Window computers
+A common location for your clone is `C:\Users\username\github` on Windows computers
 (`C:\Users\wb123456\github` on WB computers where `123456` is replaced with your UPI)
 or `/Users/johnsmith/github` on Mac computers.
 Another common location is `C:\Users\username\Documents\github`
@@ -50,12 +52,14 @@ Any folder with this column (see image blow) is indeed synced in OneDrive.
 
 Another example of a type of folder where the clone should not be stored
 is a folder that is managed remotely by someone else, such as an IT department.
-It is common that you have a folder like this if
+It is common that you have one or several folders like this if
 your computer belongs to a large organization you are working for.
 Your access to this folder can change with little notice
 and you might therefore lose access to your clone.
-A almost universal convention across IT department in all organization
+A almost universal convention across IT department in all organizations
 is that your user folder in the `C:\Users\` (Windows) or `/Users/` (Mac)
 is a folder you should always have access to.
 That is another reasons why `C:\Users\username\github`
 or `/Users/johnsmith/github` are excellent locations for all your clone.
+
+## How do I move a clone on my computer?
