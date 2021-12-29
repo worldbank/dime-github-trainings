@@ -7,7 +7,7 @@ sometimes even years - but when that would cause an error,
 it will create error that are difficult to solve.
 So, it is best to follow these best practices in the first place.
 
-* What are good locations for a clone?
+* [What are good locations for a clone?](#what-are-good-locations-for-a-clone)
 * How do I move a clone on my computer?
 * Why are synced folders a bad location for my clone?
 
