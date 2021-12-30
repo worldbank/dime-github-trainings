@@ -63,3 +63,38 @@ That is another reasons why `C:\Users\username\github`
 or `/Users/johnsmith/github` are excellent locations for all your clone.
 
 ## How do I move a clone on my computer?
+
+There are two methods we recommend to move a clone on your computer.
+Method 1 is easiest but can only be done in some special circumstances.
+Method 2 can always be used.
+
+#### Method 1: Re-clone
+
+###### Important - read first
+
+**Important**: When using this method you will lose anything not committed to GitHub.com.
+Content that **will be lost** when using this method includes:
+* Edits yet to _both_ be committed and pushed to GitHub.com
+* Any files ignored in your `.gitignore` file
+* Empty folders
+
+If you are not sure this is ok in your case, use method 2.
+That method is almost as easy.
+
+One typical usecase for this method is when you want to change the location of a clone
+immediately after it was initially cloned
+and you have not yet made any changes to it's content.
+Another use case is when you have a clone to which you are never contributing.
+For example, in the case of an open source tool you are using in your code,
+but never make any contributions to.
+There are many other appropriate use cases,
+but it is up to you to make sure you can use this method in those cases.
+
+###### How to move the clone
+
+When this method is appropriate you can simply
+delete the folder of the clone and re-clone the repository.
+Make sure to delete the folder that contains the content of the repository
+that also shares the name of the repository. 
+
+#### Method 2: Move the existing clone
