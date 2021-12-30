@@ -1,47 +1,52 @@
 # Clone location best practices
 
 This guide discusses best practices for where on your computer
-you should clone the repositories you are working on.
-It is often fine to not follow these best practices for a long time -
-sometimes even years - but when that causes an error,
-that error tend to be difficult to solve
-and/or risk you losing parts of your work.
+you should clone repositories you are working on.
+It is common that users who do not follow these best practices
+do not encounter any problems for a long time - sometime even years.
+However, the day an error happens do to a bad location of the clone,
+then that error tends to be difficult to solve
+and/or risking that weeks of work are lost.
 So, it is best to follow these best practices in the first place.
 
 **Table of content:**
 
 * [What are good locations for a clone?](#what-are-good-locations-for-a-clone)
-* How do I move a clone on my computer?
-* Why are synced folders a bad location for my clone?
+* [How do I move a clone on my computer?](#how-do-i-move-a-clone-on-my-computer)
+* [Why are synced folders a bad location for my clone?](#why-are-synced-folders-a-bad-location-for-my-clone)
 
 ## What are good locations for a clone?
 
 Most places on your computer are acceptable places for your clone,
-however, the places where you should not store your clone
-tend to be the first place most users would think of.
+however, the places where you should not clone your repository
+tend to be the first places most users would think of.
+
 In short, the clone should not be stored in a folder that is
 managed by another software or managed by a remote team
 such as the IT department of your organization.
-Common examples of folders managed by another software are folders
-synced by syncing software like OneDrive, Dropbox etc.
+The most common example of a folder managed by another software are folders
+synced in syncing software like OneDrive, Dropbox etc.
 A non-shared synced folder is still not a good place for a clone.
-Read more below on why synced folders are not good locations for clones.
+Read more [below](#why-are-synced-folders-a-bad-location-for-my-clone)
+on why synced folders are not good locations for clones.
 
-In order to not have to remember what folders are good folders
+In order to not have to remember what locations are good locations
 each time you clone a repository, it is a good practice to create a folder
 called `git`, `github`, `github-clones` or something similar
-where _all_ clones for all projects you work on are stored.
+where _all_ clones for _all_ projects you work on are stored.
 This way you only have to find a good location for your clones once,
 create this folder there and then clone all your clones in that folder.
 
 A common location for your clone is `C:\Users\username\github` on Windows computers
-(`C:\Users\wb123456\github` on WB computers where `123456` is replaced with your UPI)
-or `/Users/johnsmith/github` on Mac computers.
+(more specifically `C:\Users\wb123456\github` on WB computers
+where `123456` is replaced with your UPI)
+or `/Users/username/github` on Mac computers.
 Another common location is `C:\Users\username\Documents\github`
-or `/Users/johnsmith/Documents/github`, however,
+or `/Users/username/Documents/github`, however,
 this location is acceptable only if OneDrive is not installed on your computer
 as then the `\Documents\` folder is also synced.
-This is common on all Windows 10 computers, and always the case on all WB computers.
+OneDrive is commonly installed on Windows 10 computers,
+and is always installed on all WB computers.
 
 The best way to know if your folder is synced in OneDrive
 is to check if the folder has the _Status_ column
@@ -56,11 +61,11 @@ It is common that you have one or several folders like this if
 your computer belongs to a large organization you are working for.
 Your access to this folder can change with little notice
 and you might therefore lose access to your clone.
-A almost universal convention across IT department in all organizations
-is that your user folder in the `C:\Users\` (Windows) or `/Users/` (Mac)
-is a folder you should always have access to.
+An almost universal convention across IT departments in most organizations
+is that your user folder in the path `C:\Users\` (Windows) or `/Users/` (Mac)
+is a folder you will always have access to.
 That is another reasons why `C:\Users\username\github`
-or `/Users/johnsmith/github` are excellent locations for all your clone.
+or `/Users/username/github` are excellent locations for all your clone.
 
 ## How do I move a clone on my computer?
 
@@ -70,22 +75,23 @@ Method 2 can always be used.
 
 #### Method 1: Re-clone
 
-###### Method 1: Important - read first
+##### M1: Important - read first
 
 **Important**: When using this method you will lose anything not committed to GitHub.com.
-If you are not sure this is ok in your case, use method 2.
+If you are unsure if that is acceptable in your case, use method 2.
 Content that **will be lost** when using this method includes:
-* Edits yet to _both_ be committed and pushed to GitHub.com
+* Edits not yet first committed and then also pushed to GitHub.com
 * Any files ignored in your `.gitignore` file
-* Empty folders
+* Empty folders or folders with only ignored files
 
-This method can be used to change the location of the clone in these cases:
-* Immediately after the clone was first cloned before any work is done
-* Open source tools you are using but not contributing to,
-and other repositories you never make any edits to.
-* Many other cases where you need to decide yourself if this method is appropriate
+Example of cases this method is appropriate to move clones on your computer includes:
 
-###### Method 1: How to move the clone
+* Immediately after the clone was first cloned before any work has been done
+* A clone of a repository you never make any edits to,
+such as an open source tool you use in your code without editing it first
+
+
+##### M1: How to move the clone
 
 In this method you simply delete the clone and clone the repository again.
 When deleting the clone it is important that you delete the full folder.
@@ -104,13 +110,16 @@ then just go to GitHub.com and clone it again.
 This method can also be used if you have some issues with a clone
 you know that you have no un-committed/pushed and no ignored files and
 and want to start over fresh.
+And in this case you can of course clone to the same location.
 
 #### Method 2: Move the existing clone
 
-If you want to move the clone and keep all content in the clone folder,
-also un-committed and ignored files, then you need to use this method.
+If you want to move the clone and keep all content,
+including content not pushed to GitHub.com
+such as un-committed edits and ignored files,
+then you need to use this method.
 
-###### Method 2: How to move the clone
+###### M2: How to move the clone
 
 First start by copying the clone folder to the new location.
 Remember that you need to copy the folder as well as its content.
@@ -123,8 +132,9 @@ selected as current repository.
 Then you should see the view in the first image below.
 Simply click the "_Locate_" and go to the new location of the clone.
 Remember to select the clone folder in this step,
-and not any of the content of the clone.
-In the example we use here you should select the folder called `lyrics-clone`.
+and not just the content of the clone.
+In the example we have used,
+this means that you should select the folder called `lyrics-clone`.
 See the second image below.
 
 <img src="https://github.com/worldbank/dime-github-trainings/blob/move-clone/GitHub-resources/DIME-GitHub-Guides/img/clone-not-found.png" width="75%"><!--- Image is read from master branch or use full URL-->
@@ -161,32 +171,44 @@ And while these errors are more rare they are
 likely to cause major disruptions when they happen.
 
 When syncing software detects a file with edits to be synced to the cloud,
-it blocks access to it for a fraction of a second.
+it blocks access to that file for a fraction of a second.
 That is fine when it is only much slower humans that also competes for access to those files.
 However, git is not a human and in certain git actions,
-git can make many updates in a fraction of a second to the files in the `.git` folder.
-There is always a `.git` folder in each clone folder
+git can make many updates in a fraction of a second
+to the technical files in the `.git` folder.
+There is always a `.git` folder in all clone folders,
 but depending on the settings of your computer,
-this folder might or might not be visible to you.
+this `.git` folder might or might not be visible to you.
 
-If git makes multiple changes to some of those technical files,
-then the later changes might not be possible to do
-as the syncing software currently blocks access to that file.
+As you use different features of GitHub Desktop,
+series of git commands are executed in the background in rapid succession.
+This means that git might do an edit to a file,
+then do something else and then need to make a second edit to that first file.
+This can happen within the same fraction of a second under which  
+a syncing software has blocked of access to the file.
+Sometimes this is fine, other times GitHub Desktop tells you there is an error,
+but sometimes there is an error in these files that is not detected immediately.
+
 This can lead to things like git not being aware that you have changed branch
 and commits you think you are committing to one branch,
 is actually pushed to a different branch.
-But since there is an error in the `.git` folder it might never show in your computer,
-and might not be detected until you push your edits to GitHub.com.
-This has happened in DIME projects.
+This is difficult enough to solved if identified early on,
+but it has happened in DIME projects that nothing was detected
+until it was pushed to GitHub.com and someone else tried to pull the same edits.
 
-Your commits you thought you did to one branch might have been made to other branches,
-but since those branches are different you might have very weird conflicts.
-And these conflicts are difficult to solve,
-as this types of conflicts are not expected to happen in the first place.
+Those errors can be as weird as according to GitHub Desktop,
+you are committing to one branch,
+thought what is really happening in the `.git` folder is that
+you are actually committing to some other branch.
+This will create weird conflicts that are difficult to solve.
 Sometimes the easiest way of solving such issue is to delete those commits
 and re-do all the work since the error happened.
-Since the error might have happened a while ago,
-this could mean weeks of lost work.
+Since the error might have been undetected for a while,
+this could mean weeks or months of lost work.
+
+Again, these errors are rare but they have happened a couple of time at DIME,
+but since the best practice is so easy to follow,
+we should all remember to not put our clones in synced folders.
 
 
 
