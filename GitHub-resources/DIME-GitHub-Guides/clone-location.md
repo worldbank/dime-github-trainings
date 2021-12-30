@@ -138,3 +138,57 @@ GitHub desktop will then identify this is the new location of the same clone,
 and it will detect that this is a clone of a repository hosted on GitHub.com.
 
 ## Why are synced folders a bad location for my clone?
+
+In short, syncing software and git are both collaboration tools,
+but they work very differently.
+And neither of the tools are implemented to work together,
+which can cause many different types of weird errors.
+
+#### Shared synced folders
+
+Putting a clone in a shared synced folder quickly leads to issues if
+more than one person is expected to work on the same clone in that shared folder.
+For example, if one user changes branch in the middle of someone else running the code,
+then all weird errors will happen as the files are changed by git.
+It is probably easy to see how this leads to errors
+and there is no standard workflow where this should ever be the norm.
+
+#### Non-shared synced folders
+
+What about non-shared synced folders? Then there will never be an issue with another user.
+While that is true, there are still errors than can happen in any kind of synced folder.
+And while these errors are more rare they are
+likely to cause major disruptions when they happen.
+
+When syncing software detects a file with edits to be synced to the cloud,
+it blocks access to it for a fraction of a second.
+That is fine when it is only much slower humans that also competes for access to those files.
+However, git is not a human and in certain git actions,
+git can make many updates in a fraction of a second to the files in the `.git` folder.
+There is always a `.git` folder in each clone folder
+but depending on the settings of your computer,
+this folder might or might not be visible to you.
+
+If git makes multiple changes to some of those technical files,
+then the later changes might not be possible to do
+as the syncing software currently blocks access to that file.
+This can lead to things like git not being aware that you have changed branch
+and commits you think you are committing to one branch,
+is actually pushed to a different branch.
+But since there is an error in the `.git` folder it might never show in your computer,
+and might not be detected until you push your edits to GitHub.com.
+This has happened in DIME projects.
+
+Your commits you thought you did to one branch might have been made to other branches,
+but since those branches are different you might have very weird conflicts.
+And these conflicts are difficult to solve,
+as this types of conflicts are not expected to happen in the first place.
+Sometimes the easiest way of solving such issue is to delete those commits
+and re-do all the work since the error happened.
+Since the error might have happened a while ago,
+this could mean weeks of lost work.
+
+
+
+
+One example, of this is that when you are doing a git action such as changing branch or making a commit, then Git makes many edits to many files inside the hidden folder `.git` that is in your clone folder regar
