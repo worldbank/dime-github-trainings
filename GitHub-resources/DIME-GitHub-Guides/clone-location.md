@@ -53,7 +53,7 @@ is to check if the folder has the _Status_ column
 when viewed in the file explorer.
 Any folder with this column (see image blow) is indeed synced in OneDrive.
 
-<img src="https://github.com/worldbank/dime-github-trainings/blob/move-clone/GitHub-resources/DIME-GitHub-Guides/img/onedrive-status.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-github-trainings/blob/move-clone/GitHub-resources/DIME-GitHub-Guides/img/clone-onedrive-status.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 Another example of a type of folder where the clone should not be stored
 is a folder that is managed remotely by someone else, such as an IT department.
@@ -139,7 +139,7 @@ See the second image below.
 
 <img src="https://github.com/worldbank/dime-github-trainings/blob/move-clone/GitHub-resources/DIME-GitHub-Guides/img/clone-not-found.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
-<img src="https://github.com/worldbank/dime-github-trainings/blob/move-clone/GitHub-resources/DIME-GitHub-Guides/img/new-location.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-github-trainings/blob/move-clone/GitHub-resources/DIME-GitHub-Guides/img/clone-new-location.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 If you do not see the screen where you are asked to locate the clone,
 then go to the menu of GitHub Desktop and select "_File_" -> "_Add local repository_".
@@ -209,8 +209,3 @@ this could mean weeks or months of lost work.
 Again, these errors are rare but they have happened a couple of time at DIME,
 but since the best practice is so easy to follow,
 we should all remember to not put our clones in synced folders.
-
-
-
-
-One example, of this is that when you are doing a git action such as changing branch or making a commit, then Git makes many edits to many files inside the hidden folder `.git` that is in your clone folder regar
