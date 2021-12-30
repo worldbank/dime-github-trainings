@@ -70,31 +70,71 @@ Method 2 can always be used.
 
 #### Method 1: Re-clone
 
-###### Important - read first
+###### Method 1: Important - read first
 
 **Important**: When using this method you will lose anything not committed to GitHub.com.
+If you are not sure this is ok in your case, use method 2.
 Content that **will be lost** when using this method includes:
 * Edits yet to _both_ be committed and pushed to GitHub.com
 * Any files ignored in your `.gitignore` file
 * Empty folders
 
-If you are not sure this is ok in your case, use method 2.
-That method is almost as easy.
+This method can be used to change the location of the clone in these cases:
+* Immediately after the clone was first cloned before any work is done
+* Open source tools you are using but not contributing to,
+and other repositories you never make any edits to.
+* Many other cases where you need to decide yourself if this method is appropriate
 
-One typical usecase for this method is when you want to change the location of a clone
-immediately after it was initially cloned
-and you have not yet made any changes to it's content.
-Another use case is when you have a clone to which you are never contributing.
-For example, in the case of an open source tool you are using in your code,
-but never make any contributions to.
-There are many other appropriate use cases,
-but it is up to you to make sure you can use this method in those cases.
+###### Method 1: How to move the clone
 
-###### How to move the clone
+In this method you simply delete the clone and clone the repository again.
+When deleting the clone it is important that you delete the full folder.
+This means that if your repository is called `lyrics-clone`
+then you should delete the folder called `lyrics-clone` and all its content.
 
-When this method is appropriate you can simply
-delete the folder of the clone and re-clone the repository.
-Make sure to delete the folder that contains the content of the repository
-that also shares the name of the repository. 
+If you open GitHub Desktop and select this repository as your current repository,
+then you will see the screen shown in the image below.
+Then simply click the button "_Clone Again_".
+If you do not see this screen or
+if you are not able to select the repository as current repository,
+then just go to GitHub.com and clone it again.
+
+<img src="https://github.com/worldbank/dime-github-trainings/blob/move-clone/GitHub-resources/DIME-GitHub-Guides/img/clone-not-found.png" width="75%"><!--- Image is read from master branch or use full URL-->
+
+This method can also be used if you have some issues with a clone
+you know that you have no un-committed/pushed and no ignored files and
+and want to start over fresh.
 
 #### Method 2: Move the existing clone
+
+If you want to move the clone and keep all content in the clone folder,
+also un-committed and ignored files, then you need to use this method.
+
+###### Method 2: How to move the clone
+
+First start by copying the clone folder to the new location.
+Remember that you need to copy the folder as well as its content.
+If you have a repository called `lyrics-clone`,
+then you need to copy the clone folder with that name as well as all its content.
+
+Once you have completed the move of the clone folder, then open GitHub Desktop.
+Make sure that you have the repository of the clone you are moving
+selected as current repository.
+Then you should see the view in the first image below.
+Simply click the "_Locate_" and go to the new location of the clone.
+Remember to select the clone folder in this step,
+and not any of the content of the clone.
+In the example we use here you should select the folder called `lyrics-clone`.
+See the second image below.
+
+<img src="https://github.com/worldbank/dime-github-trainings/blob/move-clone/GitHub-resources/DIME-GitHub-Guides/img/clone-not-found.png" width="75%"><!--- Image is read from master branch or use full URL-->
+
+<img src="https://github.com/worldbank/dime-github-trainings/blob/move-clone/GitHub-resources/DIME-GitHub-Guides/img/new-location.png" width="75%"><!--- Image is read from master branch or use full URL-->
+
+If you do not see the screen where you are asked to locate the clone,
+then go to the menu of GitHub Desktop and select "_File_" -> "_Add local repository_".
+Then use the menu that comes up and select the clone folder in the new location.
+GitHub desktop will then identify this is the new location of the same clone,
+and it will detect that this is a clone of a repository hosted on GitHub.com.
+
+## Why are synced folders a bad location for my clone?
