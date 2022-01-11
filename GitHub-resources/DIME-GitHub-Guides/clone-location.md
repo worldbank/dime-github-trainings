@@ -184,14 +184,14 @@ As you use different features of GitHub Desktop,
 series of git commands are executed in the background in rapid succession.
 This means that git might do an edit to a file,
 then do something else and then need to make a second edit to that first file.
-This can happen within the same fraction of a second under which  
+This can happen within the same fraction of a second under which
 a syncing software has blocked of access to the file.
 Sometimes this is fine, other times GitHub Desktop tells you there is an error,
 but sometimes there is an error in these files that is not detected immediately.
 
 This can lead to things like git not being aware that you have changed branch
 and commits you think you are committing to one branch,
-is actually pushed to a different branch.
+are actually pushed to a different branch.
 This is difficult enough to solved if identified early on,
 but it has happened in DIME projects that nothing was detected
 until it was pushed to GitHub.com and someone else tried to pull the same edits.
