@@ -51,7 +51,8 @@ and is always installed on all WB computers.
 The best way to know if your folder is synced in OneDrive
 is to check if the folder has the _Status_ column
 when viewed in the file explorer.
-Any folder with this column (see image blow) is indeed synced in OneDrive.
+Any folder with this column (see image below) is indeed synced in OneDrive 
+and **should not** be used to store clones.
 
 <img src="https://github.com/worldbank/dime-github-trainings/blob/move-clone/GitHub-resources/DIME-GitHub-Guides/img/clone-onedrive-status.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
