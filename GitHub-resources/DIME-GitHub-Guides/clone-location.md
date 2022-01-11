@@ -123,7 +123,7 @@ then you need to use this method.
 ###### M2: How to move the clone
 
 First start by copying the clone folder to the new location.
-Remember that you need to copy the folder as well as its content.
+Remember that you need to copy the folder and not just its content.
 If you have a repository called `lyrics-clone`,
 then you need to copy the clone folder with that name as well as all its content.
 
