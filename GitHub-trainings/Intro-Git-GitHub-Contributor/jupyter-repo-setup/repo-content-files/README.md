@@ -58,8 +58,10 @@ to find the LaTeX code used to generate the slides used in this training.
 Read more about LaTeX in our
 [LaTeX guidelines](https://github.com/worldbank/DIME-LaTeX-Templates).
 
-**Training repos**. There are two ways you can recreate
+**Training repo**. There are two ways you can recreate
 an identical copy of how this repo looks at the beginning of this training.
+If you are following a recording of this training and want to follow along,
+then this is what you need to do.
 
 1. The easiest way is to
 [import a copy of the repo](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer)
