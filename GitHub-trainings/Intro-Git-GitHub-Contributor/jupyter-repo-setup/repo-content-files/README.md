@@ -60,12 +60,13 @@ Read more about LaTeX in our
 
 **Training repos**. There are two ways you can recreate
 an identical copy of how this repo looks at the beginning of this training.
-The easiest way is to
+
+1. The easiest way is to
 [import a copy of the repo](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer)
 to your account.
 If you want a clean copy of the repo use this URL instead of the URL above.
 
-If you want to modify how these slides are created,
+2. If you want to modify how these slides are created,
 then you can find the python code used to set up this repos in the
 [jupyter-repo-setup](https://github.com/worldbank/dime-github-trainings/tree/main/GitHub-trainings/Intro-Git-GitHub-Contributor/jupyter-repo-setup)
 folder.
