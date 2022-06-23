@@ -64,7 +64,8 @@ an identical copy of how this repo looks at the beginning of this training.
 1. The easiest way is to
 [import a copy of the repo](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer)
 to your account.
-If you want a clean copy of the repo use this URL instead of the URL above.
+If you want a clean copy of the repo, make sure to use this URL:
+https://github.com/dime-wb-trainings/lyrics-clean.
 
 2. If you want to modify how these slides are created,
 then you can find the python code used to set up this repos in the
