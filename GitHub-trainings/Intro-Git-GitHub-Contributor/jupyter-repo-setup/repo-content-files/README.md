@@ -46,7 +46,30 @@ but without distracting us.
 
 ## Doing this training on your own
 
-This training was developed to be an interactive training taught by an instructor, but we are happy to share all material. If you are not participating in an in-person session and want to do this training on your own, go to [DIME Analytics GitHub training repo](https://github.com/worldbank/dime-github-trainings). There, you find the [LaTeX](https://github.com/worldbank/DIME-LaTeX-Templates) code to generate the slides used in this training, and the jupyter notebook code that you can run to create your own copy of this repository that you can interact with.
+This training was developed to be an interactive training taught by an instructor,
+but we are happy to share all material.
+You can find all the materials used in this training on the
+[DIME Analytics GitHub training repo](https://github.com/worldbank/dime-github-trainings).
+This repo also include the material for all our other GitHub trainings and resources.
+
+**Slides**. Go to the
+[latex-slides folder](https://github.com/worldbank/dime-github-trainings/tree/main/GitHub-trainings/Intro-Git-GitHub-Contributor/latex-slides)
+to find the LaTeX code used to generate the slides used in this training.
+Read more about LaTeX in our
+[LaTeX guidelines](https://github.com/worldbank/DIME-LaTeX-Templates).
+
+**Training repos**. There are two ways you can recreate
+an identical copy of how this repo looks at the beginning of this training.
+The easiest way is to
+[import a copy of the repo](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer)
+to your account.
+If you want a clean copy of the repo use this URL instead of the URL above.
+
+If you want to modify how these slides are created,
+then you can find the python code used to set up this repos in the
+[jupyter-repo-setup](https://github.com/worldbank/dime-github-trainings/tree/main/GitHub-trainings/Intro-Git-GitHub-Contributor/jupyter-repo-setup)
+folder.
+You can modify that script to create a copy of the repo however you want.
 
 ## Contact
 
