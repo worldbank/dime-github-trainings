@@ -16,14 +16,14 @@ All participants need to follow the steps below *before* the training. This is a
 
 #### When planning the training:
 
-* If people are attending remotely: Set up WebEx
+* If people are attending remotely: Set up a 120 min call using any of the Teams, Zoom, WebEx etc.
 * If people are attending in person: Make sure that the room is a VC room with a screen
 * If people are attending both remotely and in person, do both of the above!
 * Send the link to this page to all participants asking them to follow the _Participator_ instructions. Copy the instructor in that email.
 
 #### A day or two before the training:
 
-* Make sure that all participants has a GitHub account and a Git Client (GitHub Desktop if it is a beginner training).
+* Make sure that all participants has a GitHub account and has the Git Client GitHub Desktop installed.
 * Make sure that you have forwarded to the instructor all the GitHub account names that participants have sent to you.
 * Make sure that all participants are aware that this is an interactive training where it only make sense if everyone brings their own computer to the training.
 
