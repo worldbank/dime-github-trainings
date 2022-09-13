@@ -39,6 +39,9 @@
 # included no matter where in the repository folder they are
 # located unless you explicitly ignore that folder
 
+# Git placeholder file (to commit empty folders)
+!/**/*.gitkeep
+
 # Stata
 !/**/*.do
 !/**/*.ado
