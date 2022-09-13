@@ -21,6 +21,9 @@
 !.gitignore
 !.gitattributes
 
+# Git placeholder file (to commit empty folders)
+!/**/*.gitkeep
+
 # Keep markdown files used for documentation on GitHub
 !README.md
 !CONTRIBUTING.md
@@ -38,9 +41,6 @@
 # The following file types are code that should always be
 # included no matter where in the repository folder they are
 # located unless you explicitly ignore that folder
-
-# Git placeholder file (to commit empty folders)
-!/**/*.gitkeep
 
 # Stata
 !/**/*.do
