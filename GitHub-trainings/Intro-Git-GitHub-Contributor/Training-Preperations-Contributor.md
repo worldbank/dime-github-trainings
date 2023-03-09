@@ -6,7 +6,7 @@ All participants need to follow the steps below *before* the training. This is a
 
 1. If you do not already have a GitHub account, please follow [these instructions](https://github.com/worldbank/dime-github-trainings/blob/master/GitHub-resources/DIME-GitHub-Guides/Creating-GitHub-account.md) to sign up
 
-2. Please send your GitHub username to the organizer or the instructor for your training session. The instructor will then invite you to the training repository. You will need to accept that invitation in order to participate in the training.
+2. Please send your GitHub username to the organizer or the instructor for your training session. (If you signed up for this training using a form where you indicated your username - then you do not need to share it again.) The instructor will then invite you to the training repository. You will need to accept that invitation in order to participate in the training. 
 
 3. [Download and install the software GitHub Desktop](https://desktop.github.com/). This is a Github Client that is free to download. There are other Github clients but this training uses GitHub Desktop as it is the best client for beginners. After you have installed it, open it and log in using your GitHub account at least once.
 
