@@ -50,7 +50,7 @@ Read more about LaTeX in our
 3. Everyone creates a branch from this new branch
 4. 2 people try to edit the same file (one in the same line, another in a different section). The others add a new file. One person adds a catalog file.
 5. Commit changes, check the syntax of the commit
-6. Merge branches, see what happens
-7. Resolve Merge Conflicts
-8. merge back to the new branch, then develop
+6. Merge branches to the branch created in step 2, see what happens
+7. Resolve Merge Conflicts, set "approval"
+8. merge back to then develop
 9. Misc: Placeholder files, .git ignore, "hosted in repo"
