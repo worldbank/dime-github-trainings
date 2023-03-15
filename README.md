@@ -46,10 +46,11 @@ Read more about LaTeX in our
 
 ## EduAnalytics Training Specifications:
 1. Clone the repo to the right Github path
-2. Create a new branch (label it a purpose)
-3. 2 people try to edit the same file (one in the same line, another in a different section). The others add a new file. 
-4. Commit changes, check the syntax
-5. Merge branches, see what happens
-6. Create a new branch to add a catalog file
-7. merge back to develop
-8. Misc: Placeholder files, .git ignore, "hosted in repo"
+2. Create a new branch (name it with the purpose)
+3. Everyone creates a branch from this new branch
+4. 2 people try to edit the same file (one in the same line, another in a different section). The others add a new file. One person adds a catalog file.
+5. Commit changes, check the syntax of the commit
+6. Merge branches, see what happens
+7. Resolve Merge Conflicts
+8. merge back to the new branch, then develop
+9. Misc: Placeholder files, .git ignore, "hosted in repo"
