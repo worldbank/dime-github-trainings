@@ -6,12 +6,6 @@ This repository was created for a training session of
 You can read more about DIME Analytics Git and GitHub trainings
 [here](https://github.com/worldbank/dime-github-trainings).
 
-This is one of two beginner trainings.
-This one is for *Contributors*:
-people that will make code contributions and provide feedback using Git/GitHub.
-You can read more about Contributors and other roles in DIME Analytics
-[Suggested GitHub Project Roles](https://github.com/worldbank/dime-github-trainings/blob/master/GitHub-resources/DIME-GitHub-Roles/DIME-GitHub-roles.md).
-
 ## About this training
 
 This training targets both absolute beginners and people with some Git/GitHub experience
@@ -44,37 +38,18 @@ We will add lyrics to this repository in .txt files.
 We use that file format as it will behave the same way as any code file,
 but without distracting us.
 
-## Doing this training on your own
-
-This training was developed to be an interactive training taught by an instructor,
-but we are happy to share all material.
-You can find all the materials used in this training on the
-[DIME Analytics GitHub training repo](https://github.com/worldbank/dime-github-trainings).
-This repo also include the material for all our other GitHub trainings and resources.
-
 **Slides**. Go to the
 [latex-slides folder](https://github.com/worldbank/dime-github-trainings/tree/main/GitHub-trainings/Intro-Git-GitHub-Contributor/latex-slides)
 to find the LaTeX code used to generate the slides used in this training.
 Read more about LaTeX in our
 [LaTeX guidelines](https://github.com/worldbank/DIME-LaTeX-Templates).
 
-**Training repo**. There are two ways you can recreate
-an identical copy of how this repo looks at the beginning of this training.
-If you are following a recording of this training and want to follow along,
-then this is what you need to do.
-
-1. The easiest way is to
-[import a copy of the repo](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer)
-to your account.
-If you want a clean copy of the repo, make sure to use this URL:
-https://github.com/dime-wb-trainings/lyrics-clean.
-
-2. If you want to modify how these slides are created,
-then you can find the python code used to set up this repos in the
-[jupyter-repo-setup](https://github.com/worldbank/dime-github-trainings/tree/main/GitHub-trainings/Intro-Git-GitHub-Contributor/jupyter-repo-setup)
-folder.
-You can modify that script to create a copy of the repo however you want.
-
-## Contact
-
-If you have any questions about this training, please email us at dimeanalytics@worldbank.org
+## EduAnalytics Training Specifications:
+1. Clone the repo to the right Github path
+2. Create a new branch (label it a purpose)
+3. 2 people try to edit the same file (one in the same line, another in a different section). The others add a new file. 
+4. Commit changes, check the syntax
+5. Merge branches, see what happens
+6. Create a new branch to add a catalog file
+7. merge back to develop
+8. Misc: Placeholder files, .git ignore, "hosted in repo"
