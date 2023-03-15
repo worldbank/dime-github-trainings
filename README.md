@@ -53,4 +53,4 @@ Read more about LaTeX in our
 6. Merge branches to the branch created in step 2, see what happens
 7. Resolve Merge Conflicts, set "approval"
 8. merge back to then develop
-9. Misc: Placeholder files, .git ignore, "hosted in repo"
+9. Misc: Placeholder files, .git ignore, "hosted in repo", admin rights 
