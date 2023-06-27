@@ -50,6 +50,7 @@
 !/**/*.R
 !/**/*.Rmd
 !/**/*.Rproj
+!/**/*.qmd
 # Still ignore user file for R projects
 .Rproj.user
 
