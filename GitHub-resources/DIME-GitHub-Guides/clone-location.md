@@ -54,7 +54,7 @@ when viewed in the file explorer.
 Any folder with this column (see image below) is indeed synced in OneDrive 
 and **should not** be used to store clones.
 
-<img src="https://github.com/worldbank/dime-github-trainings/blob/move-clone/GitHub-resources/DIME-GitHub-Guides/img/clone-onedrive-status.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="./img/clone-onedrive-status.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 Another example of a type of folder where the clone should not be stored
 is a folder that is managed remotely by someone else, such as an IT department.
@@ -106,7 +106,7 @@ If you do not see this screen or
 if you are not able to select the repository as current repository,
 then just go to GitHub.com and clone it again.
 
-<img src="https://github.com/worldbank/dime-github-trainings/blob/move-clone/GitHub-resources/DIME-GitHub-Guides/img/clone-not-found.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="./img/clone-not-found.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 This method can also be used if you have some issues with a clone
 you know that you have no un-committed/pushed and no ignored files and
@@ -138,9 +138,9 @@ In the example we have used,
 this means that you should select the folder called `lyrics-clone`.
 See the second image below.
 
-<img src="https://github.com/worldbank/dime-github-trainings/blob/move-clone/GitHub-resources/DIME-GitHub-Guides/img/clone-not-found.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="./img/clone-not-found.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
-<img src="https://github.com/worldbank/dime-github-trainings/blob/move-clone/GitHub-resources/DIME-GitHub-Guides/img/clone-new-location.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="./img/clone-new-location.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 If you do not see the screen where you are asked to locate the clone,
 then go to the menu of GitHub Desktop and select "_File_" -> "_Add local repository_".
