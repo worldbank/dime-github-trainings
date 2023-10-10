@@ -41,6 +41,5 @@ To do that, follow these steps.
   1. Click emails in the menu (or click here https://github.com/settings/emails)
   1. In the field that says _Add email address_ enter the email you want to add as your second email. An email will be sent to that address with instructions for how to confirm that you own that email. Complete those instructions before doing next step.
 * **Set up notification for the second email**
-  1. After you have added a second email, click _Notifications_ in the settings menu (or click here https://github.com/settings/notifications, link only works if you are logged in to GitHub.com).
-  1. Make sure that you have the email box selected in the _Participating_ and _Watching_ section.
-  1. Then scroll down to the _Custom routing_ section where you can select which email  GitHub will send notifications from repositories hosted in organization accounts.
+  1. After you have added a second email, click _Notifications_ in the settings menu and then click _Custom Routing_ (or click here https://github.com/settings/notifications/custom_routing, link only works if you are logged in to GitHub.com).
+  1. Select the origanization accounts for which you want notifications sent to your second email. Any notification for any repo or project hosted on the account you select for the second email will be sent to that email.
