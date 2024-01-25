@@ -1,0 +1,121 @@
+---
+title: "PRWP Series: Git and GitHub"
+subtitle: "How the gold standard for code development can help research teams"
+author: "Kristoffer Bjarkefur"
+institute: DIME Analytics
+date: today
+date-format: "MMMM, YYYY"
+format:
+  dime-revealjs:
+    # Output file
+    output-file: index.html
+    # Table of Contents
+    toc: true
+    toc_float: true
+    toc-depth: 1
+    toc-location: body
+    toc-title: "Contents"
+    # Generate a self contained file
+    self-contained: true
+    self-contained-math: true
+    # Turn preview links within the presentation off (all links open in a new tab)
+    preview-links: false
+    # Logo and footer options
+    logo: "logos/DIME_COLOR.png"
+    footer: "[DIME Analytics](https://www.worldbank.org/en/research/dime/data-and-analytics) - [Reproducible Research Repository](https://reproducibility.worldbank.org/) - these slides"
+---
+
+```{r Setup}
+#| include: false
+# Add default ggplot theme. This can be overridden by your own theme at
+# the end of the ggplot graph.
+
+# DIME:
+source("_extensions/dime/setup_dime_palettes.R")
+source("_extensions/dime/setup_ggplot2_dime.R")
+```
+
+# What is Git and GitHub?
+
+## Git
+
+- Git is a protocol or a system to keep track of every changes made to a code base
+- It is optimized for sharing versions of code online
+- But Git is more than just versions control. It has great collaboration and quality assurance features as well
+
+## Git, GitHub and Git Clients
+
+Make the comparison to emails
+
+
+# Version control
+
+## Commits
+
+* All edits is packaged into something called commits.
+  * Each commit consists of all line-by-line differences to the previous commit
+* Each commit has a unique URL that you can permanently link to
+  * You can always point back to a specific version
+* Each commit show the difference from the previous commit 
+  * You can always compare, line-by-line what has changed between the current verison and any previous verison of the project
+
+# Collaboration
+
+## Branches
+
+Branches allows team members to work on new code without it impacting anyone else's code
+
+Once the team wants to include 
+
+## Review features
+
+# Git Clients
+
+## GitHub Desktop
+
+A Git Client such as GitHub Desktop is a software that allows you to package your edits into commits. 
+
+
+# Optimized for code
+
+## Raw text files
+
+Optimized for raw text files. All code no matter language is always raw text files.
+
+Some output is also raw text.
+
+The opposite is binary files. It includes all media files, Microsoft Office docs, PDF. 
+
+Also a lot fo data formats such as .dta file. .csv is a format that is raw text, but unless it is fully public data that we have right to republish, we should not store any data on GitHub
+
+## Binary files
+
+Git can handle them, but only very inefficiently
+
+If large binary files that are updated frequently are put on Git, then it will slow down your project folder, to the point it becoming impossible to work with
+
+There are settings that prevents binary files to be added to the project folder. We have templates for this that make this process easy and can be modified for each project's need.
+
+## Where to put data
+
+- API
+- An ignored folder data is manually added to
+- Code in Git and data on OneDrive etc. 
+
+# Reproducibilty featueres
+
+## Labels/Releases
+
+Each commit has a permanent and unique URL - but the automatically generated URL has a complicated technical format
+
+You can label a commit with anything you want. Software are often labeled as `v1.0`, `v13.2.14` etc. but we can label it anything we want. `baseline-report`, `prwp-submission` etc.
+
+This creates a 100% fail proof method on knowing exactly what code that genereated which report and where submitted to something, at any point in the future
+
+## Version control raw text outputs
+
+Tables in `.tex`, `.csv`, or `.md` format works perfectly to version control on git
+
+This allows you to be3 fully awawre of if any changes in your code makes any difference to your outputs
+
+

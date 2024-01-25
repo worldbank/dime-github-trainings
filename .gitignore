@@ -63,6 +63,7 @@
 
 # Markdown
 !/**/*.md
+!/**/*.qmd
 
 # Text files
 !/**/*.txt
