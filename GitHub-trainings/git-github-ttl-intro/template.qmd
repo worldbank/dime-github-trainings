@@ -27,66 +27,107 @@ format:
 
 ```{r Setup}
 #| include: false
-# Add default ggplot theme. This can be overridden by your own theme at
-# the end of the ggplot graph.
 
-# DIME:
+# DIME template:
 source("_extensions/dime/setup_dime_palettes.R")
 source("_extensions/dime/setup_ggplot2_dime.R")
 ```
 
+
 # What is Git and GitHub?
+
 
 ## Git
 
-- Git is a protocol or a system to keep track of every changes made to a code base
-- It is optimized for sharing versions of code online
-- But Git is more than just versions control. It has great collaboration and quality assurance features as well
+- Git is a protocol or a system to keep track of every changes made to a project's code
+- Git is made to be suitable to share these code versions over the internet
+- Git is more than just versions control - it has great collaboration and quality assurance features as well
 
 ## Git, GitHub and Git Clients
 
-Make the comparison to emails
+
+TODO: Compare Git to email. I.e., make a quarto version of this image: https://github.com/worldbank/dime-github-trainings/blob/main/GitHub-trainings/Common-Resources/img/git_github_gitclient_gitclient.png
 
 
 # Version control
 
+
 ## Commits
 
-* All edits is packaged into something called commits.
-  * Each commit consists of all line-by-line differences to the previous commit
+The center building block of version control in Git are "commits"
+
+* Code edits are packaged into commits
+
+* A commit consists of the line-by-line differences to the previous commit
+
 * Each commit has a unique URL that you can permanently link to
   * You can always point back to a specific version
+
 * Each commit show the difference from the previous commit 
-  * You can always compare, line-by-line what has changed between the current verison and any previous verison of the project
+  * You can always compare, line-by-line what has changed between the current version and any previous version of the project
+
+
 
 # Collaboration
 
+
 ## Branches
 
-Branches allows team members to work on new code without it impacting anyone else's code
+Branches allow the team to have parallel versions of the project at the same time
 
-Once the team wants to include 
+This enables team members to work on new code without it impacting any other team member's version of the code 
+
+This makes emails like "Please do not touch any files in this folder while I am working on them"
+
+This allows us to unleash our creativity and use our time experiment with the code instead of coordinate who modifies which file when
+
+Once the team wants to include the new code in the main code, GitHub makes it easy to do so
+
 
 ## Review features
 
+Merging a branch is an excellent time to review your code. Therefore GitHub as developed a lot of excellent review tools for that stage
+
+TODO: Show example of file differences tab in PRs
+
+TODO: Show example of comment feature in file differences tab
+
+TODO: Show example of code suggestion in file differences tab
+`
+
+
+
 # Git Clients
+
 
 ## GitHub Desktop
 
 A Git Client such as GitHub Desktop is a software that allows you to package your edits into commits. 
 
+There are different clients. I strongly recommend everyone using a graphic Git Client such as GitHub Desktop
+
+Since Git is a standardized protocol, members of the same team can use the Git Client of their choice
+
+
+## Curate your code before committing it
+
+Graphical Git Clients helps you curate your code such that you only 
+
+Yet another things that liberates your creativity. Experiment in your code and decide at this stage what code should be shared with rest of team, and discard code that was only useful in your development process
+
+TODO: Show example of file edit with a lot of `print`/`display` where only commit the relevant row
+
+
 
 # Optimized for code
 
+
 ## Raw text files
 
-Optimized for raw text files. All code no matter language is always raw text files.
-
-Some output is also raw text.
+Git is optimized for raw text files. All code, no matter language, is always raw text files.
 
 The opposite is binary files. It includes all media files, Microsoft Office docs, PDF. 
 
-Also a lot fo data formats such as .dta file. .csv is a format that is raw text, but unless it is fully public data that we have right to republish, we should not store any data on GitHub
 
 ## Binary files
 
@@ -96,13 +137,32 @@ If large binary files that are updated frequently are put on Git, then it will s
 
 There are settings that prevents binary files to be added to the project folder. We have templates for this that make this process easy and can be modified for each project's need.
 
-## Where to put data
 
+## Data
+
+Most data formats are binary. Such as `.dta` file or `.rdata`.
+
+`.csv` is a format that is raw text, but unless it is fully public data that we have right to republish, we should not store any data on GitHub
+
+
+## So, where to put data?
+
+TODO: Make into three columns
 - API
 - An ignored folder data is manually added to
 - Code in Git and data on OneDrive etc. 
 
+
+
 # Reproducibilty featueres
+
+
+## Version control raw text outputs
+
+Tables in `.tex`, `.csv`, or `.md` format works perfectly to version control on git
+
+This allows you to be3 fully aware of if any changes in your code makes any difference to your outputs
+
 
 ## Labels/Releases
 
@@ -110,12 +170,7 @@ Each commit has a permanent and unique URL - but the automatically generated URL
 
 You can label a commit with anything you want. Software are often labeled as `v1.0`, `v13.2.14` etc. but we can label it anything we want. `baseline-report`, `prwp-submission` etc.
 
-This creates a 100% fail proof method on knowing exactly what code that genereated which report and where submitted to something, at any point in the future
+This creates a reliable way to know exactly what code that generated which report and where submitted to something, at any point in the future
 
-## Version control raw text outputs
-
-Tables in `.tex`, `.csv`, or `.md` format works perfectly to version control on git
-
-This allows you to be3 fully awawre of if any changes in your code makes any difference to your outputs
 
 
