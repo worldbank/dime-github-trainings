@@ -50,7 +50,7 @@ Git/GitHub provides several tools for quality-assurance that will make your proj
 :::
 
 ::: {.column width="43%"}
-<img src="images/finaldoc_cartoon.png"/>
+<img src="img/finaldoc_cartoon.png"/>
 :::
 ::::
 
@@ -70,22 +70,22 @@ Git/GitHub provides several tools for quality-assurance that will make your proj
 :::
 
 ::: {.column width="30%"}
-<img src="images/git-logo.png"/>
+<img src="img/git-logo.png"/>
 :::
 ::::
 
 
 ## Git, GitHub and Git Clients
 
-<img src="images/git-email1.png"/>
+<img src="img/git-email1.png"/>
 
 ## Git, GitHub and Git Clients
 
-<img src="images/git-email2.png"/>
+<img src="img/git-email2.png"/>
 
 ## Git, GitHub and Git Clients
 
-<img src="images/git-email3.png"/>
+<img src="img/git-email3.png"/>
 
 
 # Version control
@@ -107,7 +107,7 @@ OneDrive, DropBox etc. saves full versions. Therefore, even if you have the most
 :::
 
 ::: {.column width="10%"}
-<img src="images/network-graph-1.png"/>
+<img src="img/network-graph-1.png"/>
 :::
 ::::
 
@@ -127,7 +127,7 @@ Git use the commits to "_calculate_" any version you select to "**_check-out_**"
 :::
 
 ::: {.column width="10%"}
-<img src="images/network-graph-1.png"/>
+<img src="img/network-graph-1.png"/>
 :::
 ::::
 
@@ -148,7 +148,7 @@ TODO: Image of commit on GitHub
 :::
 
 ::: {.column width="10%"}
-<img src="images/network-graph-1.png"/>
+<img src="img/network-graph-1.png"/>
 :::
 ::::
 
@@ -182,7 +182,7 @@ TODO: Image of compare of multiple commits on GitHub
 :::
 
 ::: {.column width="10%"}
-<img src="images/network-graph-1.png"/>
+<img src="img/network-graph-1.png"/>
 :::
 ::::
 
@@ -258,7 +258,7 @@ Makes emails like "_Please do not touch any files in this folder while I am work
 :::
 
 ::: {.column width="10%"}
-<img src="images/network-graph-2.png"/>
+<img src="img/network-graph-2.png"/>
 :::
 ::::
 
