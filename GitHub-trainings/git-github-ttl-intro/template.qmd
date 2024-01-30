@@ -33,7 +33,7 @@ source("_extensions/dime/setup_dime_palettes.R")
 source("_extensions/dime/setup_ggplot2_dime.R")
 ```
 
-# Motiviation and fundamentals
+# Motivation and fundamentals
 
 ## Why use Git/GitHub?
 
@@ -369,7 +369,7 @@ TODO: Something
 </table>
 ```
 
-# Reproducibilty featueres
+# Reproducibilty features
 
 ## Version control raw text outputs
 
@@ -377,7 +377,7 @@ TODO: Something
 :::: {.columns .v-center-container}
 ::: {.column width="50%"}
 
-Tables in `.tex`, `.csv`, or `.md` format works perfectly to version control on Git
+Tables in `.tex`, `.csv`, or `.md` format works perfectly to version control results on Git
 
 This allows you to be fully aware of if any changes in your code makes any difference to your outputs
 
