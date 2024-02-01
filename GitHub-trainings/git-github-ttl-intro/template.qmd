@@ -14,7 +14,7 @@ format:
     toc_float: true
     toc-depth: 1
     toc-location: body
-    toc-title: "Contents"
+    toc-title: "Sections"
     # Generate a self contained file
     self-contained: true
     self-contained-math: true
@@ -35,6 +35,15 @@ source("_extensions/dime/setup_ggplot2_dime.R")
 
 # Motivation and fundamentals
 
+## Today's project folder 
+::: {.vh-center-container width="50%"}
+A project folder in Git/GitHub is called a "_**repository**_".
+
+All examples in this slide are from this repository: [https://github.com/dime-wb-trainings/prwp-ttl](https://github.com/dime-wb-trainings/prwp-ttl)
+:::
+
+
+
 ## Why use Git/GitHub?
 
 :::: {.columns .v-center-container}
@@ -50,7 +59,8 @@ Git/GitHub provides several tools for quality-assurance that will make your proj
 :::
 
 ::: {.column width="43%"}
-<img src="img/finaldoc_cartoon.png"/>
+
+![](img/finaldoc_cartoon.png){fig-align="right"}
 :::
 ::::
 
@@ -70,22 +80,22 @@ Git/GitHub provides several tools for quality-assurance that will make your proj
 :::
 
 ::: {.column width="30%"}
-<img src="img/git-logo.png"/>
+![](img/git-logo.png){fig-align="center"}
 :::
 ::::
 
 
 ## Git, GitHub and Git Clients
 
-<img src="img/git-email1.png"/>
+![](img/git-email1.png){fig-align="center"}
 
 ## Git, GitHub and Git Clients
 
-<img src="img/git-email2.png"/>
+![](img/git-email2.png){fig-align="center"}
 
 ## Git, GitHub and Git Clients
 
-<img src="img/git-email3.png"/>
+![](img/git-email3.png){fig-align="center"}
 
 
 # Version control
@@ -107,7 +117,7 @@ OneDrive, DropBox etc. saves full versions. Therefore, even if you have the most
 :::
 
 ::: {.column width="10%"}
-<img src="img/network-graph-1.png"/>
+![](img/network-graph-1.png){fig-align="center"}
 :::
 ::::
 
@@ -127,20 +137,22 @@ Git use the commits to "_calculate_" any version you select to "**_check-out_**"
 :::
 
 ::: {.column width="10%"}
-<img src="img/network-graph-1.png"/>
+![](img/network-graph-1.png){fig-align="center"}
 :::
 ::::
 
 
-## GitHub is very clickable
+## GitHub is very clickable and linkable
 
 :::: {.columns .v-center-container}
 ::: {.column width="70%"}
 On GitHub, each commit is given a unique URL that can be shared within team to make conversation about code edits very exact. 
 
-These links are permanent and will forever show the edits in, for example, "D"
+These links are permanent and will forever show the edits in, for example, "D".
 
-TODO: Image of commit on GitHub
+See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/commit/a83c7ef80c4cfe5a57d845c62872f4ea9253c98d).
+
+![](img/commit-1file.png){fig-align="center"}
 
 :::
 
@@ -148,7 +160,7 @@ TODO: Image of commit on GitHub
 :::
 
 ::: {.column width="10%"}
-<img src="img/network-graph-1.png"/>
+![](img/network-graph-1.png){fig-align="center"}
 :::
 ::::
 
@@ -160,29 +172,32 @@ TODO: Image of commit on GitHub
 A commit is on the project level. This means, a commit includes the difference in all project files relative the previous commit
 
 If you check-out an old commit, Git restores all files in the project folder to that version
+
+See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/commit/05d71bce58f4c2d6cbc55b02c0b6666aa9273427).
+
 :::
 
 ::: {.column width="50%"}
-TODO: Image of commit for multiple files
+![](img/commit-2files.png){fig-align="center"}
 :::
 ::::
 
 
-## GitHub is very clickable
+## GitHub is very clickable and linkable
 
 :::: {.columns .v-center-container}
-::: {.column width="70%"}
+::: {.column width="35%"}
+It is also [possible](https://stackoverflow.com/a/63940108/6889416) to show the sum of the differences in multiple commits.
 
-It is also [possible](https://stackoverflow.com/a/63940108/6889416) to show the sum of the differences in multiple commits
+See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/compare/bc4dcc1210ad2f8c419139af023744dbc967aacc..c88cbc8f2007943564b8eff34a624a04600a7f65).
+:::
 
-TODO: Image of compare of multiple commits on GitHub
+::: {.column width="55%"}
+![](img/commit-compare.png){fig-align="center"}
 :::
 
 ::: {.column width="10%"}
-:::
-
-::: {.column width="10%"}
-<img src="img/network-graph-1.png"/>
+![](img/network-graph-1.png){fig-align="center"}
 :::
 ::::
 
@@ -202,7 +217,10 @@ Since Git is a standardized protocol, collaborators on the same project use diff
 :::
 
 ::: {.column width="50%"}
-TODO: Show example of file differences tab with comment and suggestion
+
+![](img/gui-client.png){fig-align="center"}
+
+![](img/cli-client.png){fig-align="center"}
 :::
 ::::
 
@@ -219,8 +237,11 @@ Do not save clones in a folder that is synced in OneDrive, Dropbox etc. On WB co
 
 :::
 
-::: {.column width="50%"}
-TODO: Something
+::: {.column width="20%"}
+:::
+
+::: {.column width="30%"}
+![](img/clone.png){fig-align="left"}
 :::
 ::::
 
@@ -236,7 +257,8 @@ This liberates your creativity! Experiment with your code and discard code with 
 :::
 
 ::: {.column width="50%"}
-TODO: Show example of file edit with a lot of `print`/`display` where only commit the relevant row
+
+![](img/curate-commit.png){fig-align="left"}
 :::
 ::::
 
@@ -258,7 +280,7 @@ Makes emails like "_Please do not touch any files in this folder while I am work
 :::
 
 ::: {.column width="10%"}
-<img src="img/network-graph-2.png"/>
+![](img/network-graph-2.png){fig-align="center"}
 :::
 ::::
 
@@ -274,30 +296,59 @@ Before merging is an excellent time to review code, and GitHub has therefore dev
 Work in a "_**feature**_" branch for small new edits. When code works in that branch, merge to main.
 
 Merge feature branches to a "_**dev**_" branch for a major new edits. When major task is done, merge to main.
+
+See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/pull/1/files#).
 :::
 
 ::: {.column width="50%"}
-TODO: Show example of file differences tab with comment and suggestion
+![](img/review-features.png){fig-align="center"}
+
 :::
 ::::
+
+## Network graph
+
+
+
+:::: {.columns .v-center-container}
+::: {.column width="70%"}
+
+GitHub repositories has a real time network graph that is live and updates whenever the repo changes. This is an excellent place to have an overview of what is going on in the project.
+
+See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/network).
+
+![](img/network-graph-gh){fig-align="center"}
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="10%"}
+![](img/network-graph-2.png){fig-align="center"}
+:::
+::::
+
 
 # Optimized for code
 
 ## Raw text files
 
 :::: {.columns .v-center-container}
-::: {.column width="30%"}
+::: {.column width="40%"}
 
 Git is optimized for raw text files. All code, no matter language, is always raw text files.
 
 The opposite is binary files. It includes all media files, Microsoft Office docs, PDF. 
 :::
 
-::: {.column width="10%"}
+::: {.column width="20%"}
 :::
 
-::: {.column width="60%"}
-TODO: Screen shot of code, and cross-overed PPT and Excel logo
+::: {.column width="40%" .h-center-container}
+
+![](img/r-code.png){fig-align="center"}
+
+![](img/binary-formats.png){fig-align="center"}
 :::
 ::::
 
@@ -305,7 +356,7 @@ TODO: Screen shot of code, and cross-overed PPT and Excel logo
 ## Binary files
 
 :::: {.columns .v-center-container}
-::: {.column width="50%"}
+::: {.column width="60%"}
 
 Git can handle them, but only in the same inefficient way as OneDrive/DropBox. Since all commits is stored on your computer, this will eventually be a major issue.
 
@@ -313,26 +364,28 @@ You can set "_**ignore**_" settings that prevents binary files to be saved in th
 
 :::
 
-::: {.column width="50%"}
-TODO: Screen shot of ignore template
+::: {.column width="40%"}
+![](img/ignore-example.png){fig-align="center"}
 :::
 ::::
 
 ## Data
 
 :::: {.columns .v-center-container}
-::: {.column width="50%"}
+
+::: {.column width="20%" .v-center-container}
+:::
+
+::: {.column width="60%"}
 
 What about data? Most data formats are binary. For example: `.dta` or `.rdata`.
 
 `.csv` is a format that is raw text, but unless it is fully public data that we have right to republish, we should not store any data on GitHub
 
 Git and GitHub is for code, not data.
-
 :::
 
-::: {.column width="50%"}
-TODO: Something
+::: {.column width="20%" .v-center-container}
 :::
 ::::
 
@@ -371,22 +424,35 @@ TODO: Something
 
 # Reproducibilty features
 
-## Version control raw text outputs
+## Version control of research output: raw text tables
 
 
 :::: {.columns .v-center-container}
-::: {.column width="50%"}
+::: {.column width="40%"}
 
 Tables in `.tex`, `.csv`, or `.md` format works perfectly to version control results on Git
 
 This allows you to be fully aware of if any changes in your code makes any difference to your outputs
 
+See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/commit/05d71bce58f4c2d6cbc55b02c0b6666aa9273427).
+
 :::
 
-::: {.column width="50%"}
-TODO: Screen shot of latex table with outputs that has changed
+::: {.column width="60%"}
+
+![](img/commit-2files.png){fig-align="center"}
 :::
 ::::
+
+## Version control of research output: graphs
+
+Many graph types can also be version controlled. However, this wont highlight the difference. 
+
+Changes in meta data can lead to a diff, that is not a difference in the data visualization. Therefore, no diff means the graphs has no difference, a diff can be a difference in the data but it can also just be a meta data diff.
+
+See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/commit/aac0f19be1de5f72b4e1ab99f1e4cf524d3e4469).
+
+![](img/graph-diff.png){fig-align="center"}
 
 
 ## Labels/Releases
@@ -398,12 +464,14 @@ Each commit has a permanent and unique URL - but the automatically generated URL
 
 You can label a commit with anything you want. Software are often labeled as `v1.0`, `v13.2.14` etc. but we can label it anything we want. `baseline-report`, `prwp-submission` etc.
 
-This creates a reliable way to know exactly what code that generated which report and where submitted to something, at any point in the future
+This creates a reliable way to know exactly what code that generated which report and where submitted to something, at any point in the future.
+
+See example [here](https://github.com/worldbank/rio-safe-space/releases/tag/WP).
 
 :::
 
 ::: {.column width="40%"}
-TODO: Something
+![](img/label.png){fig-align="center"}
 :::
 ::::
 
