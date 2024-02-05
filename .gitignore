@@ -63,17 +63,14 @@
 
 # Markdown
 !/**/*.md
+!/**/*.qmd
 
 # Text files
 !/**/*.txt
 
 #######################
-#Un-ignore all images used for Latex-presentations
-!**/Common-Resources/img/*.png
-!**/latex-slides/img/*.png
-
-#Un-ignore all images used in README is resources
-!**/github-resources/**/img/*.png
+#Un-ignore all png files directly in a folder called /img/
+!**/img/*.png
 
 #######################
 #Un-ignore all files needed when setting up the training repositories

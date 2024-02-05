@@ -1,0 +1,512 @@
+---
+title: "PRWP Series: Git and GitHub"
+subtitle: "How the gold standard for code development can help research teams"
+author: "Kristoffer Bjärkefur"
+institute: DIME Analytics
+date: today
+date-format: "MMMM, YYYY"
+format:
+  dime-revealjs:
+    # Output file
+    output-file: index.html
+    # Table of Contents
+    toc: true
+    toc_float: true
+    toc-depth: 1
+    toc-location: body
+    toc-title: "Sections"
+    # Generate a self contained file
+    self-contained: true
+    self-contained-math: true
+    # Turn preview links within the presentation off (all links open in a new tab)
+    preview-links: false
+    # Logo and footer options
+    logo: "logos/DIME_COLOR.png"
+    footer: "[DIME Analytics](https://www.worldbank.org/en/research/dime/data-and-analytics) - [Reproducible Research Repository](https://reproducibility.worldbank.org/) - [All versions of these slides](https://osf.io/92jtd)"
+---
+
+```{r Setup}
+#| include: false
+
+# DIME template:
+source("_extensions/dime/setup_dime_palettes.R")
+source("_extensions/dime/setup_ggplot2_dime.R")
+```
+
+# Motivation and fundamentals
+
+## Today's project folder 
+::: {.vh-center-container width="50%"}
+A project folder in Git/GitHub is called a "_**repository**_".
+
+All examples in these slides are from this repository: [https://github.com/dime-wb-trainings/prwp-ttl](https://github.com/dime-wb-trainings/prwp-ttl).
+:::
+
+
+
+## Why use Git/GitHub?
+
+:::: {.columns .v-center-container}
+
+::: {.column width="57%"}
+Git is the gold-standard tool to take full control over a project's code files.
+
+In 2024, no team that works with code should spend significant time on file management.
+
+Be able to browse, review and common on any code contribution made by anyone in the project - as a TTL, you should love this!
+
+Git/GitHub provides several tools for quality-assurance that will make your project's code better.
+:::
+
+::: {.column width="43%"}
+
+![](img/finaldoc_cartoon.png){fig-align="right"}
+:::
+::::
+
+# What is Git and GitHub?
+
+## Git
+
+:::: {.columns .v-center-container}
+
+::: {.column width="60%"}
+- Git is an open-source protocol to track changes made to code.
+- Changes are stored in packages intended to be shared over the internet.
+- Git was initially _"just"_ version control, but features built around this protocol has made it into much more.
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="30%"}
+![](img/git-logo.png){fig-align="center"}
+:::
+::::
+
+
+## Git, GitHub and Git Clients
+
+![](img/git-email1.png){fig-align="center"}
+
+## Git, GitHub and Git Clients
+
+![](img/git-email2.png){fig-align="center"}
+
+## Git, GitHub and Git Clients
+
+![](img/git-email3.png){fig-align="center"}
+
+
+# Version control
+
+## Commits
+
+:::: {.columns .v-center-container}
+::: {.column width="70%"}
+Version control is not unique to Git. OneDrive, DropBox etc. also has version control.
+
+Instead of saving the full file for each version (very inefficient), Git only saves the difference from the previous version (very efficient).
+
+Each saved line-by-line difference is called a "**_commit_**". This is the central building block in Git.
+
+OneDrive, DropBox etc. saves full versions. Therefore, even if you have the most expensive enterprise subscription, old versions will eventually be permanently deleted.
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="10%"}
+![](img/network-graph-1.png){fig-align="center"}
+:::
+::::
+
+
+## Gives access to **all** historic versions
+
+:::: {.columns .v-center-container}
+::: {.column width="60%"}
+Since commits are so efficient, all historic versions of your project is stored on your computer - without taking up significant disk space.
+
+You can tell Git to show any version of your code files - this is done without creating a chaos of multiple saved versions of each file.
+
+Git uses the commits to "_calculate_" any version you select to "**_check-out_**".
+:::
+
+::: {.column width="20%"}
+:::
+
+::: {.column width="10%"}
+![](img/network-graph-1.png){fig-align="center"}
+:::
+::::
+
+
+## GitHub is very clickable and linkable
+
+:::: {.columns .v-center-container}
+::: {.column width="70%"}
+On GitHub, each commit is given a unique URL - enabling easy and unambiguous conversation about code. 
+
+These links are permanent and will forever show the edits in a specific commit.
+
+See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/commit/a83c7ef80c4cfe5a57d845c62872f4ea9253c98d).
+
+![](img/commit-1file.png){fig-align="center"}
+
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="10%"}
+![](img/network-graph-1.png){fig-align="center"}
+:::
+::::
+
+## A commit is a snap shot of the full project
+
+:::: {.columns .v-center-container}
+::: {.column width="50%"}
+
+Every commit is on the project level. This means that a commit includes the difference in all project files relative the previous commit.
+
+If you check-out an old commit, Git restores all files in the project folder to that version.
+
+See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/commit/05d71bce58f4c2d6cbc55b02c0b6666aa9273427).
+
+:::
+
+::: {.column width="50%"}
+![](img/commit-2files.png){fig-align="center"}
+:::
+::::
+
+
+## GitHub is very clickable and linkable
+
+:::: {.columns .v-center-container}
+::: {.column width="35%"}
+It is also [possible](https://stackoverflow.com/a/63940108/6889416) to show the sum of the differences in multiple commits.
+
+See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/compare/bc4dcc1210ad2f8c419139af023744dbc967aacc..c88cbc8f2007943564b8eff34a624a04600a7f65).
+:::
+
+::: {.column width="55%"}
+![](img/commit-compare.png){fig-align="center"}
+:::
+
+::: {.column width="10%"}
+![](img/network-graph-1.png){fig-align="center"}
+:::
+::::
+
+# Git Clients
+
+## GitHub Desktop
+
+:::: {.columns .v-center-container}
+::: {.column width="55%"}
+
+A Git Client is a software that allows you to package your edits into commits. Many alternatives exists.
+
+We strongly recommend everyone using a GUI Git Client such as [GitHub Desktop](https://desktop.github.com/) (top picture). Unless you are a computer scientists, do not use the CLI tool (bottom picture) until you are an advanced Git user.
+
+Since Git is a standardized protocol, collaborators on the same project may use different Git Clients.
+
+:::
+
+::: {.column width="45%"}
+
+![](img/gui-client.png){fig-align="center"}
+
+![](img/cli-client.png){fig-align="center"}
+:::
+::::
+
+## Git Clone
+
+:::: {.columns .v-center-container}
+::: {.column width="50%"}
+
+A copy of a repository downloaded to your computer is called a "_**clone**_".
+
+You use your Git Client to clone a repository. The clone is and behaves like a regular folder on your computer. Work with the code files exactly how you usually do without Git.
+
+Do not save clones in a folder that is synced in OneDrive, Dropbox etc. On WB computers, the "_Documents_" folder is synced.
+
+:::
+
+::: {.column width="20%"}
+:::
+
+::: {.column width="30%"}
+![](img/clone.png){fig-align="left"}
+:::
+::::
+
+
+## Curate your code before committing it
+
+:::: {.columns .v-center-container}
+::: {.column width="50%"}
+
+GUI Git Clients helps you curate your code such that you are in full control what lines of codes are shared with the team.
+
+This liberates your creativity! Experiment with your code and discard test code only used in development with a click of a button.
+:::
+
+::: {.column width="50%"}
+
+![](img/curate-commit.png){fig-align="left"}
+:::
+::::
+
+# Collaboration
+
+## Branches
+
+:::: {.columns .v-center-container}
+::: {.column width="70%"}
+
+Commits allows us to jump to older versions of the code, "_**branches**_" allows us to jump to parallel versions of the code.
+
+Commits "_**pushed**_" to one branch does not impact other branches. Yet another way to unleash our creativity as we can experiment in a parallel version, and if not successful we discard the branch without "_**merging**_" them to the "_**main**_" branch.
+
+Makes emails like "_Please do not touch any files in this folder while I am working on them_" obsolete.
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="10%"}
+![](img/network-graph-2.png){fig-align="center"}
+:::
+::::
+
+## Review features
+
+:::: {.columns .v-center-container}
+::: {.column width="50%"}
+
+_"Git/GitHub: Come for the version control, stay for the review features!"_
+
+Right before merging is an excellent time to review code. GitHub has therefore developed many excellent review tools for that stage.
+
+* Discuss any line of code
+* Make suggestions directly to the code that the author can easily accept or rejct.
+
+See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/pull/1/files#).
+:::
+
+::: {.column width="50%"}
+![](img/review-features.png){fig-align="center"}
+
+:::
+::::
+
+## GitFlow
+
+:::: {.columns .v-center-container}
+::: {.column width="70%"}
+
+Git does not require that you use branches in any particular way. 
+
+Instead, there are two well-established and popular work-flow principles. Best suited for research projects with well-reviewed infrequent publications is: [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
+
+* Never work in the "_**main**_" branch - unless editing meta-files such as the README.
+
+* Work in a "_**feature**_" branch for small tasks. When code works in that branch, review and merge to main.
+
+* For larger tasks, split large tasks into smaller task solved in feature branches. Merge these into a "_**dev**_" branch until the large task is solved. Then, thorough review and merge to main.
+
+:::
+
+::: {.column width="30%"}
+![](img/gitflow.png){fig-align="center"}
+
+:::
+::::
+
+
+## Network graph
+
+
+
+:::: {.columns .v-center-container}
+::: {.column width="70%"}
+
+GitHub repositories have real-time network graphs that are live and update whenever the repo changes. 
+
+This is an excellent place to have an overview of what is going on in the project.
+
+See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/network).
+
+![](img/network-graph-gh){fig-align="center"}
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="10%"}
+![](img/network-graph-2.png){fig-align="center"}
+:::
+::::
+
+
+# Optimized for code
+
+## Raw text files
+
+:::: {.columns .v-center-container}
+::: {.column width="40%"}
+
+Git is optimized for raw text files. 
+
+All code, no matter language, is always raw text files.
+
+The opposite is binary files. It includes all media files, Microsoft Office docs, PDF. 
+:::
+
+::: {.column width="20%"}
+:::
+
+::: {.column width="40%" .h-center-container}
+
+![](img/r-code.png){fig-align="center"}
+
+![](img/binary-formats.png){fig-align="center"}
+:::
+::::
+
+
+## Binary files
+
+:::: {.columns .v-center-container}
+::: {.column width="60%"}
+
+Git _can_ handle binary file, but only in the same inefficient way as OneDrive/DropBox. 
+
+Since all commits are stored on your computer, this will eventually be a major issue.
+
+You can set "_**ignore**_" settings that prevents binary files to be added to Git even if they are saved in the project folder. 
+
+DIME Analytics has a [template](https://github.com/worldbank/dime-github-trainings/tree/main/GitHub-resources/DIME-GitHub-Templates) for this settings that can be modified for each project's need.
+
+:::
+
+::: {.column width="40%"}
+![](img/ignore-example.png){fig-align="center"}
+:::
+::::
+
+## Data
+
+:::: {.columns .v-center-container}
+
+::: {.column width="20%" .v-center-container}
+:::
+
+::: {.column width="60%"}
+
+What about data? Most data formats are binary. For example: `.dta` or `.rdata`.
+
+`.csv` is a format that is raw text, but unless it is fully public data that we have right to republish, we should not store any data on GitHub.
+
+Git and GitHub is for code, not data.
+:::
+
+::: {.column width="20%" .v-center-container}
+:::
+::::
+
+## So, where to put data?
+
+```{=html}
+<table style="table-layout: fixed; width: 100%;">
+  <thead>
+    <tr>
+      <th style="width: 33.33%; text-align: center;">API</th>
+      <th style="width: 33.33%; text-align: center;">Manually add</th>
+      <th style="width: 33.33%; text-align: center;">Multi-roots</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="width: 33.33%; padding: 25px;">
+        <div style="text-align: justify;">
+          If your data comes from an API, write an API call that loads the data into the code.<br><br>If code saves API data to the Git folder, make sure that data folders or data formats are ignored.
+        </div>
+      </td>
+      <td style="width: 33.33%; padding: 25px;">
+        <div style="text-align: justify;">
+          If the data does not update frequently, it can be shared in any traditional way and the user manually copies the data to the project folder before running the code the first time.<br><br>Make sure that data folders or data formats are ignored.
+        </div>
+      </td>
+      <td style="width: 33.33%; padding: 25px;">
+        <div style="text-align: justify;">
+          Have multiple roots in your projects file paths. Keep data in the old location and then point data file paths to a data folder in a that location. Point code file paths to the Git folder.<br><br>If intermediate data is saved to the Git folder, make sure that data folders or data formats are ignored.
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+```
+
+# Reproducibilty features
+
+## Version control of research output: raw text tables
+
+
+:::: {.columns .v-center-container}
+::: {.column width="40%"}
+
+Tables in raw text formats --- such as `.tex`, `.csv`, or `.md` --- works perfectly to version control in Git.
+
+This allows you to be fully aware of when changes in your code cause changes in your outputs.
+
+See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/commit/05d71bce58f4c2d6cbc55b02c0b6666aa9273427).
+
+:::
+
+::: {.column width="60%"}
+
+![](img/commit-2files.png){fig-align="center"}
+:::
+::::
+
+## Version control of research output: graphs
+
+Many graph types can also be version controlled - but less precisely. Visual comparisons before committing is only possible in GUI clients.
+
+Changes in meta data can make Git identify a difference that is not a difference in the data visualization. See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/commit/aac0f19be1de5f72b4e1ab99f1e4cf524d3e4469).
+
+Therefore, if Git identifies no difference, then the new graph is identical to the one already on the repository. However, when Git identifies a difference, it might just be the meta data that differs, and the data visualization is still identical.
+
+![](img/graph-diff.png){fig-align="center"}
+
+
+## Labels/Releases
+
+:::: {.columns .v-center-container}
+::: {.column width="55%"}
+
+Each commit has a permanent and unique URL - but the automatically generated URL has a complicated technical format.
+
+You can label a commit with anything you want. Software are often labeled as `v1.0`, `v13.2.14` etc. but we can label it anything we want. `baseline-report`, `prwp-submission` etc.
+
+This creates a reliable way to know exactly what code that generated which report and where submitted to something, at any point in the future.
+
+See example [here](https://github.com/worldbank/rio-safe-space/releases/tag/WP).
+
+:::
+
+::: {.column width="45%"}
+![](img/label.png){fig-align="center"}
+:::
+::::
+
+# Thank you! Questions?
+
+* Most recent and all old version of these slides in PDF format here: https://osf.io/92jtd
+* Repository with source file for these slides here: https://github.com/worldbank/dime-github-trainings
