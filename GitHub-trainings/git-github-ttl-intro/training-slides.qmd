@@ -507,3 +507,6 @@ See example [here](https://github.com/worldbank/rio-safe-space/releases/tag/WP).
 ::::
 
 # Thank you! Questions?
+
+* Most recent and all old version of these slides in PDF format here: https://osf.io/92jtd
+* Repository with source file for these slides here: https://github.com/worldbank/dime-github-trainings
