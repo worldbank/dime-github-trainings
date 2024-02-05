@@ -477,7 +477,7 @@ See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/commit/05d
 
 ## Version control of research output: graphs
 
-Many graph types can also be version controlled - but less precisely. 
+Many graph types can also be version controlled - but less precisely. Visual comparisons before committing is only possible in GUI clients.
 
 Changes in meta data can make Git identify a difference that is not a difference in the data visualization. See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/commit/aac0f19be1de5f72b4e1ab99f1e4cf524d3e4469).
 
