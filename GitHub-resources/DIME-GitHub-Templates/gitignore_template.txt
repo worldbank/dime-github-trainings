@@ -29,7 +29,7 @@
 !CONTRIBUTING.md
 !LICENSE*
 
-* Unignore reproot files
+* Unignore reproot files - see https://dime-worldbank.github.io/repkit/articles/reproot-files.html
 !reproot*.yaml
 
 #######################
