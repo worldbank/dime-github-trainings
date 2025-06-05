@@ -35,6 +35,37 @@ source("_extensions/dime/setup_ggplot2_dime.R")
 
 # Motivation and fundamentals
 
+## DIME Analytics Code and Data Recommendation
+
+<hr>
+
+:::: {.columns}
+::: {.column width="50%"}
+**DATA**
+ 
+Keep a pristine immutable backup of original data.
+ 
+Create any derivative data sets and output using code from this data.
+:::
+::: {.column width="50%"}
+**CODE**
+
+Version control all edits to your code using Git.
+
+This indirectly version controls all derivative data sets and output.
+
+:::
+::::
+
+<hr>
+
+More training sessions for Git/GitHub:
+
+- Join the contributor training during MSFR on Friday, June 13 at 9am ET.
+- We will after MSFR announce a round of contributor sessions this summer
+
+<hr>
+
 ## Why use Git/GitHub?
 
 :::: {.columns .v-center-container}
@@ -72,14 +103,35 @@ Git/GitHub provides several tools for quality-assurance that will make your proj
 
 :::: {.columns .v-center-container}
 
-::: {.column width="60%"}
+::: {.column width="50%"}
 
 - A project folder in Git/GitHub is called a "_**repository**_" – or just _**repo**_.
+- Repos are hosted on GitHub organization accounts. Users are given access through personal GitHub accounts.
 - All collaborators have a copy of the repo on their computer – this is called a _**clone**_.
 - You can review and observe in the browser, and then you do not need a clone.
 - All examples in this session are from this repository: [https://github.com/dime-wb-trainings/prwp-ttl](https://github.com/dime-wb-trainings/prwp-ttl).
 
 :::
+::::
+
+## GitHub Organization Accounts
+
+:::: {.columns .v-center-container}
+
+::: {.column width="45%"}
+
+Two organization accounts where we can host our repos:
+
+- https://github.com/worldbank 
+- https://github.com/dime-worldbank
+
+Guides for all actions (get or grant access, create a repo etc.) on the dime-worldbank landing page
+:::
+
+::: {.column width="55%"}
+![](img/dime-account.png){fig-align="center"}
+:::
+
 ::::
 
 # Version control
@@ -131,7 +183,6 @@ To keep historic versions in OneDrive/DropBox, you must save different versions 
 :::
 ::::
 
-
 ## GitHub is very clickable and linkable
 
 :::: {.columns .v-center-container}
@@ -172,6 +223,26 @@ See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/commit/05d
 :::
 ::::
 
+## Labels/Releases
+
+:::: {.columns .v-center-container}
+::: {.column width="55%"}
+
+You can label commits you think will be especially important for you or someone else in the future.
+
+You can label a commit with anything you want. Software are often labeled as `v1.0`, `v13.2.14` etc. but we can label it anything we want. `baseline-report`, `prwp-submission`, `RA-Bob-handhover` etc.
+
+This creates a reliable way to know exactly what code that generated which report and where submitted to something, at any point in the future.
+
+See example [here](https://github.com/worldbank/rio-safe-space/releases/tag/WP).
+
+:::
+
+::: {.column width="45%"}
+![](img/label.png){fig-align="center"}
+:::
+::::
+
 
 ## GitHub is very clickable and linkable
 
@@ -200,7 +271,9 @@ See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/compare/bc
 
 A Git Client is a software that allows you to package your edits into commits. Many alternatives exists.
 
-We strongly recommend everyone using a GUI Git Client such as [GitHub Desktop](https://desktop.github.com/) (top picture). Unless you are a computer scientists, do not use the CLI tool (bottom picture) until you are an advanced Git user.
+We strongly recommend everyone using a GUI Git Client such as [GitHub Desktop](https://desktop.github.com/) (top picture). 
+
+Unless you are a computer scientists, do not use the CLI tool (bottom picture) until you are an advanced Git user (if ever).
 
 Since Git is a standardized protocol, collaborators on the same project may use different Git Clients.
 
@@ -221,7 +294,9 @@ Since Git is a standardized protocol, collaborators on the same project may use 
 
 **Do not save clones in a folder that is synced in OneDrive, Dropbox etc.** Those collaboration tools work different and sometimes corrupt how Git shares content.
 
-On your computer, the files in the clone of the repository will looks and behaves like a regular project folder. Work with the code files exactly how you usually do without Git.
+On your computer, the files in the clone of the repository will looks and behaves like a regular project folder. 
+
+Work with the code files exactly how you usually do without Git.
 
 Edits are only committed and shared when the human decides to do so. **Collaboration with intent!**
 
@@ -245,7 +320,7 @@ GUI Git Clients helps you curate your code such that you are in full control wha
 
 Files are not synced on every edit, and we get to curate our edits before sharing. **This liberates team's creativity!**
 
-Experiment with your code and discard test code only used in development with a click of a button.
+Experiment with your code, add excessive print statements, and discard code you don't want to share with a click of a button.
 :::
 
 ::: {.column width="5%"}
@@ -408,9 +483,9 @@ Most data formats are binary. For example: `.dta` or `.rdata`.
 
 Some data formats (ex. `.csv`) are raw text, and can be tracked efficiently. However, GitHub is only graded for public data and frequent edits to raw text data can still create very large clones.
 
-Therefore, our recommendation is simply: Git and GitHub is for code, not data. 
+Therefore, our recommendation is simply: _Git and GitHub is for code, not data_. 
 
-But where should we save and share data? We have identified 3 methods.
+But where should we save and share data? We have identified three methods.
 
 DIME Analytics is happy to meet with DIME teams and discuss what method is best for them and help with setup.
 
@@ -463,9 +538,9 @@ _Cons:_
 :::: {.columns .v-center-container}
 ::: {.column width="80%"}
 
-_Example use case:_ Any project where the data is fetched through APIs or in other ways directly in the code.
+_Example use case:_ Any project where the code fetches the data through APIs or in other ways handled fully in the code.
 
-Write an API call that loads the data into working memory or saves it to file.
+Write an API call in the code that loads the data into working memory or saves it to file.
 
 If data is saved in the clone, make sure that data folders or data formats are ignored.
 
@@ -488,10 +563,6 @@ _Cons:_
 :::
 ::::
 
-:::
-
-::: {.column width="20%"}
-![](img/network-graph-2.png){fig-align="center"}
 :::
 ::::
 
@@ -572,27 +643,7 @@ Therefore, if Git identifies no difference, then the new graph is identical to t
 ![](img/graph-diff.png){fig-align="center"}
 
 
-# Under-utilized great features on GitHub
-
-## Labels/Releases
-
-:::: {.columns .v-center-container}
-::: {.column width="55%"}
-
-Each commit has a permanent and unique URL - but the automatically generated URL has a complicated technical format.
-
-You can label a commit with anything you want. Software are often labeled as `v1.0`, `v13.2.14` etc. but we can label it anything we want. `baseline-report`, `prwp-submission`, `RA-Bob-handhover` etc.
-
-This creates a reliable way to know exactly what code that generated which report and where submitted to something, at any point in the future.
-
-See example [here](https://github.com/worldbank/rio-safe-space/releases/tag/WP).
-
-:::
-
-::: {.column width="45%"}
-![](img/label.png){fig-align="center"}
-:::
-::::
+# Other great GitHub features
 
 ## Issues
 
@@ -638,5 +689,7 @@ See example [here](https://github.com/worldbank/repkit/blame/main/src/ado/reprun
 
 # Thank you! Questions?
 
-* Most recent and all old version of these slides in PDF format here: https://osf.io/92jtd
+I also welcome at this point other TTLs to share their experiences on migrating to and using Git/GitHub!
+
+
 * Repository with source file for these slides here: https://github.com/worldbank/dime-github-trainings
