@@ -8,7 +8,7 @@ date-format: "MMMM, YYYY"
 format:
   dime-revealjs:
     # Output file
-    output-file: index.html
+    output-file: training-slides-dime-cdp.html
     # Table of Contents
     toc: true
     toc_float: true
@@ -21,7 +21,7 @@ format:
     # Turn preview links within the presentation off (all links open in a new tab)
     preview-links: false
     # Logo and footer options
-    logo: "logos/DIME_COLOR.png"
+    logo: "_extensions/dime/logos/DIME_COLOR.png"
     footer: "[DIME Analytics](https://www.worldbank.org/en/research/dime/data-and-analytics) - [Reproducible Research Repository](https://reproducibility.worldbank.org/) - [All versions of these slides](https://osf.io/92jtd)"
 ---
 
