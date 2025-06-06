@@ -21,7 +21,7 @@ format:
     # Turn preview links within the presentation off (all links open in a new tab)
     preview-links: false
     # Logo and footer options
-    logo: "_extensions/dime/logos/DIME_COLOR.png"
+    logo: "_extensions/dime/logos/WB-DEC-Impact-horizontal-RGB-high.png"
     footer: "[DIME Analytics](https://www.worldbank.org/en/research/dime/data-and-analytics) - [Reproducible Research Repository](https://reproducibility.worldbank.org/) - [All versions of these slides](https://osf.io/92jtd)"
 ---
 
@@ -61,7 +61,7 @@ This indirectly version controls all derivative data sets and outputs.
 
 More training sessions for Git/GitHub:
 
-- Join the contributor training during MSFR on Friday, June 13 at 9am ET.
+- Join the contributor training during MSFR on Friday, June 13 at 9am ET. MSFR agenda: https://bit.ly/msfr25-agenda
 - After MSFR, we will announce a round of contributor sessions this summer.
 
 <hr>
@@ -266,57 +266,12 @@ See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/compare/bc
 
 # Git Clients
 
-## GitHub Desktop
-
-:::: {.columns .v-center-container}
-::: {.column width="55%"}
-
-A Git Client is a software that allows you to package your edits into commits. Many alternatives exist.
-
-We strongly recommend everyone use a GUI Git Client such as [GitHub Desktop](https://desktop.github.com/) (top picture). 
-
-Unless you are a computer scientist, do not use the CLI tool (bottom picture) until you are an advanced Git user (if ever).
-
-Since Git is a standardized protocol, collaborators on the same project may use different Git Clients.
-
-:::
-
-::: {.column width="45%"}
-
-![](img/gui-client.png){fig-align="center"}
-
-![](img/cli-client.png){fig-align="center"}
-:::
-::::
-
-## Git Clone
-
-:::: {.columns .v-center-container}
-::: {.column width="68%"}
-
-**Do not save clones in a folder that is synced in OneDrive, Dropbox, etc.** Those collaboration tools work differently and sometimes corrupt how Git shares content.
-
-On your computer, the files in the cloned repository will look and behave like a regular project folder. 
-
-Work with the code files exactly how you usually do without Git.
-
-Edits are only committed and shared when you decide to do so. **Collaboration with intent!**
-
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="27%"}
-![](img/clone.png){fig-align="left"}
-:::
-::::
-
-
 ## Curate your code before committing it
 
 :::: {.columns .v-center-container}
-::: {.column width="45%"}
+::: {.column width="50%"}
+
+A Git Client is a software that allows you to package your edits into commits.
 
 GUI Git Clients help you curate your code so that you have full control over which lines of code are shared with the team.
 
@@ -433,7 +388,9 @@ See this example [here](https://github.com/dime-wb-trainings/prwp-ttl/network).
 
 Git is optimized for raw text files. 
 
-All code, regardless of language, is stored as raw text files. Formats like `.tex`, `.md`, and `.qmd` are also raw text.
+All code, regardless of language, is stored as raw text files. 
+
+Formats like `.tex`, `.md`, and `.qmd` are also raw text.
 
 In contrast, binary files include all media files, Microsoft Office documents, PDFs, etc.
 :::
@@ -457,9 +414,9 @@ In contrast, binary files include all media files, Microsoft Office documents, P
 
 Git _can_ handle binary files, but only in the same inefficient way as OneDrive or DropBox. 
 
-Since all commits are saved in your clone, tracking binary files risks making the clone so large that no regular computer can handle it.
-
 All repos created by DIME Analytics come with an "_**ignore file**_" that prevents binary files from being tracked by Git even if they are saved in the clone. 
+
+Since all commits are saved in your clone, tracking binary files risks making the clone so large that no regular computer can handle it.
 
 The DIME Analytics [ignore template](https://github.com/worldbank/dime-github-trainings/tree/main/GitHub-resources/DIME-GitHub-Templates) can be modified for each project's needs, but this is rarely necessary.
 
