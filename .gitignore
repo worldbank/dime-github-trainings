@@ -65,6 +65,10 @@
 !/**/*.md
 !/**/*.qmd
 
+#######################
+# Un-ignore all files needed for quarto templates
+!**/_extensions/**/*.*
+
 # Text files
 !/**/*.txt
 

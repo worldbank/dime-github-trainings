@@ -1,0 +1,19 @@
+# {.center .center-x}
+
+<table width = "100%">
+<tbody>
+  <tr>
+    <td style = "vertical-align: baseline; text-align: center;" width = "40%">
+      <img src = "https://github.com/dime-worldbank.png" class = "picture" style="vertical-align: baseline" />
+    </td>
+    <td style = "vertical-align: middle; text-align: center;" width = "60%">
+      <ul style = "list-style:none;">
+        <li><a href = "https://www.worldbank.org/en/research/dime" target = "_blank"><i class = "fas fa-home"></i> DIME</a></li>
+        <li><a href = "https://www.linkedin.com/company/the-world-bank" target = "_blank"><i class = "fab fa-linkedin"></i> the-world-bank</a></li>
+        <li><a href = "https://github.com/dime-worldbank/" target = "_blank"><i class = "fab fa-github"></i> dime-worldbank</a></li>
+        <li><a href = "https://twitter.com/wb_research" target = "_blank"><i class = "fab fa-twitter"></i> wb_research</a></li>
+      </ul>
+    </td>
+  </tr>
+</tbody>
+</table>

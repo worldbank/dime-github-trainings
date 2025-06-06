@@ -1,0 +1,192 @@
+/*-- scss:defaults --*/
+
+// importing fonts Arimo and Lato
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+// fonts
+$font-family-sans-serif: 'Lato', sans-serif !default;
+
+// headings
+$presentation-heading-font: 'Lato', sans-serif  !default;
+$presentation-heading-color: #07202E !default;
+$h1-font-size: 1.6em !default;
+$h2-font-size: 1.3em !default;
+$h3-font-size: 1.15em !default;
+
+//code
+$code-color: #4090BE !default;
+$font-family-monospace: 'Inconsolata', monospace  !default;
+
+// general  
+$body-bg: #FFFFFF;
+$Almost-White: #f8f8f8;
+$body-color: #000000;
+$link-color: #4090BE;
+$solid-blue: #07202E;
+$presentation-font-size-root: 28px;
+
+// math
+$math-fontsize: 80%;
+
+/*-- scss:rules --*/
+.reveal pre code {
+  background-color: #f8f8f8;
+  font-size: 1em;
+  padding: 0.5em;
+  line-height: 1.2em;
+}
+
+.reveal .slide-number a {
+  color: $link-color;
+}
+
+#title-slide {
+  text-align: left;
+  
+  .title {
+    font-size: 1.5em;
+    border-bottom: 5px solid $link-color;
+  }
+  .title:after {
+    content: '';
+    display: block;
+    border-bottom: 5px solid $solid-blue;
+    margin-bottom: -5px;
+    max-width: 50%;
+  }
+  
+  .subtitle {
+  color: $solid-blue;
+  font-size: 90%;
+  font-family: $presentation-heading-font;
+  }
+  
+  
+  .institute, .quarto-title-affiliation {
+    font-style: italic;
+    font-size: 80%;
+  }
+
+  .author, .quarto-title-author-name {
+    color: $solid-blue;
+    font-size: 85%;
+  }
+  
+  .date, .quarto-title-author-name {
+    color: $solid-blue;
+    font-size: 80%;
+  }
+
+  .quarto-title-authors {
+    display: flex;
+    justify-content: left;
+  
+    .quarto-title-author {
+      padding-left: 0em;
+      padding-right: 0em;
+      width: 100%;
+    }
+  }
+  
+  p.author::before, div.quarto-title-author::before {
+    content: "";
+    display: block;
+    border: none;
+    background-color: $body-bg;
+    color: $solid-blue;
+    height: 3px;
+    margin-bottom: 1em;
+  }
+
+  p, a {
+    color: $solid-blue;
+  }
+}
+
+.author {
+  color: $solid-blue;
+  font-size: $h2-font-size;
+  font-family: $presentation-heading-font;
+}
+
+.footer {
+  font-family: $presentation-heading-font;
+}
+
+.reveal .slide-number {
+  font-family: $presentation-heading-font;
+}
+
+.reveal .panel-tabset [role=tab] {
+    font-size: 0.8em;
+}
+
+.reveal .footer {
+    color: black;
+}
+
+.has-dark-background .footer {
+    color: white;
+}
+
+.center-x{
+    text-align: center;
+}
+
+.center-xy {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%), translateX(-50%);
+  transform: translateY(-50%), translateX(-50%);
+}
+
+section.has-dark-background a, section.has-dark-background a:hover {
+    color: $Almost-White;
+}
+
+.slide-logo {
+  display: block !important;
+  position: fixed !important;
+  top: 0 !important;
+  right: 10px !important;
+  max-height: 8% !important;
+  height: 100% !important;
+  width: auto !important;
+  color: $body-color !important;
+}
+
+.slide-number, .reveal.has-logo .slide-number {
+  bottom: 10px !important;
+  right: 10px !important;
+  top: unset !important;
+  color: $body-color !important;
+}
+
+// Vertically Centering Elements
+.v-center-container {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+// Vertically and Horizontal Centering Elements
+.vh-center-container {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  text-align:  center;
+}
+
+.h-center-container {
+  text-align:  center;
+}
+
+// Math
+.MathJax {
+    font-size: $math-fontsize !important;
+}
+
