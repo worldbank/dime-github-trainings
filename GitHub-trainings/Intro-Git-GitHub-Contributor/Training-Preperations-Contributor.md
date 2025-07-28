@@ -1,23 +1,29 @@
-# Preparations - Intro to Git/GitHub Contributor training
+# Preparations – Intro to Git/GitHub Contributor Training
 
 ## Participator
 
-All participants need to follow the steps below *before* the training. This is an interactive training so it is important that all participants follow all these instruction and bring their laptop to the training.
+All participants are expected to complete the steps below *before* the training. This is an interactive session, so it is essential that everyone follows these instructions and brings their laptop to the training.
 
-1. If you do not already have a GitHub account, please follow [these instructions](https://github.com/worldbank/dime-github-trainings/blob/master/GitHub-resources/DIME-GitHub-Guides/Creating-GitHub-account.md) to sign up. If you already have a GitHub account you do not need to create a dedicated one for your WB work.
+1. If you do not already have a GitHub account, please follow [these best-practice instructions](https://github.com/worldbank/dime-github-trainings/blob/master/GitHub-resources/DIME-GitHub-Guides/Creating-GitHub-account.md) to sign up.  
+   If you already have a GitHub account, you do **not** need to create a separate one for your WB work.
 
-2. Please send your GitHub username to the organizer or the instructor for your training session. (If you signed up for this training using a form where you indicated your username - then you do not need to share it again.) The instructor will then invite you to the training repository.
+2. Please send your GitHub username to the organizer or instructor of your training session.  
+   (If you provided your username when signing up via a form, you do not need to send it again.)  
+   The instructor will invite you to the training repository.
 
-3. Install the software GitHub Desktop. This is a free Github Client approved for WB computers. There are other Github clients but this training uses GitHub Desktop as it is the best client for beginners. 
-    * **Personal computer**: [Download GitHub Desktop installer here](https://desktop.github.com/)
-    * **WB computer**: Open *Software Center* from the Windows Start menu. Search for GitHub Desktop and then click install.
+3. Install the GitHub Desktop application. This is a free GitHub client approved for WB computers.  
+   While other clients exist, this training uses GitHub Desktop because it is the most beginner-friendly option.
+   - **Personal computer**: [Download GitHub Desktop here](https://desktop.github.com/)
+   - **WB computer**: Open *Software Center* from the Windows Start menu. Search for **GitHub Desktop** and click **Install**.
 
-4. After you have installed GitHub Desktop, open it and go to _Options_ in the _File_ menu. Log in using the same GitHub account.
-     * _Optionally_: You can also go to _About GitHub Desktop_ in the _Help_ menu to see if there is a new version of the software. _Software center_ usually do not install the very latest version. In the future, GitHub desktop updates itself.
+4. After installing GitHub Desktop, open it and go to _File_ → _Options_, then log in using your GitHub account.  
+   - _Optional_: Go to _Help_ → _About GitHub Desktop_ to check for updates.  
+     (Note: *Software Center* may not install the latest version. In the future, GitHub Desktop will update itself automatically.)
 
-5. Accept the invitation sent out by the instructor in step 2. 
+5. Accept the invitation to the training repository sent by your instructor (see Step 2).
 
-6. Bring the computer where you installed GitHub Desktop to the training.
+6. Bring the laptop with GitHub Desktop installed to the training session.
+
 
 ## Organizer
 
