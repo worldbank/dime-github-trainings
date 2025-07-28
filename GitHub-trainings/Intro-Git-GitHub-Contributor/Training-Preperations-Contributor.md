@@ -5,9 +5,10 @@
 All participants are expected to complete the steps below *before* the training. This is an interactive session, so it is essential that everyone follows these instructions and brings their laptop to the training.
 
 1. If you do not already have a GitHub account, please follow [these best-practice instructions](https://github.com/worldbank/dime-github-trainings/blob/master/GitHub-resources/DIME-GitHub-Guides/Creating-GitHub-account.md) to sign up.  
-   If you already have a GitHub account, you do **not** need to create a separate one for your WB work.
+   If you already have a GitHub account, you do **not** need to create a separate one for your WB work.  
+   (See the best-practice guide for details on using a single account for both personal and professional use.)
 
-2. Please send your GitHub username to the organizer or instructor of your training session.  
+2. Send your GitHub username to the organizer or instructor of your training session.  
    (If you provided your username when signing up via a form, you do not need to send it again.)  
    The instructor will invite you to the training repository.
 
@@ -18,12 +19,11 @@ All participants are expected to complete the steps below *before* the training.
 
 4. After installing GitHub Desktop, open it and go to _File_ → _Options_, then log in using your GitHub account.  
    - _Optional_: Go to _Help_ → _About GitHub Desktop_ to check for updates.  
-     (Note: *Software Center* may not install the latest version. In the future, GitHub Desktop will update itself automatically.)
+     (*Software Center* may not install the latest version. GitHub Desktop will regardless evenutally update itself automatically.)
 
 5. Accept the invitation to the training repository sent by your instructor (see Step 2).
 
 6. Bring the laptop with GitHub Desktop installed to the training session.
-
 
 ## Organizer
 
