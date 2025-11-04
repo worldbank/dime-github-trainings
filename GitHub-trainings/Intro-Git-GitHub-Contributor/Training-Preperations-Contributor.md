@@ -11,19 +11,20 @@ All participants are expected to complete the steps below *before* the training.
 2. Send your GitHub username to the organizer or instructor of your training session.  
    (If you provided your username when signing up via a form, you do not need to send it again.)  
    The instructor will invite you to the training repository.
+   - _Do not send the email address associated with your GitHub account, we need your username. Your username is in the URL to your proile page on GitHub.com, so if unsure, you can alsways share that URL._
 
-3. Install the GitHub Desktop application. This is a free GitHub client approved for WB computers.  
+4. Install the GitHub Desktop application. This is a free GitHub client approved for WB computers.  
    While other clients exist, this training uses GitHub Desktop because it is the most beginner-friendly option.
    - **Personal computer**: [Download GitHub Desktop here](https://desktop.github.com/)
    - **WB computer**: Open *Software Center* from the Windows Start menu. Search for **GitHub Desktop** and click **Install**.
 
-4. After installing GitHub Desktop, open it and go to _File_ → _Options_, then log in using your GitHub account.  
+5. After installing GitHub Desktop, open it and go to _File_ → _Options_, then log in using your GitHub account.  
    - _Optional_: Go to _Help_ → _About GitHub Desktop_ to check for updates.  
      (*Software Center* may not install the latest version. GitHub Desktop will regardless evenutally update itself automatically.)
 
-5. Accept the invitation to the training repository sent by your instructor (see Step 2).
+6. Accept the invitation to the training repository sent by your instructor (see Step 2).
 
-6. Bring the laptop with GitHub Desktop installed to the training session.
+7. Bring the laptop with GitHub Desktop installed to the training session.
 
 ## Organizer
 
