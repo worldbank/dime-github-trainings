@@ -28,6 +28,7 @@
 !README.md
 !CONTRIBUTING.md
 !LICENSE*
+!CITATION.cff # Git-friendly citation file
 
 * Unignore reproot files - see https://dime-worldbank.github.io/repkit/articles/reproot-files.html
 !reproot*.yaml
@@ -94,6 +95,8 @@
 # the "#" below after you checked your .yml/.yaml files for sensitive content
 #!/**/*.yml
 #!/**/*.yaml
+
+
 
 #######################
 # Include some additional file formats in any output folder. You might have
