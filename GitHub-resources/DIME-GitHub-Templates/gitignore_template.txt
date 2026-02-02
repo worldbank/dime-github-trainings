@@ -28,7 +28,8 @@
 !README.md
 !CONTRIBUTING.md
 !LICENSE*
-!CITATION.cff # Git-friendly citation file
+# Git-friendly citation file
+!CITATION.cff
 
 * Unignore reproot files - see https://dime-worldbank.github.io/repkit/articles/reproot-files.html
 !reproot*.yaml
