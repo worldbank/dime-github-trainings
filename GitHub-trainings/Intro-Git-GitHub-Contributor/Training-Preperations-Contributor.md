@@ -20,7 +20,7 @@ All participants are expected to complete the steps below *before* the training.
 
 5. After installing GitHub Desktop, open it and go to _File_ → _Options_, then log in using your GitHub account.  
    - _Optional_: Go to _Help_ → _About GitHub Desktop_ to check for updates.  
-     (*Software Center* may not install the latest version. GitHub Desktop will regardless evenutally update itself automatically.)
+     (*Software Center* may not install the latest version. GitHub Desktop will regardless eventually update itself automatically.)
 
 6. Accept the invitation to the training repository sent by your instructor (see Step 2).
 
