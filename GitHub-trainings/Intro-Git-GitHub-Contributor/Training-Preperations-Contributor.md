@@ -11,7 +11,7 @@ All participants are expected to complete the steps below *before* the training.
 2. Send your GitHub username to the organizer or instructor of your training session.  
    (If you provided your username when signing up via a form, you do not need to send it again.)  
    The instructor will invite you to the training repository.
-   - _Do not send the email address associated with your GitHub account, we need your username. Your username is in the URL to your proile page on GitHub.com, so if unsure, you can alsways share that URL._
+   - _Do not send the email address associated with your GitHub account, we need your username. Your username is in the URL to your profile page on GitHub.com, so if unsure, you can always share that URL._
 
 4. Install the GitHub Desktop application. This is a free GitHub client approved for WB computers.  
    While other clients exist, this training uses GitHub Desktop because it is the most beginner-friendly option.
