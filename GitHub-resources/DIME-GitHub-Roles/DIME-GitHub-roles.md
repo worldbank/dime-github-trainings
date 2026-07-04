@@ -3,18 +3,18 @@
 * These roles are templates that are often adjusted to fit each project, but this template should always be a good starting point
 * Not all of these roles are official GitHub roles, and a role described here might be called something else in other GitHub guidelines, however the intuition behind them will be the same
 * Some team members will have multiple roles for the same repository.
-  * On smaller projects some team member might have all the roles listed here
+  * On smaller projects some team members might have all the roles listed here
 
 ## DIME GitHub Team Structure
-These are assumptions we make about a typical research team. Most teams are not a typical team, but we still think that most team will be able to use this a great starting point.
+These are assumptions we make about a typical research team. Most teams are not a typical team, but we still think that most teams will be able to use this a great starting point.
 
 * Not all roles are needed in each repository, some roles can exist across teams
-  * Team structures differ across organizations, so this sections explains is meant by team in this paper to avoid confusion
+  * Team structures differ across organizations, so this section explains what is meant by team in this paper to avoid confusion
   teams
   * These guidelines are based on DIME’s team structure, but the roles in this document should be applicable even if your team is organized differently
 * To describe how this could work we are defining three types of teams:
   * Project Team - The team members that work on a single repository for a specific project
-  * Research Team - A research team consists of multiple project teams that do research on similar topic, using similar methods etc.
+  * Research Team - A research team consists of multiple project teams that do research on similar topics, using similar methods etc.
   * Unit - A unit consists of several research teams
 * If a research team only has one project, then the terms research team and project team can be seen as completely synonymous
 
@@ -58,7 +58,7 @@ Typically, there are many Contributors to a repository, and most Contributors wi
 * Most people in the project team tend to be Contributors
 * RAs are the most active Contributors
 * PIs that code are Contributors, but not all PIs are Contributors (some are Observers)
-* Code reviewer and other QA roles are examples of people that are not members of a the project team but could still be Contributors as they might also submit edits to the code
+* Code reviewer and other QA roles are examples of people that are not members of the project team but could still be Contributors as they might also submit edits to the code
 
 #### Need to know:
 * Need to understand and be able to use Clone, Commit, and Branch

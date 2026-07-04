@@ -20,7 +20,7 @@ This training will not teach you everything about Git and GitHub,
 but after this training you will know how to contribute to a repository.
 
 The training is designed for someone joining a team that is already using Git/GitHub,
-or that is about to start, and has a team member that is experience with GitHub workflows.
+or that is about to start, and has a team member that is experienced with GitHub workflows.
 This training will not teach you how to create a repository,
 how to set up work flows and best practices for a team using Git/GitHub,
 or how to solve conflicts etc. in a repository.
@@ -50,7 +50,7 @@ This training was developed to be an interactive training taught by an instructo
 but we are happy to share all material.
 You can find all the materials used in this training on the
 [DIME Analytics GitHub training repo](https://github.com/worldbank/dime-github-trainings).
-This repo also include the material for all our other GitHub trainings and resources.
+This repo also includes the material for all our other GitHub trainings and resources.
 
 **Slides**. Go to the
 [latex-slides folder](https://github.com/worldbank/dime-github-trainings/tree/main/GitHub-trainings/Intro-Git-GitHub-Contributor/latex-slides)
