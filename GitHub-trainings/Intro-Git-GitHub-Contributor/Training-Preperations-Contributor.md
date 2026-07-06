@@ -1,6 +1,6 @@
 # Preparations – Intro to Git/GitHub Contributor Training
 
-## Participator
+## Participant
 
 All participants are expected to complete the steps below *before* the training. This is an interactive session, so it is essential that everyone follows these instructions and brings their laptop to the training.
 
@@ -37,9 +37,9 @@ All participants are expected to complete the steps below *before* the training.
 
 #### A day or two before the training:
 
-* Make sure that all participants has a GitHub account and has the Git Client GitHub Desktop installed.
+* Make sure that all participants have a GitHub account and has the Git Client GitHub Desktop installed.
 * Make sure that you have forwarded to the instructor all the GitHub account names that participants have sent to you.
-* Make sure that all participants are aware that this is an interactive training where it only make sense if everyone brings their own computer to the training.
+* Make sure that all participants are aware that this is an interactive training where it only makes sense if everyone brings their own computer to the training.
 
 ## Instructor
 

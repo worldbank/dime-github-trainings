@@ -22,4 +22,4 @@ We will continuously develop more resources based on the demand from the teams w
 ### Possible future trainings
 
 * **GitBetter** - This training can be self-taught and is aimed towards someone who comfortable using the basics of Git/GitHub and want to start having a deeper understanding how Git works and how GitHub is implemented, and how to use that understanding to be a better *Contributor* and eventually an excellent *Repo maintainer*.
-* **Git-GitHub-Repo-maintainer** - This training trains the attendee in things necessary for be someone who is responsible to set up and uphold the work flow for a project hosted in Git.
+* **Git-GitHub-Repo-maintainer** - This training trains the attendee in things necessary to be someone who is responsible to set up and uphold the work flow for a project hosted in Git.

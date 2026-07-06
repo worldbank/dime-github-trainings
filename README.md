@@ -1,6 +1,6 @@
 # DIME GitHub Trainings and Resources
 
-This repo contains GitHub training materials and other GitHub resources. All content in this repository is published under the MIT License so anyone is free to use these resources in way the see fit. See [LICENSE](https://github.com/worldbank/dime-github-trainings/blob/master/LICENSE) for all details.
+This repo contains GitHub training materials and other GitHub resources. All content in this repository is published under the MIT License so anyone is free to use these resources in any way they see fit. See [LICENSE](https://github.com/worldbank/dime-github-trainings/blob/master/LICENSE) for all details.
 
 All presentations developed in this repo can be found in PDF format [here](https://osf.io/e54gy/)
 
