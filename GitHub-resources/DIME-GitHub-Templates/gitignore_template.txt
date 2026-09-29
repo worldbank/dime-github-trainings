@@ -1,10 +1,10 @@
 ########################################################################
 #
-# Based on DIME .gitignore template. Follow the instructions in the URL
+# Based on DECDI .gitignore template. Follow the instructions in the URL
 # below to set up this template in your own repository
 # https://github.com/worldbank/dime-github-trainings/tree/main/GitHub-resources/DIME-GitHub-Templates
 #
-# This is version 2.0
+# This is version 2.1
 #
 ########################################################################
 
