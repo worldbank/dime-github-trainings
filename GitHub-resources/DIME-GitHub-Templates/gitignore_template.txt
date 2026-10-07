@@ -4,7 +4,7 @@
 # below to set up this template in your own repository
 # https://github.com/worldbank/dime-github-trainings/tree/main/GitHub-resources/DIME-GitHub-Templates
 #
-# This is version 2.1
+# This is version 3.0
 #
 ########################################################################
 
@@ -31,7 +31,7 @@
 # Git-friendly citation file
 !CITATION.cff
 
-* Unignore reproot files - see https://dime-worldbank.github.io/repkit/articles/reproot-files.html
+# Unignore reproot files - see https://dime-worldbank.github.io/repkit/articles/reproot-files.html
 !reproot*.yaml
 
 #######################
@@ -83,7 +83,7 @@
 # Julia
 !/**/*.jl
 
-#Files to create custom layout and functionality
+# Files to create custom layout and functionality
 # in dashboards, markdown notebooks, bookdown etc.
 !/**/*.css
 !/**/*.js
@@ -124,3 +124,11 @@ token.*
 tokens.*
 token/
 tokens/
+
+#######################
+# Ignore Git worktrees. Coding agents (and some users) create worktrees -
+# extra working folders with their own branch - inside the repository folder,
+# for example in .claude/worktrees/. Content in a worktree is tracked on its
+# own branch, so it should never be committed as files in this branch. This
+# rule matches any folder called worktrees, regardless of which tool created it.
+**/worktrees/
